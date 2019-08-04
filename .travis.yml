@@ -13,6 +13,7 @@ before_install:
         -in Travis_Token.enc -out ~\/.ssh/Travis_Token -d
         #- openssl aes-256-cbc -K $encrypted_e74dc4b9668f_key -iv $encrypted_e74dc4b9668f_iv
         #  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+        #     - chmod +x ./publish-to-gh-pages.sh  # 为shell文件添加可执行权限
 
 install:
     - npm install
@@ -22,10 +23,15 @@ script:
     - hexo g
 
 after_script:
+    - set -ev
+    - git clone https://${GH_REF} blog
+    - cd blog
+    - git config user.name "Travis"
+    - git config user.email "tianyaqpzm@163.com"
     - git checkout master
     - git add ./public
     - git commit -m 'Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M`'
-    - git push --force --quiet origin master
+    - git push --force --quiet "https://${Travis_Token}@${GH_REF}" master
 
 branches:
     only:
@@ -33,4 +39,4 @@ branches:
 
 env:
     global:
-        -  GH_REF: github.com/tianyaqpzm/tianyaqpzm.github.io.git    
+        - GH_REF: github.com/tianyaqpzm/tianyaqpzm.github.io.git    

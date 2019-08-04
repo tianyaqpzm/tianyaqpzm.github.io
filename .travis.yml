@@ -1,29 +1,18 @@
 language: node_js
 node_js: stable
-
 cache:
   apt: true
   directories:
-    - node_modules # 缓存不经常更改的内容
-
+    - node_modules
 before_install:
-  - export TZ='Asia/Shanghai' # 更改时区
+  - export TZ='Asia/Shanghai'
   - npm install
   - npm install -g hexo-cli
-  - chmod 600 ~/.ssh
-  - openssl aes-256-cbc -K $encrypted_e74dc4b9668f_key -iv $encrypted_e74dc4b9668f_iv
-    -in Travis_Token.enc -out ~\/.ssh/Travis_Token -d
-    #- openssl aes-256-cbc -K $encrypted_e74dc4b9668f_key -iv $encrypted_e74dc4b9668f_iv
-    #  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
-    #     - chmod +x ./publish-to-gh-pages.sh  # 为shell文件添加可执行权限
-
 install:
   - npm install
-
 script:
   - hexo clean
   - hexo g
-
 after_script:
   - set -ev
   - git clone https://${GH_REF} blog
@@ -34,11 +23,10 @@ after_script:
   - git add ./public
   - git commit -m 'Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M`'
   - git push --force --quiet "https://${Travis_Token}@${GH_REF}" master
-
 branches:
   only:
-    - hexo # 只检测hexo 分支
-
+    - hexo
 env:
   global:
     - GH_REF: github.com/tianyaqpzm/tianyaqpzm.github.io.git
+    - secure: qw3mwZ55DYbtGaORGopa8jzM8jnAr7IQ/L0d40F1SHWGqkM4NubfMQLLYW34zdVyINBuO0QFr2P3jXiPumsoncFApHTuOUj7dY4zOj8Oeo1iZFiulz7oqnAxs6uPlTrR1jpx5rkv+SghlG5oi3ny4jSP57SCYDHHpJuUx/zwZS0xPh8Rjjqi/rWTInj9desoqPWvTa/PwFh+/xcgWi1npU6pm01gG5oD4UxpR18sZD38K4paWPpPWAg9o0+OYHKYVA1Znc8UqwgJuDs9SGe8AsmsTkQboSuNtOtcr6em1+s/6hCEHyafn6O4atoEB/x/40txGCQ58O7MSB454NfEcz1sJCyPm1c1YxQkwLH05cQ8r3RY2/ZdMTWgGRth+EOwUbVWMc6swTXALkTjzAoSO5BWmhinugxKBaKjjZ2kXiCoeGSID/7dBd48RzZb8SFxuILVDfqyPPrY4AVm+F2AaMGPA+V2KKtFYd6hpZQEVDSk1xxhYPl/ds5rJRj/4SZ8qXTUhkXoy694wQss4FhZ2wyFdl2JmDwOlCiKbgmjvs+cbaRFPSk5Kb9Ue+ui5tjvX8K15Mrc+qq6UTKlIcvL9HmPzB0kb7RLGoDcFGzcAdMo64mtQ0Er/cWSNrUS6gUK9Zsgw7OH4bLt4HbZPc/BlfkpT9KJ2q3PA5WMvcWgL2g=

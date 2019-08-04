@@ -9,10 +9,10 @@ cache:
 before_install:
     - export TZ='Asia/Shanghai' # 更改时区
     - npm install
-    #- openssl aes-256-cbc -K $encrypted_e74dc4b9668f_key -iv $encrypted_e74dc4b9668f_iv
-    #  -in Travis_Token.enc -out ~\/.ssh/Travis_Token -d
-- openssl aes-256-cbc -K $encrypted_e74dc4b9668f_key -iv $encrypted_e74dc4b9668f_iv
-  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+    - openssl aes-256-cbc -K $encrypted_e74dc4b9668f_key -iv $encrypted_e74dc4b9668f_iv
+        -in Travis_Token.enc -out ~\/.ssh/Travis_Token -d
+        #- openssl aes-256-cbc -K $encrypted_e74dc4b9668f_key -iv $encrypted_e74dc4b9668f_iv
+        #  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
 
 install:
     - npm install

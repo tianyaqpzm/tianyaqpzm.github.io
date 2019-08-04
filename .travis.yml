@@ -3,33 +3,32 @@ node_js: stable
 cache:
   apt: true
   directories:
-    - node_modules
+  - node_modules
 before_install:
-  - export TZ='Asia/Shanghai'
-  - npm install -g hexo-cli
+- export TZ='Asia/Shanghai'
+- npm install -g hexo-cli
 install:
-  - npm install
+- npm install
 script:
-  - hexo clean && hexo g
+- hexo clean && hexo g
 after_script:
-  - ssh -T git@github.com
-  - set -ev
-  - git clone https://${GH_REF} blog
-  - cd blog
-  - git checkout master
-  - git config user.name "tianyaqpzm"
-  - git config user.email "tianyaqpzm@163.com"
-  - cd ../
-  - mv ./blog/.git/ ./public/
-  - cd ./public
-  - git add .
-  - git commit -m 'Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M`'
-  - echo ${GH_TOKEN}
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master
+- ssh -T git@github.com
+- set -ev
+- git clone https://${GH_REF} blog
+- cd blog
+- git checkout master
+- git config user.name "tianyaqpzm"
+- git config user.email "tianyaqpzm@163.com"
+- cd ../
+- mv ./blog/.git/ ./public/
+- cd ./public
+- git add .
+- git commit -m 'Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M`'
+- git push --force --quiet "https://${Travis_Token}@${GH_REF}" master
 branches:
   only:
-    - hexo
+  - hexo
 env:
   global:
-    - GH_REF: github.com/tianyaqpzm/tianyaqpzm.github.io.git
-    - secure: s+4DOuyMSXOM1CHPQuOSe/eGS+UMVnJUAEzmCGpBuKK4HVNHZo1SAqcx1O+plBQYef5nj7tKEekp239ZDLqWDoYbhvkXRWf/Y+vB5BnM3gAdspzRerevgb/fcbwbkvRXGiwhWyM+KEOFC27r9QdM0ILBxcKrPmQyqzy15liAbX1ohbW4CrIplCnTi42n0v7F/cifwkdZNuroJVSxbJBxB4//O7murSe1pI/X0RO3CybqIlUNbzSKggt3F2CSRrvJwWy3QYBXMoXOWh5EOQdxI9N+caISZTSDqoreM7nD44N0eyHzlEtVVRypHGSdhpw9w1bIGVI6NZDe2M3PhqXmlQJGd4eOkb36+U8X161AuOvrPCZWY6XH2g7Agnk48s38779IrnGUcSakuN+/wkMCt7+IuuLRvYE/4mW/yl1F6c7XXoGDNv/ptDq3cxgfn/4bhmL8H/xwmIsSG5Cvprx8MslMkYjuVLv5YpX/OtDe9fJDCofwpkEHFo8mCKXYGg4bW1TiSgmksjFZMvWmbFBAoB11JWuDBZC95QT+CT8CvY9SZ8XcPWoqhJkIQ7tk7hfdcOYjDuu3klNiQqMwgO9+j8S66kARmUXcbn3XcsKhLBQo6gdCEc+0/a6L6907O1oQtmesoRUPifGQSwhIFlxf4FaONSE9mbmtuhTFP5zBZ4I=
+  - GH_REF: github.com/tianyaqpzm/tianyaqpzm.github.io.git
+  - secure: k17Fv3KfMRANkvRCzvvA/0MVV9nbQ9NA9qQMZQGuVdTTr8MT/7Irjw2MjqURWxU8HilBPAla6odrr7VYZH+V/weSUMvem89SewOEGySHWTCBwyEYh6N6lf0uLrzs28GG4pcvTRJXAKGM1tNrfxqX8R9r3gEpgsNld7RuY+W85cpYULUn/3E8w+K0Ct30R9h2ePSPlq4v/ygMqL239+76d11nVLNp9nXQhyriwUMpBsEFa9opNOV5AAbLRO9sDHjyC7xrSe8RjbbPD8hS2j+YdvLAT0mqEqnsXO0hjGLDTGqTehTkHrilny0pF7f7BzjLrKndHDKEjIRtNeFcfTyaX5neSjG+dHfm1R6vjhG+lNh8qwaKXB8dPvr8DqkPgDIYIvtwxBskDjZp0vAArNDv6Otw/+Y7wNfU9n4f4X/lZdauOp1Q2nEJjVxR6mDwslU6viykfpo/dwsPyYpvFr/qZOGJ/Of8D6XqpqRDzkXsL8DEkXbTV6BAF1TVImX0baeL+KhdI1HkBqyNfDzqJZ7PSd/dV/3+fYSNHNH/QJFzkvLkwtscGi6ConHYdmt7OeW1lsA8BXP9Ub8O2mWcV5U7COI//7WWEpOjOJBdx2nUhdnvun1zynT3Uq2/m337sBTTq/CIrRT+0xLF1ODQtHGCzJNSNnzAk00GuQyW0e8XY/E=

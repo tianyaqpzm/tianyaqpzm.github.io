@@ -13,14 +13,13 @@ install:
 script:
   - hexo clean
   - hexo g
-  - ls -lrt
 after_script:
   - set -ev
   - git clone https://${GH_REF} blog
   - cd blog
   - git checkout master
-  - ls
   - cd ../
+  - ls -lrt
   - git config user.name "Travis"
   - git config user.email "tianyaqpzm@163.com"
   - git add ./public

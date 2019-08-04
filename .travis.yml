@@ -20,7 +20,7 @@ after_script:
   - git config user.name "Travis"
   - git config user.email "tianyaqpzm@163.com"
   - cd ../
-  - mv .blog/.git/ ./public/
+  - mv ./blog/.git/ ./public/
   - cd ./public
   - git add .
   - git commit -m 'Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M`'

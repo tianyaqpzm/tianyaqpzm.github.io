@@ -10,20 +10,20 @@ before_install:
 install:
   - npm install
 script:
-  - hexo clean
-  - hexo g
+  - hexo clean && hexo g
 after_script:
   - set -ev
   - git clone https://${GH_REF} blog
   - cd blog
   - git checkout master
-  - git config user.name "Travis"
+  - git config user.name "tianyaqpzm"
   - git config user.email "tianyaqpzm@163.com"
   - cd ../
   - mv ./blog/.git/ ./public/
   - cd ./public
   - git add .
   - git commit -m 'Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M`'
+  - echo ${Travis_Token}
   - git push --force --quiet "https://${Travis_Token}@${GH_REF}" master
 branches:
   only:
@@ -31,4 +31,4 @@ branches:
 env:
   global:
     - GH_REF: github.com/tianyaqpzm/tianyaqpzm.github.io.git
-    - secure: qw3mwZ55DYbtGaORGopa8jzM8jnAr7IQ/L0d40F1SHWGqkM4NubfMQLLYW34zdVyINBuO0QFr2P3jXiPumsoncFApHTuOUj7dY4zOj8Oeo1iZFiulz7oqnAxs6uPlTrR1jpx5rkv+SghlG5oi3ny4jSP57SCYDHHpJuUx/zwZS0xPh8Rjjqi/rWTInj9desoqPWvTa/PwFh+/xcgWi1npU6pm01gG5oD4UxpR18sZD38K4paWPpPWAg9o0+OYHKYVA1Znc8UqwgJuDs9SGe8AsmsTkQboSuNtOtcr6em1+s/6hCEHyafn6O4atoEB/x/40txGCQ58O7MSB454NfEcz1sJCyPm1c1YxQkwLH05cQ8r3RY2/ZdMTWgGRth+EOwUbVWMc6swTXALkTjzAoSO5BWmhinugxKBaKjjZ2kXiCoeGSID/7dBd48RzZb8SFxuILVDfqyPPrY4AVm+F2AaMGPA+V2KKtFYd6hpZQEVDSk1xxhYPl/ds5rJRj/4SZ8qXTUhkXoy694wQss4FhZ2wyFdl2JmDwOlCiKbgmjvs+cbaRFPSk5Kb9Ue+ui5tjvX8K15Mrc+qq6UTKlIcvL9HmPzB0kb7RLGoDcFGzcAdMo64mtQ0Er/cWSNrUS6gUK9Zsgw7OH4bLt4HbZPc/BlfkpT9KJ2q3PA5WMvcWgL2g=
+    - secure: 0DVj4oc3TlmkPrqJGa9jKHElh/tO+ccOdvoLxJjqOMEgqqibx/iXNGXxzGpj2+76ZFd/dewI0I34OUm6x1/cUwI0y1QrkcvKbu50BmB2Aqn1mgITUjIzhVcwRFZdfdgwzCq+scgGS/rqs07Q674yJ+yplt0QY30MifVCUnA5WyixB/9/kaBdAHGA24iQuNqvRcYQtVTj3K/Bkpm4TYc/hMOL/xE/HLO0yiN/bS2isPQXJGyMs0T1PboWGWZM/vSGQ3DvMx5zIh51kxrvlYvfjy6DXVDOLXcqpSndfJFBldEvFZUhWRP83XUOQuB01tZAkXjeUTABBMFCCi1xSTkOvQ+m97JTrlmWvHnCndl7lZCyW7iVLZ23F4zxettATaKW6QMwfuz9mtWnVujOFSn7ugxw2cX9bh6kJNKAvlBYoYg4bQmHWa0tsrWOFTzBA0MXmZoAbtqRrYQFE8J8C9Hf2GyXWVqpfCocuUsQ4SWZnazfdmlEX/pc2Fz7clxXQF5loEhc7WYJh0MBc1lw5y/pvQ/BR0BzbUYchUZp5Gj5M7oP1YkRDh0SJUfLGFwfcoSpIqYyZkW9Ws8S/zie2N1pNoRU+XX4F+2GSGE17JzkDtfDiTtoyyWRESlF1iDiCI6MUOFe5L9Por9KCoXwr+YY013QcHx8qS7OK7BkC63zp0w=

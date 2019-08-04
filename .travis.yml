@@ -5,8 +5,6 @@ cache:
   directories:
     - node_modules
 before_install:
-  # - openssl aes-256-cbc -K $encrypted_e74dc4b9668f_key -iv $encrypted_e74dc4b9668f_iv
-  #   -in Travis_Token.enc -out ~\/.ssh/Travis_Token -d
   - export TZ='Asia/Shanghai'
   - npm install -g hexo-cli
 install:
@@ -26,12 +24,12 @@ after_script:
   - cd ./public
   - git add .
   - git commit -m 'Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M`'
-  - echo ${Travis_Token}
-  - git push --force --quiet "https://${Travis_Token}@${GH_REF}" master
+  - echo ${GH_TOKEN}
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master
 branches:
   only:
     - hexo
 env:
   global:
     - GH_REF: github.com/tianyaqpzm/tianyaqpzm.github.io.git
-    - secure: 0DVj4oc3TlmkPrqJGa9jKHElh/tO+ccOdvoLxJjqOMEgqqibx/iXNGXxzGpj2+76ZFd/dewI0I34OUm6x1/cUwI0y1QrkcvKbu50BmB2Aqn1mgITUjIzhVcwRFZdfdgwzCq+scgGS/rqs07Q674yJ+yplt0QY30MifVCUnA5WyixB/9/kaBdAHGA24iQuNqvRcYQtVTj3K/Bkpm4TYc/hMOL/xE/HLO0yiN/bS2isPQXJGyMs0T1PboWGWZM/vSGQ3DvMx5zIh51kxrvlYvfjy6DXVDOLXcqpSndfJFBldEvFZUhWRP83XUOQuB01tZAkXjeUTABBMFCCi1xSTkOvQ+m97JTrlmWvHnCndl7lZCyW7iVLZ23F4zxettATaKW6QMwfuz9mtWnVujOFSn7ugxw2cX9bh6kJNKAvlBYoYg4bQmHWa0tsrWOFTzBA0MXmZoAbtqRrYQFE8J8C9Hf2GyXWVqpfCocuUsQ4SWZnazfdmlEX/pc2Fz7clxXQF5loEhc7WYJh0MBc1lw5y/pvQ/BR0BzbUYchUZp5Gj5M7oP1YkRDh0SJUfLGFwfcoSpIqYyZkW9Ws8S/zie2N1pNoRU+XX4F+2GSGE17JzkDtfDiTtoyyWRESlF1iDiCI6MUOFe5L9Por9KCoXwr+YY013QcHx8qS7OK7BkC63zp0w=
+    - secure: s+4DOuyMSXOM1CHPQuOSe/eGS+UMVnJUAEzmCGpBuKK4HVNHZo1SAqcx1O+plBQYef5nj7tKEekp239ZDLqWDoYbhvkXRWf/Y+vB5BnM3gAdspzRerevgb/fcbwbkvRXGiwhWyM+KEOFC27r9QdM0ILBxcKrPmQyqzy15liAbX1ohbW4CrIplCnTi42n0v7F/cifwkdZNuroJVSxbJBxB4//O7murSe1pI/X0RO3CybqIlUNbzSKggt3F2CSRrvJwWy3QYBXMoXOWh5EOQdxI9N+caISZTSDqoreM7nD44N0eyHzlEtVVRypHGSdhpw9w1bIGVI6NZDe2M3PhqXmlQJGd4eOkb36+U8X161AuOvrPCZWY6XH2g7Agnk48s38779IrnGUcSakuN+/wkMCt7+IuuLRvYE/4mW/yl1F6c7XXoGDNv/ptDq3cxgfn/4bhmL8H/xwmIsSG5Cvprx8MslMkYjuVLv5YpX/OtDe9fJDCofwpkEHFo8mCKXYGg4bW1TiSgmksjFZMvWmbFBAoB11JWuDBZC95QT+CT8CvY9SZ8XcPWoqhJkIQ7tk7hfdcOYjDuu3klNiQqMwgO9+j8S66kARmUXcbn3XcsKhLBQo6gdCEc+0/a6L6907O1oQtmesoRUPifGQSwhIFlxf4FaONSE9mbmtuhTFP5zBZ4I=

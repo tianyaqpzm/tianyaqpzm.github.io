@@ -23,7 +23,7 @@ after_script:
 - mv ./blog/.git/ ./public/
 - cd ./public
 - git add .
-- git commit -m 'Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M`'
+- git commit -m 'Travis CI Auto Builder at `date + %Y-%m-%d %H:%M`'
 - git push --force --quiet "https://${Travis_Token}@${GH_REF}" master
 branches:
   only:

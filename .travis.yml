@@ -3,32 +3,31 @@ node_js: stable
 cache:
   apt: true
   directories:
-    - node_modules
+  - node_modules
 before_install:
-  - export TZ='Asia/Shanghai'
-  - npm install -g hexo-cli
+- export TZ='Asia/Shanghai'
+- npm install -g hexo-cli
 install:
-  - npm install
+- npm install
 script:
-  - hexo clean && hexo g
+- hexo clean && hexo g
 after_script:
-  # - ssh -T git@github.com
-  - set -ev
-  - git clone https://${GH_REF} blog
-  - cd blog
-  - git checkout master
-  - git config user.name "tianyaqpzm"
-  - git config user.email "tianyaqpzm@163.com"
-  - cd ../
-  - mv ./blog/.git/ ./public/
-  - cd ./public
-  - git add .
-  - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
-  - git push --force --quiet "https://${Travis_Token}@${GH_REF}" master
+- set -ev
+- git clone https://${GH_REF} blog
+- cd blog
+- git checkout master
+- git config user.name "tianyaqpzm"
+- git config user.email "tianyaqpzm@163.com"
+- cd ../
+- mv ./blog/.git/ ./public/
+- cd ./public
+- git add .
+- git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
+- git push --force --quiet "https://${Travis_Token}@${GH_REF}" master
 branches:
   only:
-    - hexo
+  - hexo
 env:
   global:
-    - GH_REF: github.com/tianyaqpzm/tianyaqpzm.github.io.git
-    - secure: k17Fv3KfMRANkvRCzvvA/0MVV9nbQ9NA9qQMZQGuVdTTr8MT/7Irjw2MjqURWxU8HilBPAla6odrr7VYZH+V/weSUMvem89SewOEGySHWTCBwyEYh6N6lf0uLrzs28GG4pcvTRJXAKGM1tNrfxqX8R9r3gEpgsNld7RuY+W85cpYULUn/3E8w+K0Ct30R9h2ePSPlq4v/ygMqL239+76d11nVLNp9nXQhyriwUMpBsEFa9opNOV5AAbLRO9sDHjyC7xrSe8RjbbPD8hS2j+YdvLAT0mqEqnsXO0hjGLDTGqTehTkHrilny0pF7f7BzjLrKndHDKEjIRtNeFcfTyaX5neSjG+dHfm1R6vjhG+lNh8qwaKXB8dPvr8DqkPgDIYIvtwxBskDjZp0vAArNDv6Otw/+Y7wNfU9n4f4X/lZdauOp1Q2nEJjVxR6mDwslU6viykfpo/dwsPyYpvFr/qZOGJ/Of8D6XqpqRDzkXsL8DEkXbTV6BAF1TVImX0baeL+KhdI1HkBqyNfDzqJZ7PSd/dV/3+fYSNHNH/QJFzkvLkwtscGi6ConHYdmt7OeW1lsA8BXP9Ub8O2mWcV5U7COI//7WWEpOjOJBdx2nUhdnvun1zynT3Uq2/m337sBTTq/CIrRT+0xLF1ODQtHGCzJNSNnzAk00GuQyW0e8XY/E=
+  - GH_REF: github.com/tianyaqpzm/tianyaqpzm.github.io.git
+  - secure: Np5DBYQckCN7tkTjK1eGX3hNoBwFPYe9TepQSUoeS1jQbckF7j7HwCF16wwbzVz1oUqOaf9BW8CU9roaQ51rXRac8NyKqTLj7y8607pT9mdFUX0aow9TrRQuWBvUDJr2cOIqa/8+XhuTNsY2HKbPesckNb/4dFBkPmWWhPlosHtKWrFseDgsPwgNJ9zVZYO0/KKrGR0vZvKhiJFlvvBbmkJNI0EP355ZS/PYU3HhXGiWaMegsF7CCscdekxbeNfcui5XRo8Y2H7DqWpAQg+7KAlE+GlUgZcgzQ49e/uSGvRDAHDVZ0i0dRAg8AKgDwPf+nTXxTgACrgEkc42LWQ8ojFdfjJqNloNy+cfLnGvfNp6eTN/+CQE0pMVIZLbUlp9h0lc5l1OZybLUpboYzveVGMEQTJFKoAscKaqXwU57p11247ueSyYeZycKkYA+cIjoOZyWgsn6/HnC4kjWh7ZSVKny1DxKGCNo7LYUEGmDrVK5RDN9Z/XeHD2KysKxgeBFgNMlwL2c8qotrMC9xNPelVOX0uAZlgRpaezWO0prUPxzC+gLi1tEClJNjGkt8isUiVvUONBK/ldhup79ZE02GXYg3pzVYww2yUWPJSwwji9vYhD7wNqb1G3lFN7arctRlsetQA36I+6IEWZWiUO3GlO/C56fwt8k7xeaRl4TUU=

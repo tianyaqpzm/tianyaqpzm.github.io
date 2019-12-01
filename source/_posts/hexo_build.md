@@ -26,6 +26,16 @@ top: false
 
 #### 4. trivas自动部署hexo的blog
 
+
+
+https://travis-ci.com/dashboard
+
+
+
+而是https://travis-ci.org/
+
+
+
 ```
 Travis_Token  :  f093d9acb49cc127430aeed *************************26a3f890b
 
@@ -38,6 +48,8 @@ echo 'Travis_Token=f093d9acb49cc127430aeed *************************26a3f890b' >
 git push --force --quiet "https://f093d9acb49cc127430aeed *************************26a3f890b@github.com/tianyaqpzm/tianyaqpzm.github.io.git" hexo
 ```
 
+![image-20191202000100719](hexo_build/image-20191202000100719.png)
+
 
 
 * token 登录
@@ -49,7 +61,9 @@ git push --force --quiet "https://f093d9acb49cc127430aeed **********************
 
 
 ```
-`travis encrypt 'GH_TOKEN=<TOKEN>' --add`
+travis encrypt 'GH_TOKEN=<TOKEN>' --add
+
+
 ```
 
 * id_rsa 登录 (失败)

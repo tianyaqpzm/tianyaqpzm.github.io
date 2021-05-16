@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-03T12:47:22.392Z</updated>
+  <updated>2021-05-16T13:58:35.023Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,25 +17,60 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test_my_site</title>
-    <link href="http://yoursite.com/2019/08/03/test-my-site/"/>
-    <id>http://yoursite.com/2019/08/03/test-my-site/</id>
-    <published>2019-08-03T12:47:22.000Z</published>
-    <updated>2019-08-03T12:47:22.392Z</updated>
+    <title>file</title>
+    <link href="http://yoursite.com/2019/08/05/file/"/>
+    <id>http://yoursite.com/2019/08/05/file/</id>
+    <published>2019-08-05T15:59:20.000Z</published>
+    <updated>2021-05-16T13:58:35.023Z</updated>
+    
+    <content type="html"><![CDATA[<p>亿级流量电商网站的商品详情页系统，架构讲解，项目实战：高并发+高可用的系统缓存架构</p><p>真正能支撑高并发以及高可用的复杂系统中的<strong>缓存架构</strong>有哪些东西？</p><p>（1）如何让 redis 集群支撑几十万 QPS 高并发 + 99.99%高可用 +TB 级海量数据 + 企业级数据备份与恢复？</p><p>redis 企业级集群架构</p><p>（2）如何支撑高性能以及高并发到极致？ 同时给缓存架构最后到安全保护层？</p><p>（nginx + lua）+ redis + ehcache 的三级缓存架构</p><p>（3）高并发场景下，如何解决数据库与缓存双写的时候数据不一致的情况？</p><p>企业级的完美数据库+ 缓存双写一致性解决方案</p><p>（4）</p><p><img src="file/image-20191216235706283.png" alt="image-20191216235706283"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;亿级流量电商网站的商品详情页系统，架构讲解，项目实战：高并发+高可用的系统缓存架构&lt;/p&gt;
+&lt;p&gt;真正能支撑高并发以及高可用的复杂系统中的&lt;strong&gt;缓存架构&lt;/strong&gt;有哪些东西？&lt;/p&gt;
+&lt;p&gt;（1）如何让 redis 集群支撑几十万 QPS 高并发 + 99
+      
+    
+    </summary>
+    
+      <category term="dir" scheme="http://yoursite.com/categories/dir/"/>
+    
+    
+      <category term="tag1" scheme="http://yoursite.com/tags/tag1/"/>
+    
+      <category term="tag2" scheme="http://yoursite.com/tags/tag2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>file</title>
+    <link href="http://yoursite.com/2019/08/05/dir/file/"/>
+    <id>http://yoursite.com/2019/08/05/dir/file/</id>
+    <published>2019-08-05T15:59:20.000Z</published>
+    <updated>2019-08-05T16:01:49.664Z</updated>
     
     <summary type="html">
     
     </summary>
     
+      <category term="dir" scheme="http://yoursite.com/categories/dir/"/>
+    
+    
+      <category term="tag1" scheme="http://yoursite.com/tags/tag1/"/>
+    
+      <category term="tag2" scheme="http://yoursite.com/tags/tag2/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/08/03/hello-world/"/>
-    <id>http://yoursite.com/2019/08/03/hello-world/</id>
-    <published>2019-08-03T12:30:53.355Z</published>
-    <updated>2019-08-03T12:30:53.356Z</updated>
+    <link href="http://yoursite.com/2019/08/04/hello-world/"/>
+    <id>http://yoursite.com/2019/08/04/hello-world/</id>
+    <published>2019-08-04T10:46:44.629Z</published>
+    <updated>2019-08-04T10:46:44.630Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
@@ -48,6 +83,44 @@
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>test_my_site</title>
+    <link href="http://yoursite.com/2019/08/03/test-my-site/"/>
+    <id>http://yoursite.com/2019/08/03/test-my-site/</id>
+    <published>2019-08-03T12:47:22.000Z</published>
+    <updated>2021-05-16T15:13:44.271Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>其他_hexo博客</title>
+    <link href="http://yoursite.com/2017/05/24/hexo_build/"/>
+    <id>http://yoursite.com/2017/05/24/hexo_build/</id>
+    <published>2017-05-24T14:07:58.000Z</published>
+    <updated>2021-05-16T15:14:46.784Z</updated>
+    
+    <content type="html"><![CDATA[<p>​</p><h4 id="1-GitHub-建立"><a href="#1-GitHub-建立" class="headerlink" title="1. GitHub 建立"></a>1. GitHub 建立</h4><h4 id="2-本地安装-hexo"><a href="#2-本地安装-hexo" class="headerlink" title="2. 本地安装 hexo"></a>2. 本地安装 hexo</h4><h4 id="3-主题"><a href="#3-主题" class="headerlink" title="3. 主题"></a>3. 主题</h4><h4 id="4-trivas-自动部署-hexo-的-blog"><a href="#4-trivas-自动部署-hexo-的-blog" class="headerlink" title="4. trivas 自动部署 hexo 的 blog"></a>4. trivas 自动部署 hexo 的 blog</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Travis_Token  :  f093d9acb49cc127430aeed *************************26a3f890b</span><br><span class="line"></span><br><span class="line">travis encrypt &apos;Travis_Token=f093d9acb49cc127430aeed *************************26a3f890b&apos; --add</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">echo &apos;Travis_Token=f093d9acb49cc127430aeed *************************26a3f890b&apos; &gt; ~/.ssh/Travis_Token</span><br><span class="line"></span><br><span class="line">0</span><br><span class="line"></span><br><span class="line">git push --force --quiet &quot;https://f093d9acb49cc127430aeed *************************26a3f890b@github.com/tianyaqpzm/tianyaqpzm.github.io.git&quot; hexo</span><br></pre></td></tr></table></figure><p><img src="hexo_build/image-20191202000100719.png" alt="image-20191202000100719"></p><ul><li>token 登录</li></ul><blockquote><p>登陆 <code>GitHub</code> –<code>Settings</code> 选项，找到 <code>Personal access tokens</code> 页面。</p><p>点击右上角的 <code>Generate new token</code> 按钮会生成新的 token，点击后提示输入密码后继续，然后来到如下界面，取个名字（我这里取 <code>Travis_Token</code> 下面的配置文件中会用到)，勾选相应权限，这里只需要 <code>repo</code> 下全部和 <code>user</code> 下的 <code>user:email</code> 即可。</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">travis encrypt &apos;GH_TOKEN=&lt;TOKEN&gt;&apos; --add</span><br></pre></td></tr></table></figure><ul><li>id_rsa 登录 (失败)</li></ul><blockquote><p>参考 <a href="https://cosmeapp.github.io/2017/09/18/travis-ci-auto-build/" target="_blank" rel="noopener">Travis CI 系列：自动化部署博客</a></p></blockquote><p><img src="/Users/pei/Documents/md%E7%AC%94%E8%AE%B0/hexo_blog.assets/image-20190804111117063.png" alt="image-20190804111117063"></p><p>在<code>.travis.yml</code>添加<code>ssh -T git@github.com</code>测试，发现 ssh 的配置是没问题的。</p><ul><li>密码账号登录</li></ul><h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><ol><li>解决 master commit 树被清空</li></ol><p>两种方案：</p><ul><li>在 public 文件夹里 git init</li><li>将 clone 下的.git 文件夹 移动到 public 下面： mv ./blog/.git/ ./public/</li></ul><ol start="2"><li>使用 token 进行提交</li></ol><p>可以先在本地进行验证，</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push --force --quiet &quot;https://f093d9acb49cc127430aeed35103f2026a3f890b@github.com/tianyaqpzm/tianyaqpzm.github.io.git&quot; hexo</span><br></pre></td></tr></table></figure><ol start="3"><li>Travis 部署时报错：WARN No layout: categories/index.html</li></ol><p>主题也是一个版本库，目录下包含.git 目录，当向 github 进行 push 时，未 push 上去。目前的解决方案时将主题目录下的.git 改名或者删除，如果再 push 发现还是没有提交上去。然后将主题目录拷贝到库之外的目录，执行 push 在服务端先删除主题目录，然后再把主题拷贝回来，再次 push。</p>]]></content>
+    
+    <summary type="html">
+    
+      Golang下的数组操作
+    
+    </summary>
+    
+      <category term="其他" scheme="http://yoursite.com/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="travis" scheme="http://yoursite.com/tags/travis/"/>
     
   </entry>
   

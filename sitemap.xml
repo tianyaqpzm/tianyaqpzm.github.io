@@ -2,44 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/gallery/index.html</loc>
+    <loc>http://yoursite.com/2017/05/24/hexo_build/</loc>
     
-    <lastmod>2019-08-03T14:44:30.595Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/slides/index.html</loc>
-    
-    <lastmod>2019-08-03T14:43:41.021Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
-    
-    <lastmod>2019-08-03T14:40:31.098Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
-    
-    <lastmod>2019-08-03T14:40:03.243Z</lastmod>
+    <lastmod>2021-05-16T15:14:46.784Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2019/08/03/test-my-site/</loc>
     
-    <lastmod>2019-08-03T12:47:22.392Z</lastmod>
+    <lastmod>2021-05-16T15:13:44.271Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2019/08/03/hello-world/</loc>
+    <loc>http://yoursite.com/2019/08/05/file/</loc>
     
-    <lastmod>2019-08-03T12:30:53.356Z</lastmod>
+    <lastmod>2021-05-16T13:58:35.023Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/08/05/dir/file/</loc>
+    
+    <lastmod>2019-08-05T16:01:49.664Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2019-08-04T10:46:44.634Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/slides/index.html</loc>
+    
+    <lastmod>2019-08-04T10:46:44.633Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/gallery/index.html</loc>
+    
+    <lastmod>2019-08-04T10:46:44.632Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2019-08-04T10:46:44.631Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/08/04/hello-world/</loc>
+    
+    <lastmod>2019-08-04T10:46:44.630Z</lastmod>
     
   </url>
   

@@ -24,3 +24,6 @@ redis 企业级集群架构
 （4）
 
 ![image-20191216235706283](file/image-20191216235706283.png)
+
+              return new Promise((resolve, reject) => {}); // 返回pending状态
+              // return (new Promise((resolve, reject)=>{reject()}));//返回reject状态 会被最后catch捕获。

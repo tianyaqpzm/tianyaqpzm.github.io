@@ -1,0 +1,14 @@
+{
+  "name": "1.leetcode",
+  "version": "1.0.0",
+  "description": "for j in range(0,9,3):                 map= [0 for k in range(10)]                 for k in range(i,i+3):",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.10"
+  }
+}

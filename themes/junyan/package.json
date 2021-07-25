@@ -1,0 +1,9 @@
+{
+  "name": "junyan",
+  "version": "0.1.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "hexo s -p 3111 -o"
+  }
+}

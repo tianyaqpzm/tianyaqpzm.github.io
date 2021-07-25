@@ -1,0 +1,35 @@
+language: node_js
+node_js: stable
+cache:
+  apt: true
+  directories:
+    - node_modules
+before_install:
+  - export TZ='Asia/Shanghai'
+  - npm install -g hexo-cli
+install:
+  - npm install
+script:
+  - hexo clean && hexo g
+after_script:
+  - set -ev
+  - git clone https://${GH_REF} blog
+  - cd blog
+  - git config user.name "tianyaqpzm"
+  - git config user.email "tianyaqpzm@163.com"
+  - git checkout master
+  - cd ../
+  - mv ./blog/.git/ ./public/
+  - cd ./public
+  - git config --list
+  - git config --system --unset credential.helper
+  - git add .
+  - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
+  - git push --force "https://${Travis_Token}@${GH_REF}" master
+branches:
+  only:
+    - hexo
+env:
+  global:
+    - GH_REF: github.com/tianyaqpzm/tianyaqpzm.github.io.git
+    - secure: TG4rIyFKEvJpofuo6bLvuM6hgQaB1DozegjjzTaMHOIc18xh2wwcaN91haVG35HpOlyoqsrzTBH5syR3EjoxDnhtvvBk4G/5vV7WRuP6SymnF/CxQkG6o58tkP4loB7orjBQYZT5pCYBNognz+BNkBnkfQM/TZCFCk2Jt5VVI/WzolSfX4RjOHd36FacMDBdSZ8p8VyU12qVcYj+iwdeydUvPQFYyR5oGd8AiH7Sck2195IBu6SyJbLHiGuS7X5sZqjqSBNl0jSO7WYXjV3UMIUEK3mvJS4pfp2BEj6NdKdqxTPlz45JgNYFh6Oye/GTC78qVBl4O2gD5mD6vBLg1dWMiS/pGOwJWlALKp2QL3M2rFex09qplRzuQXOkirV8TWp+Uw0c0nIxC0pGIg5H0HF9dtELqD2XKNJCc5BvqV02KDE3ZReZsRP5xcaXx2N/FM6Qt9Z3edbNRy2W/nvb7AVu+gt/FD8yLN2rKeOoaiqu60BJjC/iWfVb4jP5dc+0Bfo/WG8+hUtKFaRBEAgycMvMaceVHXmBe18cUtJ7Ve4FL4dfTqIx/WBdMt83PNdtTRB1MBucskrhJ7asTw/95hzpe5KGWjZQZHyTSn5z6QBDyTdSi7+Ko25WOTjYVL8XCzLVs22G9GG38Lu3RUw8CInxuRKqzPaacqX2uTtYH24=

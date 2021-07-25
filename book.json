@@ -1,0 +1,37 @@
+{
+  "plugins": [
+    "insert-logo",
+    "anchor-navigation-ex",
+    "expandable-chapters-small"
+  ],
+  "pluginsConfig": {
+    "insert-logo": {
+      "url": "https://i.loli.net/2021/07/26/a4DEGSWvB1qLsxg.jpg",
+      "style": "background: none; max-height: 100px; min-height: 30px"
+    },
+    "anchor-navigation-ex": {
+      "showLevel": true,
+      "associatedWithSummary": true,
+      "printLog": false,
+      "multipleH1": true,
+      "mode": "float",
+      "showGoTop": true,
+      "float": {
+        "floatIcon": "fa fa-navicon",
+        "showLevelIcon": false,
+        "level1Icon": "fa fa-hand-o-right",
+        "level2Icon": "fa fa-hand-o-right",
+        "level3Icon": "fa fa-hand-o-right"
+      },
+      "pageTop": {
+        "showLevelIcon": false,
+        "level1Icon": "fa fa-hand-o-right",
+        "level2Icon": "fa fa-hand-o-right",
+        "level3Icon": "fa fa-hand-o-right"
+      }
+    },
+    "theme-default": {
+      "showLevel": true
+    }
+  }
+}

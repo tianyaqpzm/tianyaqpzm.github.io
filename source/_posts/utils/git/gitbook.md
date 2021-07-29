@@ -58,3 +58,33 @@ $ gitbook pdf ./ /home/pdf/
 
 https://www.cnblogs.com/jiangming-blogs/p/14643136.html
 
+
+
+## 上传操作
+
+
+
+git init
+
+git remote add book https://github.com/tianyaqpzm/book.git
+
+git add .
+
+git commit -m "【问题单号】xxxx【修改说明 Modification】初始化gitbook，自动生成目录"
+
+git push --force "https://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@github.com/tianyaqpzm/book.git" master
+
+
+
+mv _posts posts
+
+
+
+sed -i "" "s/source\\/_posts/source\\/posts/g" index.html
+
+
+
+### 访问
+
+https://tianyaqpzm.github.io/book/
+

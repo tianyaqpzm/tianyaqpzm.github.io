@@ -1,18 +1,52 @@
 ---
-title: 其他_hexo博客
+title: hexo博客
 date: 2017-05-24 22:07:58
 tags: [hexo, travis]
 categories:
-  - 其他
+  - 工具
 description: Golang下的数组操作
 top: false
 ---
 
-​
+
 
 #### 1. GitHub 建立
 
 #### 2. 本地安装 hexo
+
+##### Create a new post
+
+```bash
+$ hexo new "My New Post"
+```
+
+More info: [Writing](https://hexo.io/docs/writing.html)
+
+##### Run server
+
+```bash
+$ hexo server
+```
+
+More info: [Server](https://hexo.io/docs/server.html)
+
+##### Generate static files
+
+```bash
+$ hexo generate
+```
+
+More info: [Generating](https://hexo.io/docs/generating.html)
+
+##### Deploy to remote sites
+
+```bash
+$ hexo deploy
+```
+
+More info: [Deployment](
+
+
 
 #### 3. 主题
 
@@ -71,7 +105,7 @@ travis encrypt 'GH_TOKEN=<TOKEN>' --add
 可以先在本地进行验证，
 
 ```
-git push --force --quiet "https://f093d9acb49cc127430aeed35103f2026a3f890b@github.com/tianyaqpzm/tianyaqpzm.github.io.git" hexo
+git push --force --quiet "https://f093d9cb49cc127****f2026a3f890b@github.com/tianyaqpzm/tianyaqpzm.github.io.git" hexo
 ```
 
 3. Travis 部署时报错：WARN No layout: categories/index.html

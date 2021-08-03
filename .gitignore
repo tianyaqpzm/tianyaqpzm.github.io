@@ -6,3 +6,8 @@ node_modules/
 public/
 .deploy*/
 package-lock.json
+source/_posts/Algorithm/1.leetcode/java_demo/.classpath
+source/_posts/Algorithm/1.leetcode/java_demo/.factorypath
+source/_posts/Algorithm/1.leetcode/java_demo/.project
+source/_posts/Algorithm/1.leetcode/java_demo/.settings/
+source/_posts/Algorithm/1.leetcode/java_demo/target/

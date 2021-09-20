@@ -2,9 +2,13 @@ package com.pei.learn.basic;
 
 class ProtectedTestSub extends ProtectedTest {
 
-    public static void main(String[] args) throws CloneNotSupportedException {
+    public static void main(String[] args) {
         ProtectedTestSub protectedTestSub = new ProtectedTestSub();
-        protectedTestSub.clone();
+        try {
+            protectedTestSub.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
         Object o = new Object();
 //        o.clone(); 不能直接调用
         ProtectedTest protectedTest = new ProtectedTest();

@@ -1,3 +1,10 @@
 {
-    "go.inferGopath": false
+    "go.inferGopath": false,
+    "java.checkstyle.configuration":"./source/_posts/other/google_checks.xml",
+    "java.errors.incompleteClasspath.severity": "info",
+    "java.project.sourcePaths": [
+        "source/_posts/Algorithm/经典算法/回溯",
+        "source/_posts/Algorithm/经典算法/动态规划",
+        "source/_posts/Algorithm/经典算法/单调栈"
+    ]
 }

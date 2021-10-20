@@ -72,7 +72,7 @@ git add .
 
 git commit -m "【问题单号】xxxx【修改说明 Modification】初始化gitbook，自动生成目录"
 
-git push --force "https://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@github.com/tianyaqpzm/book.git" master
+git push --force "https://ghp_@github.com/tianyaqpzm/book.git" master
 
 
 
@@ -88,3 +88,10 @@ sed -i "" "s/source\\/_posts/source\\/posts/g" index.html
 
 https://tianyaqpzm.github.io/book/
 
+
+
+
+
+参考：
+
+ [Gitbook详解（三）-目录结构详解](https://www.cnblogs.com/jiangming-blogs/p/14643136.html)

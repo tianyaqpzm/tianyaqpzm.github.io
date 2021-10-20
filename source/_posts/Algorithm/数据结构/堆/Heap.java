@@ -1,6 +1,9 @@
 
 import java.util.Arrays;
 
+/**
+ * 大顶堆
+ */
 public class Heap {
     // 当前堆大小
     int size = 0;
@@ -30,16 +33,21 @@ public class Heap {
         }
     }
 
+    /**
+     * 向下查找，保证满足 大顶堆
+     * 
+     * @param i
+     */
     public void shiftDowm(int i) {
         // 保存下沉节点
         int tmp = queue[i];
-        while (i << 2 <= size) {
+        while (i << 1 <= size) {
             int child = i << 1;
-            // 取子节点较小的
-            if (child != size && queue[child + 1] < queue[child]) {
+            // 取子节点较大的
+            if (child != size && queue[child + 1] > queue[child]) {
                 child++;
             }
-            if (tmp > queue[child]) {
+            if (tmp < queue[child]) {
                 queue[i] = queue[child];
                 i = child;
             } else {
@@ -91,7 +99,7 @@ public class Heap {
         int[] arr = new int[] { 2, 7, 4, 1, 8, 1 };
         Heap heap = new Heap(arr);
         heap.buildHeap();
-        System.out.println(heap.peek());
+        // System.out.println(heap.peek());
         heap.push(5);
         while (heap.size > 0) {
             int num = heap.pop();

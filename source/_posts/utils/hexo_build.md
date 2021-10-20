@@ -50,6 +50,10 @@ More info: [Deployment](
 
 #### 3. 主题
 
+[hexo主题](https://hexo.io/zh-cn/docs/server.html)
+
+
+
 #### 4. trivas 自动部署 hexo 的 blog
 
 ```

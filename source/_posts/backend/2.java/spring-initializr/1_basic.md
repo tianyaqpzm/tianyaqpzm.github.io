@@ -83,3 +83,9 @@ MavenResolverDependencyManagementVersionResolverTests   UT跑不过  @Disable �
 
 
 
+
+
+参考：
+
+[spring initializr源码分析（骨架生成代码生成器）](https://blog.csdn.net/qq_42859864/article/details/89053202)
+

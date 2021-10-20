@@ -9,7 +9,7 @@ import java.util.Map;
  */
 
 // @lc code=start
-class Solution322 {
+class Solution {
     public HashMap<Integer, Integer> cache = new HashMap<>();
 
     private int MAX_VALUE;
@@ -20,6 +20,13 @@ class Solution322 {
         return ans == MAX_VALUE ? -1 : ans;
     }
 
+    /**
+     * 遍历硬币的组合， 1，2，5 硬币列表，当前兑换金额</br>
+     * 
+     * @param coins
+     * @param amount
+     * @return
+     */
     private int dfs(int[] coins, int amount) {
         if (this.cache.containsKey(amount)) {
             return this.cache.get(amount);
@@ -39,7 +46,8 @@ class Solution322 {
     }
 
     /**
-     * 排列数：背包在外层
+     * 排列数：背包在外层<br>
+     * 与硬币次序无关
      * 
      * @param coins
      * @param amount
@@ -71,7 +79,8 @@ class Solution322 {
     }
 
     /**
-     * 组合数：物品在外层
+     * 组合数：物品在外层<br>
+     * 内部循环，获取到所有硬币的组合数
      * 
      * @param coins
      * @param amount
@@ -107,9 +116,12 @@ class Solution322 {
     }
 
     /**
-     * dp[j]：凑足总额为j所需钱币的最少个数为dp[j]. 递推公式：dp[j] = min(dp[j - coins[i]] + 1, dp[j]);
+     * dp[j]：凑足总额为j所需钱币的最少个数为dp[j]. <br>
+     * 递推公式：dp[j] = min(dp[j - coins[i]] + 1, dp[j]);
      * 
-     * 
+     * @param coins
+     * @param amount
+     * @return
      */
     public int coinChange(int[] coins, int amount) {
         // int[] dp = new int[amount + 1];

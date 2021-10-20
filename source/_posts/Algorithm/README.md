@@ -1,4 +1,15 @@
+---
+title: 算法
+date: 2021-05-24 22:07:58
+tags: [算法, leetcode]
+categories:
+  - Algorithm
+description: 算法
+top: true
+---
 # 算法
+
+[TOC]
 
 日常、工作、生活
 
@@ -21,6 +32,11 @@
   - [vue]
 
 ###  [经典算法](经典算法/README.md)
+
+在 VS Code 快速生成单元测试———— Go版本
+https://jaycechant.info/2020/rapidly-generate-unit-tests-in-vs-code/
+
+
 
 
 

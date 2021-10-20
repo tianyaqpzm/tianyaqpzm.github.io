@@ -1,4 +1,38 @@
-Invalid username or password
+# Git配置
+
+
+[TOC]
+
+## $ 配置
+1. 设置用户名和email
+
+```
+git config --global user.name "Your Name" 
+git config --global user.email "youremail@domain.com"
+```
+
+##$ 初始化仓库
+```
+$ git init             //初始化
+
+$ touch README
+
+$ git add README        //更新README文件,更新全部 git add .
+
+$ git commit -m ‘first commit’     //提交更新，并注释信息“first commit”
+
+$ git remote add origin git@github.com:defnngj/hello-world.git     //连接远程github项目，使用ssh方式， 
+git remote add origin https://github.com/IFWEB/node-deploy.git  // 可以使用https方式  
+git clone origin https://github.com/IFWEB/node-deploy.git 方式克隆远程项目
+$ git pull origin master //从git上下载代码到本地，如果报fatal: refusing to merge unrelated histories错误，则需要加上 --allow-unrelated-histories
+
+如果当前分支与多个主机存在追踪关系，那么这个时候-u选项会指定一个默认主机，这样后面就可以不加任何参数使用git push。
+$ git push -u origin master     //将本地项目更新到github项目上去
+```
+
+
+
+* Q: Invalid username or password
 
 ![image-20191202001350552](git_config/image-20191202001350552.png)
 
@@ -6,9 +40,15 @@ git config --global user.name "tianyaqpzm"
 
 git config --global user.email "tianyaqpzm@163.com"
 
+
+
 ![image-20191202001949386](git_config/image-20191202001949386.png)
 
-### 设置 Git 提交注释模版
+
+
+## $ 效率
+
+### 1、配置提交模版
 
 git config --global commit.template ~/project/utils/commit.template
 
@@ -17,7 +57,9 @@ git config --global commit.template ~/project/utils/commit.template
 【自测结果】自测通过
 【二进制 or 第三方来源】不涉及
 
-避免每次输入密码：
+
+
+### 2、避免每次输入密码：
 
 .gitconfig 配置文件。用文档编辑工具打开该文件
 

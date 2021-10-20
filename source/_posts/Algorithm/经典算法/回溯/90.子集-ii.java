@@ -1,6 +1,5 @@
 import java.util.Arrays;
-import jav
-a.util.ArrayList;
+import java.util.ArrayList;
 import java.util.List;
 /*
  * @lc app=leetcode.cn id=90 lang=java

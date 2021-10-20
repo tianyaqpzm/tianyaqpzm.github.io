@@ -1,0 +1,68 @@
+
+# python
+[iPython的安装及问题解决](https://www.jianshu.com/p/8779eac7f313)
+[jupyter安装多个python环境](https://blog.csdn.net/djshichaoren/article/details/79198102)
+
+[在Jupyter中安装Python包](https://blog.csdn.net/wja8a45TJ1Xa/article/details/78757258)
+
+
+python -m pip install -upgrade pip  更新pip 源
+
+在sudoers 里添加用户和权限
+mkdir -m 777 test3
+
+```
+cat >hello.py << EOF
+#!/usr/bin/env python
+#-*- coding:utf-8 -*-
+__authon__=''
+if __name__='main':
+    print(u"你好，python")
+EOF
+
+cd !$     去 !$:表示上一次使用的路径。
+
+
+windows 默认GBK编码
+#!/usr/bin/python env  windows 不需要
+#coding=utf-8
+#-*- coding:GBK -*-
+linux 默认utf-8
+```
+赋值自动识别<= 2^63-1 = 9223372036854775807  int,
+float 不包括无限小数，不区分精度
+a+bj
+二进制 bin(-1000) 
+八进制 oct()
+十六进制 hex()
+
+
+linux vi :
+set ts=4
+set expandtab
+
+匈牙利命名法： 属性+类型+对象
+
+[urllib与urllib2的学习总结(python2.7.X)](https://www.cnblogs.com/wly923/archive/2013/05/07/3057122.html)
+[python中urllib, urllib2,urllib3, httplib,httplib2, request的区别](https://blog.csdn.net/permike/article/details/52437492)
+python 3.x中urllib库和urilib2库合并成了urllib库。。
+其中urllib2.urlopen()变成了urllib.request.urlopen()
+urllib2.Request()变成了urllib.request.Request()
+
+
+原因查询源码 (python3.5.2) ，urllib moudle中并没有request相关方法,直接是urlopen方法
+
+
+urllib.request 用于打开和读取URL, 
+urllib.error 用于处理前面request引起的异常, 
+urllib.parse 用于解析URL, 
+urllib.robotparser用于解析robots.txt文件
+
+
+
+
+
+
+
+
+

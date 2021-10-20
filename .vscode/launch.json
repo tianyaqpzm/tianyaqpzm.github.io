@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch HeapMin",
+            "request": "launch",
+            "mainClass": "HeapMin",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch IO",
+            "request": "launch",
+            "mainClass": "IO",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution95",
+            "request": "launch",
+            "mainClass": "Solution95",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch SolutionBST",
+            "request": "launch",
+            "mainClass": "SolutionBST",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch BST的个数",
+            "request": "launch",
+            "mainClass": "BST的个数",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution209",
+            "request": "launch",
+            "mainClass": "Solution209",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Basic",
+            "request": "launch",
+            "mainClass": "Basic",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
             "name": "Launch Solution42",
             "request": "launch",
             "mainClass": "Solution42",

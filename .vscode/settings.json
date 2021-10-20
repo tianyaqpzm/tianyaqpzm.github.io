@@ -4,7 +4,12 @@
     "java.errors.incompleteClasspath.severity": "info",
     "java.project.sourcePaths": [
         "source/_posts/Algorithm/经典算法/回溯",
+        "source/_posts/Algorithm/经典算法/单调栈",
         "source/_posts/Algorithm/经典算法/动态规划",
-        "source/_posts/Algorithm/经典算法/单调栈"
+        "source/_posts/Algorithm/数据结构/基本用法",
+        "source/_posts/Algorithm/数据结构/二叉树/二叉搜索树",
+        "source/_posts/Algorithm/基本用法/Java/1.0输入输出",
+        "source/_posts/1.leetcode/tmp",
+        "source/_posts/Algorithm/数据结构/堆"
     ]
 }

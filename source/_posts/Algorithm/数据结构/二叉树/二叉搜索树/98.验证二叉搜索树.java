@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 /*
  * @lc app=leetcode.cn id=98 lang=java
  *
@@ -13,7 +15,7 @@
  */
 class Solution {
     public boolean isValidBST(TreeNode root) {
-        Stack<Integer> stack = new Stack<>();
+        Stack<TreeNode> stack = new Stack<>();
         TreeNode previous = null;
 
         while (root != null || !stack.isEmpty()) {

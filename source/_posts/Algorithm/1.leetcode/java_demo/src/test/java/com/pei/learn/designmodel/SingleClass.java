@@ -12,6 +12,7 @@ class Foo {
     private volatile Help help = new Help();
 
     public Help getHelp() {
+        // 业务代码
         if (help == null) {
             synchronized (this) {
                 if (help == null) {

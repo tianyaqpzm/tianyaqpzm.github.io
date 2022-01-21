@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Solution3",
+            "request": "launch",
+            "mainClass": "Solution3",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution912",
+            "request": "launch",
+            "mainClass": "Solution912",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution236",
+            "request": "launch",
+            "mainClass": "Solution236",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch SolutionNCE",
+            "request": "launch",
+            "mainClass": "SolutionNCE",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch NCE509牛能和牛可乐的礼物",
+            "request": "launch",
+            "mainClass": "NCE509牛能和牛可乐的礼物",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
             "name": "Launch HeapMin",
             "request": "launch",
             "mainClass": "HeapMin",

@@ -1,7 +1,7 @@
 package com.pei.learn.file;
 
 // import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
-import lombok.Data;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.xml.sax.SAXException;
@@ -11,7 +11,6 @@ import javax.xml.parsers.*;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.regex.Pattern;
 
 import static org.junit.jupiter.api.Assertions.fail;
@@ -102,9 +101,4 @@ public class XmlTest {
 
 }
 
-@Data
-class User {
-    private String userId;
-    private String role;
-    private String description;
-}
+

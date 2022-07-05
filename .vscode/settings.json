@@ -3,15 +3,20 @@
     "java.checkstyle.configuration":"./source/_posts/other/google_checks.xml",
     "java.errors.incompleteClasspath.severity": "info",
     "java.project.sourcePaths": [
-        "source/_posts/Algorithm/经典算法/回溯",
-        "source/_posts/Algorithm/经典算法/单调栈",
-        "source/_posts/Algorithm/经典算法/动态规划",
+        "source/_posts/Algorithm/经典算法/排序",
+        "source/_posts/Algorithm/算法专题/回溯",
+        "source/_posts/Algorithm/算法专题/动态规划/回文子串",
         "source/_posts/Algorithm/数据结构/堆",
         "source/_posts/Algorithm/数据结构/基本用法",
         "source/_posts/Algorithm/数据结构/二叉树/二叉搜索树",
         "source/_posts/Algorithm/数据结构/二叉树",
         "source/_posts/Algorithm/基本用法/Java/1.0输入输出",
+        "source/_posts/Algorithm/1.leetcode/java_demo/src/test/java/com/pei/algorithm",
         "source/_posts/1.leetcode/tmp",
-        "source/_posts/Algorithm/经典算法/排序"
+        "source/_posts/Algorithm/算法专题/动态规划"
+    ],
+    "java.debug.settings.onBuildFailureProceed":true,
+    "java.project.referencedLibraries":[
+        "lib/**/*.jar"
     ]
 }

@@ -5,6 +5,12 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * 功能描述：
+ *
+ * @author pei
+ * @since 2022-03-06
+ */
 public class GuavaEventBusUnitTest {
 
     private TradeConsumer listener;

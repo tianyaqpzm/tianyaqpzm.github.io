@@ -14,6 +14,14 @@ class Solution912 {
         return nums;
     }
 
+    /**
+     * Method1: Partition of Quick Sort; Time: O(N); The Worst Time: O(N^2);
+     * Space:O(logN)
+     * 
+     * @param nums
+     * @param l
+     * @param r
+     */
     private void randomized_quicksort(int[] nums, int l, int r) {
         // 划分前后两部分，
         if (l < r) {
@@ -26,10 +34,19 @@ class Solution912 {
 
     private int randomizedPartition(int[] nums, int l, int r) {
         int i = new Random().nextInt(r - l + 1) + 1;
+        // 随机数据作为
         swap(nums, r, i);
         return partition(nums, l, r);
     }
 
+    /**
+     * 从 l~r 最后一个数为基准， 4 2 3
+     * 
+     * @param nums
+     * @param l
+     * @param r
+     * @return
+     */
     private int partition(int[] nums, int l, int r) {
         int pivot = nums[r];
         int i = l - 1;

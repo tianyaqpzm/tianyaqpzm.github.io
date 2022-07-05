@@ -1,0 +1,3 @@
+com/pei/spring/autoconfigure/config/GreeterAutoConfiguration.class
+com/pei/spring/autoconfigure/service/Greeter.class
+com/pei/spring/autoconfigure/properties/GreeterProperties.class

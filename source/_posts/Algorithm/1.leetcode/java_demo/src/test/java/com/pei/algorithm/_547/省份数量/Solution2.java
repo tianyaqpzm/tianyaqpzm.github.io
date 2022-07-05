@@ -3,7 +3,7 @@ package com.pei.algorithm._547.省份数量;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public
+
 /*
  * @lc app=leetcode.cn id=547 lang=java
  *
@@ -11,7 +11,7 @@ public
  */
 
 // @lc code=start
-class Solution2 {
+public class Solution2 {
 
     public int findCircleNum(int[][] isConnected) {
         int length = isConnected.length;

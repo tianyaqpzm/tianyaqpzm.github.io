@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../common/redis-spring-boot-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../common/redis-spring-boot-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../spring-boot-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../spring-boot-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../spring-boot-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java" charset="UTF-8" />
   </component>
 </project>

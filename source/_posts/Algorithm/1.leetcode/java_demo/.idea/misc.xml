@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../spring-boot-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../common/redis-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/pom.xml" />
       </list>
     </option>
   </component>

@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Solution011",
+            "request": "launch",
+            "mainClass": "Solution011",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution106",
+            "request": "launch",
+            "mainClass": "Solution106",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution695",
+            "request": "launch",
+            "mainClass": "Solution695",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestSolutionTest",
+            "request": "launch",
+            "mainClass": "TestSolutionTest",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestSolution",
+            "request": "launch",
+            "mainClass": "TestSolution",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution200",
+            "request": "launch",
+            "mainClass": "Solution200",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution215",
+            "request": "launch",
+            "mainClass": "Solution215",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution647",
+            "request": "launch",
+            "mainClass": "Solution647",
+            "projectName": "blog_be527a3e"
+        },
+        {
+            "type": "java",
             "name": "Launch Solution3",
             "request": "launch",
             "mainClass": "Solution3",

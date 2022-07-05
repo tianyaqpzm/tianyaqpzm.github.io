@@ -6,7 +6,7 @@
     <groupId>com.roncoo.education</groupId>
     <artifactId>spring-boot-demo-18-1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>spring-boot-demo-18-1</name>
     <description>Demo project for Spring Boot</description>
@@ -25,6 +25,13 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.pei.spring.autoconfigure</groupId>
+            <artifactId>redis-spring-boot-starter</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>

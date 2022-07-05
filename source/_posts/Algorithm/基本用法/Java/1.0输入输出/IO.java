@@ -10,5 +10,6 @@ public class IO {
             s = input.nextLine();
             System.out.println(s.length() - 1 - s.lastIndexOf(" "));
         }
+        // int max = Arrays.stream(numbers).reduce(0, (a, b) -> a > b ? a : b); // 10
     }
 }

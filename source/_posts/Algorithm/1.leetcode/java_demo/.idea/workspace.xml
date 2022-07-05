@@ -1,36 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="BookmarkManager">
     <bookmark url="file://$USER_HOME$/program/java/IdeaProjects/SpringBoot/spring-boot-demo-18-1/src/main/java/com/roncoo/education/component/RoncooMongodbComponent.java" description="Query query = new Query(criteria);" line="29" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3eccccdd-8e03-45c7-bf38-091e837f1782" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_00_LockSupportTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_02_SyncWaitNotifyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_03_TransferQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_04_Self_Def_CAS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pei/learn/utils/CommonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-boot-demo/spring-boot-demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.vscode/launch.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pei/learn/designmodel/SingleClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pei/learn/designmodel/SingleClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pei/learn/file/XmlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pei/learn/file/XmlTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pei/learn/nio/CopyFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pei/learn/nio/CopyFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../应试题/examination.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../应试题/examination.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../应试题/nework.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../应试题/nework.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据结构/二叉树/二叉搜索树/98.验证二叉搜索树.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据结构/二叉树/二叉搜索树/98.验证二叉搜索树.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../数据结构/二叉树/遍历/94.二叉树的中序遍历.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../数据结构/二叉树/遍历/94.二叉树的中序遍历.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/classes/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/../spring-boot-demo/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,123 +21,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="130" column="25" selection-start-line="130" selection-start-column="25" selection-end-line="130" selection-end-column="25" />
-              <folding>
-                <element signature="e#7116#7117#0" expanded="true" />
-                <element signature="e#7150#7151#0" expanded="true" />
-                <element signature="e#9117#9118#0" expanded="true" />
-                <element signature="e#9144#9145#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/roncoo/education/RedisTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/roncoo/education/redis/LinkedHashMapTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#409#410#0" expanded="true" />
-                <element signature="e#753#754#0" expanded="true" />
-                <element signature="e#804#805#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/roncoo/education/TestBloomFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/23.0/guava-23.0.jar!/com/google/common/hash/BloomFilter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="54" column="93" selection-start-line="54" selection-start-column="93" selection-end-line="54" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spring-boot-demo/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/roncoo/education/SpringBootDemo181ApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../spring-boot-demo/spring-boot-demo.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/tngtech/archunit/archunit/0.20.0/archunit-0.20.0.jar!/com/tngtech/archunit/thirdparty/com/google/common/util/concurrent/CycleDetectingLockFactory.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="540" column="17" selection-start-line="540" selection-start-column="17" selection-end-line="540" selection-end-column="17" />
-              <folding>
-                <element signature="e#11804#21933#0" />
-                <element signature="e#22675#22676#0" expanded="true" />
-                <element signature="e#22703#22704#0" expanded="true" />
-                <element signature="e#22933#22934#0" expanded="true" />
-                <element signature="e#22965#22966#0" expanded="true" />
-                <element signature="e#44444#44445#0" expanded="true" />
-                <element signature="e#44501#44502#0" expanded="true" />
-                <element signature="e#45599#45600#0" expanded="true" />
-                <element signature="e#45656#45657#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -188,32 +51,35 @@
       <find>lock</find>
       <find>lock(</find>
       <find>FairSync</find>
+      <find>eventB</find>
+      <find>SecurityAutoCon</find>
+      <find>SecurityFilterAutoConfiguration</find>
+      <find>Creating filter chain</find>
+      <find>com.pei.spring.autoconfigure.config.GreeterAutoConfiguration</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.7.RELEASE/spring-boot-autoconfigure-2.2.7.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/aop/AopAutoConfiguration.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.6.RELEASE/spring-context-5.2.6.RELEASE-sources.jar!/org/springframework/context/ApplicationListener.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.3.RELEASE/spring-boot-2.1.3.RELEASE-sources.jar!/org/springframework/boot/context/config/ConfigFileApplicationListener.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/designmodel/factory/EventType.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/designmodel/factory/EventHandlerFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/nio/Example.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/nio/CopyFileTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/nio/SelectorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/file/XmlTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pei/learn/file/User.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/LockSupport.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_00_Lock_ReentrantLock.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T02_00_ABCABC.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_02_TransferQueue.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_02_Self_Def_CAS.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_02_CAS.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/utils/SleepUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/utils/CommnonUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/utils/CommonUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/deadlock/T01_00_Philosopher.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/deadlock/T01_01_Philosopher.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T00_00_ShowMeDifference.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T03_Disorder/To3_00_Disorder.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T04_00_NewObject.java" />
@@ -244,11 +110,32 @@
         <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/basic/multiThread/T01_01_ThreadPerformance.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/basic/multiThread/T01_02_ThreadPerformance.java" />
         <option value="$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/roncoo/education/RedisTest.java" />
-        <option value="$PROJECT_DIR$/../spring-boot-demo/pom.xml" />
         <option value="$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/roncoo/education/TestBloomFilter.java" />
         <option value="$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/roncoo/education/redis/LinkedHashMapTest.java" />
+        <option value="$PROJECT_DIR$/../common/redis-spring-boot-starter/src/main/java/com/pei/spring/autoconfigure/Greeter.java" />
+        <option value="$PROJECT_DIR$/../common/redis-spring-boot-starter/src/main/java/com/pei/spring/autoconfigure/GreeterProperties.java" />
+        <option value="$PROJECT_DIR$/../common/redis-spring-boot-starter/src/main/resources/spring.factories" />
+        <option value="$PROJECT_DIR$/../spring-boot-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../common/redis-spring-boot-starter/src/main/java/com/pei/spring/autoconfigure/GreeterAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/../common/redis-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/../common/redis-spring-boot-starter/src/main/java/com/pei/spring/autoconfigure/service/Greeter.java" />
+        <option value="$PROJECT_DIR$/../common/redis-spring-boot-starter/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/../spring-boot-demo/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../spring-boot-demo/src/main/java/com/roncoo/education/controller/DemoController.java" />
+        <option value="$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/roncoo/education/SpringBootDemo181ApplicationTests.java" />
+        <option value="$PROJECT_DIR$/../common/redis-spring-boot-starter/src/main/java/com/pei/spring/autoconfigure/config/GreeterAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/designmodel/Observer/Observer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/pei/learn/designmodel/Observer/GuavaEventBusUnitTest.java" />
+        <option value="$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/MainController.java" />
+        <option value="$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/HelloController.java" />
+        <option value="$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/MyConfig2.java" />
+        <option value="$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/pom.xml" />
       </list>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -256,18 +143,18 @@
         <option name="mavenHome" value="$USER_HOME$/program/java/apache-maven-3.5.0" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-boot-demo-18-1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="csrf1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="csrf1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -292,11 +179,11 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="565" />
-    <option name="y" value="23" />
+    <option name="y" value="25" />
     <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="height" value="875" />
   </component>
+  <component name="ProjectId" id="26t21Vh8IuS6Tbk9Wz6DPYqa30s" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -305,54 +192,150 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="csrf3 验证码 security注解等" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="csrf3 验证码 security注解等" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="csrf3 验证码 security注解等" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="csrf3 验证码 security注解等" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="csrf3 验证码 security注解等" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="csrf3 验证码 security注解等" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="csrf3 验证码 security注解等" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="csrf3 验证码 security注解等" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="education" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-spring-boot-starter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-spring-boot-starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-spring-boot-starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-spring-boot-starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-spring-boot-starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfigure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-spring-boot-starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfigure" type="462c0819:PsiDirectoryNode" />
+              <item name="properties" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.2.7.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.2.7.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-boot-autoconfigure-2.2.7.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.2.7.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-boot-autoconfigure-2.2.7.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfigure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.2.7.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-boot-autoconfigure-2.2.7.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfigure" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -361,50 +344,50 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.pei.learn.labada" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.pei.learn" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.roncoo.education" />
-      <recent name="com.pei.learn.basic.multiThread" />
-      <recent name="com.pei.learn.basic.queue" />
-      <recent name="com.pei.learn.lock.T03_Disorder" />
-      <recent name="com.pei.learn.designmodel.t00_single" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue" />
       <recent name="$PROJECT_DIR$/src/test/java/com/pei/algorithm" />
       <recent name="$PROJECT_DIR$/src/test/java/com/pei/learn/safe" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../common/redis-spring-boot-starter/src/main/resources/META-INF" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.pei.learn" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.pei.learn.labada" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pei.learn.basic.multiThread" />
+      <recent name="com.roncoo.education" />
+      <recent name="com.pei.learn.basic.queue" />
+      <recent name="com.pei.learn.lock.T03_Disorder" />
+      <recent name="com.pei.learn.designmodel.t00_single" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.TestBloomFilter">
+  <component name="RunManager" selected="Application.Juzhen">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Juzhen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pei.algorithm.Juzhen" />
+      <module name="java_demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -443,34 +426,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T01_01_ThreadPerformance.test_multi_thread_perform_add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GuavaEventBusUnitTest.paymentSuccessfulEvent_whenEventHandled_thenSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java_demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pei.learn.basic.multiThread.*" />
+          <option name="PATTERN" value="com.pei.learn.designmodel.Observer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.pei.learn.basic.multiThread" />
-      <option name="MAIN_CLASS_NAME" value="com.pei.learn.basic.multiThread.T01_01_ThreadPerformance" />
-      <option name="METHOD_NAME" value="test_multi_thread_perform_add" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="T01_01_ThreadPerformance.test_single_thread_perform_add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java_demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pei.learn.basic.multiThread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.pei.learn.basic.multiThread" />
-      <option name="MAIN_CLASS_NAME" value="com.pei.learn.basic.multiThread.T01_01_ThreadPerformance" />
-      <option name="METHOD_NAME" value="test_single_thread_perform_add" />
+      <option name="PACKAGE_NAME" value="com.pei.learn.designmodel.Observer" />
+      <option name="MAIN_CLASS_NAME" value="com.pei.learn.designmodel.Observer.GuavaEventBusUnitTest" />
+      <option name="METHOD_NAME" value="paymentSuccessfulEvent_whenEventHandled_thenSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -497,6 +463,13 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Csrf1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="csrf1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mashibing.admin.Csrf1Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -528,14 +501,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Juzhen" />
+        <item itemvalue="JUnit.GuavaEventBusUnitTest.paymentSuccessfulEvent_whenEventHandled_thenSuccess" />
         <item itemvalue="Application.TestBloomFilter" />
         <item itemvalue="JUnit.T01_02_ThreadPerformance.test_task_split_perform_add" />
         <item itemvalue="Application.T01_02_ThreadPerformance" />
-        <item itemvalue="JUnit.T01_01_ThreadPerformance.test_single_thread_perform_add" />
-        <item itemvalue="JUnit.T01_01_ThreadPerformance.test_multi_thread_perform_add" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -551,14 +525,24 @@
       <workItem from="1628383977330" duration="45032000" />
       <workItem from="1632498877000" duration="13668000" />
       <workItem from="1637427429802" duration="292000" />
-      <workItem from="1637427794126" duration="49134000" />
+      <workItem from="1637427794126" duration="55403000" />
+      <workItem from="1646548898219" duration="9299000" />
+      <workItem from="1648228368974" duration="368000" />
+      <workItem from="1648228814747" duration="18000" />
+      <workItem from="1648228916553" duration="181000" />
+      <workItem from="1648229154011" duration="36000" />
+      <workItem from="1648229286009" duration="76000" />
+      <workItem from="1648229575476" duration="104000" />
+      <workItem from="1648229876787" duration="51000" />
+      <workItem from="1648229963608" duration="124000" />
+      <workItem from="1648230350453" duration="122000" />
+      <workItem from="1648230590764" duration="87000" />
+      <workItem from="1648230699064" duration="5374000" />
+      <workItem from="1654349331386" duration="8093000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GuavaEventBusUnitTest_paymentSuccessfulEvent_whenEventHandled_thenSuccess - 2021.10.17 at 17h 55m 36s.xml">
-      <configuration name="GuavaEventBusUnitTest.paymentSuccessfulEvent_whenEventHandled_thenSuccess" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="T01_00_ThreadPerformance_test_single_thread_perform_add - 2022.01.03 at 09h 59m 17s.xml">
       <configuration name="T01_00_ThreadPerformance.test_single_thread_perform_add" configurationId="JUnit" />
     </history-entry>
@@ -586,40 +570,42 @@
     <history-entry file="T01_02_ThreadPerformance_test_task_split_perform_add - 2022.01.08 at 13h 12m 02s.xml">
       <configuration name="T01_02_ThreadPerformance.test_task_split_perform_add" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GuavaEventBusUnitTest_paymentSuccessfulEvent_whenEventHandled_thenSuccess - 2022.03.06 at 14h 45m 11s.xml">
+      <configuration name="GuavaEventBusUnitTest.paymentSuccessfulEvent_whenEventHandled_thenSuccess" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119983000" />
+    <option name="totallyTimeSpent" value="135551000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="565" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="25" width="1440" height="875" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22317597" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22532189" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Structure" order="6" weight="0.2494465" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info id="Structure" order="6" weight="0.24892704" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.34776902" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.36351705" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.3501326" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.20291777" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50143063" side_tool="true" visible="true" weight="0.34776902" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50143063" side_tool="true" weight="0.34776902" />
       <window_info anchor="bottom" id="Problems" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32867134" />
       <window_info anchor="bottom" id="TunnelliJ" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.328084" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="Spring" order="15" />
+      <window_info anchor="bottom" id="Java Enterprise" order="16" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.4965035" weight="0.24907613" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -633,10 +619,11 @@
       <window_info anchor="right" id="Palette&#9;" order="10" />
       <window_info anchor="right" id="Theme Preview" order="11" />
       <window_info anchor="right" id="Coverage" order="12" sideWeight="0.5034965" side_tool="true" weight="0.24963072" />
+      <window_info anchor="right" id="Bean Validation" order="13" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -644,224 +631,207 @@
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/labada/ArraysDemoTest.java</url>
           <line>67</line>
-          <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/file/FileTest.java</url>
           <line>43</line>
-          <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/file/FileTest.java</url>
           <line>58</line>
-          <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/file/FileTest.java</url>
           <line>71</line>
-          <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/file/FileTest.java</url>
           <line>67</line>
-          <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/safe/SslEServer.java</url>
           <line>47</line>
-          <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/safe/SslEServer.java</url>
           <line>23</line>
-          <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/reflect/ReflectTest.java</url>
           <line>13</line>
-          <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/reflect/ReflectTest.java</url>
           <line>23</line>
-          <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/reflect/ReflectTest.java</url>
           <line>12</line>
-          <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/reflect/ReflectTest.java</url>
           <line>11</line>
-          <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/reflect/ReflectTest.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/proxy/dynamicmode/DynamicProxyDemo.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/reflect/Proxy.java</url>
           <line>730</line>
-          <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/reflect/Proxy.java</url>
           <line>718</line>
-          <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/reflect/Proxy.java</url>
           <line>544</line>
-          <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/designmodel/Observer/GuavaEventBusUnitTest.java</url>
-          <line>27</line>
-          <properties />
+          <line>33</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/reflect/Proxy.java</url>
           <line>731</line>
-          <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/designmodel/Observer/GuavaEventBusUnitTest.java</url>
-          <line>20</line>
-          <properties />
+          <line>26</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/designmodel/Observer/Observer.java</url>
           <line>25</line>
-          <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/designmodel/Observer/Observer.java</url>
-          <line>41</line>
-          <properties />
+          <line>42</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/designmodel/Observer/GuavaEventBusUnitTest.java</url>
-          <line>15</line>
-          <properties />
+          <line>21</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_00_LockSupportTest.java</url>
           <line>24</line>
-          <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_00_LockSupportTest.java</url>
           <line>25</line>
-          <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_00_LockSupportTest.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_00_LockSupportTest.java</url>
           <line>18</line>
-          <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/deadlock/T01_00_Philosopher.java</url>
           <line>37</line>
-          <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/deadlock/T01_00_Philosopher.java</url>
           <line>47</line>
-          <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_02_SyncWaitNotifyTest.java</url>
           <line>40</line>
-          <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue/T00_00_BlockQueue.java</url>
           <line>63</line>
-          <properties />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue/T00_01_BlockQueue.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue/T00_01_BlockQueue.java</url>
           <line>80</line>
-          <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue/T00_02_BlockQueue.java</url>
           <line>83</line>
-          <properties />
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/multiThread/T01_02_ThreadPerformance.java</url>
           <line>72</line>
-          <properties />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
           <line>2149</line>
-          <properties />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/roncoo/education/TestBloomFilter.java</url>
           <line>22</line>
-          <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
-          <line>532</line>
-          <properties field="state" class="java.util.concurrent.locks.AbstractQueuedSynchronizer" />
-          <option name="timeStamp" value="52" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/CodeFilter.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.7.RELEASE/spring-boot-2.2.7.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java</url>
+          <line>307</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.7.RELEASE/spring-boot-2.2.7.RELEASE-sources.jar!/org/springframework/boot/context/event/EventPublishingRunListener.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-devtools/2.2.7.RELEASE/spring-boot-devtools-2.2.7.RELEASE-sources.jar!/org/springframework/boot/devtools/restart/RestartApplicationListener.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.3.RELEASE/spring-boot-2.1.3.RELEASE-sources.jar!/org/springframework/boot/context/config/ConfigFileApplicationListener.java</url>
+          <line>161</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -873,352 +843,326 @@
       </breakpoints-dialog>
     </breakpoint-manager>
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/java_demo$FileTest_test_walk_file.ic" NAME="FileTest.test_walk_file Coverage Results" MODIFIED="1623666818892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.pei.learn.file.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/java_demo$Solution.ic" NAME="Solution Coverage Results" MODIFIED="1630226146784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.pei.algorithm.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/java_demo$FileTest_test_walk_file.ic" NAME="FileTest.test_walk_file Coverage Results" MODIFIED="1623666818892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.pei.learn.file.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>getApplicationListeners(event, type)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>getApplicationListeners(event, type))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>multicastEvent:134, SimpleApplicationEventMulticaster</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_01_Lock_ReentrantLock.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.4.RELEASE/spring-boot-autoconfigure-2.1.4.RELEASE.jar!/org/springframework/boot/autoconfigure/security/servlet/SecurityFilterAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="45" column="31" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="12" column="61" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_02_SyncWaitNotifyTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.4.RELEASE/spring-boot-autoconfigure-2.1.4.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/security/servlet/SecurityFilterAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="216">
+          <caret line="63" column="71" selection-start-line="63" selection-start-column="71" selection-end-line="63" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_03_TransferQueue.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.4.RELEASE/spring-boot-2.1.4.RELEASE.jar!/org/springframework/boot/web/servlet/DelegatingFilterProxyRegistrationBean.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="44" />
+        <state relative-caret-position="144">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_04_Self_Def_CAS.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.4.RELEASE/spring-boot-2.1.4.RELEASE.jar!/org/springframework/boot/web/servlet/RegistrationBean.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="96">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_05_CAS.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.4.RELEASE/spring-boot-2.1.4.RELEASE-sources.jar!/org/springframework/boot/web/servlet/ServletContextInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.4.RELEASE/spring-boot-2.1.4.RELEASE-sources.jar!/org/springframework/boot/web/servlet/RegistrationBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T02_00_ABCABC.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.4.RELEASE/spring-boot-2.1.4.RELEASE-sources.jar!/org/springframework/boot/web/servlet/DynamicRegistrationBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1298">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="145">
+          <caret line="108" column="27" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pei/learn/App.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.4.RELEASE/spring-boot-2.1.4.RELEASE-sources.jar!/org/springframework/boot/web/servlet/AbstractFilterRegistrationBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="-369">
+          <caret line="221" column="33" selection-start-line="221" selection-start-column="24" selection-end-line="221" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue/T00_00_BlockQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="744" column="19" selection-start-line="744" selection-start-column="19" selection-end-line="744" selection-end-column="19" />
+    <entry file="uml://JAVA/org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean</OriginalElement>
+          <nodes>
+            <node x="354.5" y="0.0">java.lang.FunctionalInterface</node>
+            <node x="218.5" y="76.0">org.springframework.core.Ordered</node>
+            <node x="63.0" y="228.0">org.springframework.beans.factory.Aware</node>
+            <node x="251.5" y="228.0">org.springframework.boot.web.servlet.DynamicRegistrationBean</node>
+            <node x="276.0" y="152.0">org.springframework.boot.web.servlet.RegistrationBean</node>
+            <node x="333.5" y="76.0">org.springframework.boot.web.servlet.ServletContextInitializer</node>
+            <node x="227.0" y="304.0">org.springframework.boot.web.servlet.AbstractFilterRegistrationBean</node>
+            <node x="76.75" y="380.0">org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean</node>
+            <node x="0.0" y="304.0">org.springframework.context.ApplicationContextAware</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean" target="org.springframework.context.ApplicationContextAware">
+              <point x="-76.25" y="-13.0" />
+              <point x="153.0" y="355.0" />
+              <point x="103.5" y="355.0" />
+              <point x="0.0" y="13.0" />
+            </edge>
+            <edge source="org.springframework.boot.web.servlet.AbstractFilterRegistrationBean" target="org.springframework.boot.web.servlet.DynamicRegistrationBean">
+              <point x="0.0" y="-13.0" />
+              <point x="0.0" y="13.0" />
+            </edge>
+            <edge source="org.springframework.context.ApplicationContextAware" target="org.springframework.beans.factory.Aware">
+              <point x="0.0" y="-13.0" />
+              <point x="0.0" y="13.0" />
+            </edge>
+            <edge source="org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean" target="org.springframework.boot.web.servlet.AbstractFilterRegistrationBean">
+              <point x="76.25" y="-13.0" />
+              <point x="305.5" y="355.0" />
+              <point x="355.0" y="355.0" />
+              <point x="0.0" y="13.0" />
+            </edge>
+            <edge source="org.springframework.boot.web.servlet.RegistrationBean" target="org.springframework.core.Ordered">
+              <point x="-39.5" y="-13.0" />
+              <point x="315.5" y="127.0" />
+              <point x="266.0" y="127.0" />
+              <point x="0.0" y="13.0" />
+            </edge>
+            <edge source="org.springframework.boot.web.servlet.RegistrationBean" target="org.springframework.boot.web.servlet.ServletContextInitializer">
+              <point x="39.5" y="-13.0" />
+              <point x="394.5" y="127.0" />
+              <point x="444.0" y="127.0" />
+              <point x="0.0" y="13.0" />
+            </edge>
+            <edge source="org.springframework.boot.web.servlet.ServletContextInitializer" target="java.lang.FunctionalInterface">
+              <point x="0.0" y="-13.0" />
+              <point x="0.0" y="13.0" />
+            </edge>
+            <edge source="org.springframework.boot.web.servlet.DynamicRegistrationBean" target="org.springframework.boot.web.servlet.RegistrationBean">
+              <point x="0.0" y="-13.0" />
+              <point x="0.0" y="13.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="190.0" y="136.5" />
+          <SelectedNodes>
+            <node>org.springframework.boot.web.servlet.RegistrationBean</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue/T00_00_BlockQueue.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.4.RELEASE/spring-boot-2.1.4.RELEASE-sources.jar!/org/springframework/boot/web/servlet/DelegatingFilterProxyRegistrationBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+    <entry file="file://$PROJECT_DIR$/../spring-boot-demo/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="165" column="21" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="21" />
-          <folding>
-            <element signature="e#4239#4240#0" expanded="true" />
-            <element signature="e#4304#4305#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="128">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue/T00_05_BlockQueue.java">
+    <entry file="file://$PROJECT_DIR$/../spring-boot-demo/src/main/resources/test.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.4.RELEASE/spring-security-web-5.2.4.RELEASE.jar!/org/springframework/security/web/DefaultSecurityFilterChain.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="137" column="11" selection-start-line="137" selection-start-column="11" selection-end-line="137" selection-end-column="11" />
+        <state relative-caret-position="80">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue/T00_01_BlockQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue/T00_02_BlockQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue/T00_03_BlockQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1131">
-          <caret line="28" column="61" lean-forward="true" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue/T00_04_BlockQueue.java">
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/HiController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T03_Disorder/T03_00_AliQuestion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/TimeUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="104" column="4" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="1364" column="12" lean-forward="true" selection-start-line="1364" selection-start-column="12" selection-end-line="1364" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/Executors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="210" column="58" lean-forward="true" selection-start-line="210" selection-start-column="58" selection-end-line="210" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/multiThread/ThreadPoolTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicLong.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="89" column="10" lean-forward="true" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
-          <folding>
-            <element signature="e#2308#2309#0" expanded="true" />
-            <element signature="e#2344#2345#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/Basic.java">
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/CodeFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/Inter.java">
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/service/MyDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/service/MyAuthProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/nio/Example.java">
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/Kaconfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/nio/CopyFileTest.java">
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="16" selection-start-column="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/labada/ArraysDemoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="15" selection-start-line="15" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2606#2607#0" expanded="true" />
-            <element signature="e#2692#2693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2-sources.jar!/org/junit/jupiter/api/DisplayNameGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2-sources.jar!/org/junit/jupiter/api/DisplayNameGeneration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2-sources.jar!/org/junit/jupiter/api/DisplayName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/multiThread/T01_01_ThreadPerformance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="46" selection-start-line="46" selection-end-line="48" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/reflect/Constructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="422" column="24" selection-start-line="422" selection-start-column="24" selection-end-line="422" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/DelegatingConstructorAccessorImpl.class">
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/resources/templates/ok.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeConstructorAccessorImpl.class">
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/ForkJoinTask.java">
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="1005" column="18" selection-start-line="1005" selection-start-column="18" selection-end-line="1005" selection-end-column="18" />
+        <state relative-caret-position="96">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/multiThread/T01_00_ThreadPerformance.java">
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="160">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/ForkJoinWorkerThread.java">
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/MyConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="156" column="21" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
+        <state relative-caret-position="96">
+          <caret line="35" column="58" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/multiThread/T01_02_ThreadPerformance.java">
+    <entry file="file://$PROJECT_DIR$/../common/redis-spring-boot-starter/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/MyConfig2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+        <state relative-caret-position="228">
+          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pei/learn/basic/queue/T00_06_BlockQueue.java">
+    <entry file="file://$PROJECT_DIR$/../common/redis-spring-boot-starter/src/main/java/com/pei/spring/autoconfigure/config/GreeterAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="64">
+          <caret line="11" selection-start-line="11" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/CountDownLatch.java">
+    <entry file="file://$PROJECT_DIR$/../common/redis-spring-boot-starter/src/main/java/com/pei/spring/autoconfigure/service/Greeter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        <state relative-caret-position="112">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding>
-            <element signature="e#0#10559#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/tngtech/archunit/archunit/0.20.0/archunit-0.20.0.jar!/com/tngtech/archunit/thirdparty/com/google/common/util/concurrent/CycleDetectingLockFactory.class">
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/main/java/com/mashibing/admin/Csrf1Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+        <state relative-caret-position="112">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractOwnableSynchronizer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.7.RELEASE/spring-boot-2.2.7.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
-          <folding>
-            <element signature="e#2022#2023#0" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="193">
+          <caret line="187" column="77" selection-start-line="187" selection-start-column="77" selection-end-line="187" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.7.RELEASE/spring-boot-2.2.7.RELEASE-sources.jar!/org/springframework/boot/SpringApplicationRunListeners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.7.RELEASE/spring-boot-2.2.7.RELEASE-sources.jar!/org/springframework/boot/SpringApplicationRunListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="540" column="17" selection-start-line="540" selection-start-column="17" selection-end-line="540" selection-end-column="17" />
+        <state relative-caret-position="199">
+          <caret line="552" column="7" selection-start-line="552" selection-start-column="7" selection-end-line="552" selection-end-column="7" />
           <folding>
             <element signature="e#11804#21933#0" />
             <element signature="e#22675#22676#0" expanded="true" />
@@ -1233,70 +1177,234 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.7.RELEASE/spring-boot-2.2.7.RELEASE-sources.jar!/org/springframework/boot/context/event/ApplicationEnvironmentPreparedEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="130" column="25" selection-start-line="130" selection-start-column="25" selection-end-line="130" selection-end-column="25" />
-          <folding>
-            <element signature="e#7116#7117#0" expanded="true" />
-            <element signature="e#7150#7151#0" expanded="true" />
-            <element signature="e#9117#9118#0" expanded="true" />
-            <element signature="e#9144#9145#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="183">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/roncoo/education/SpringBootDemo181ApplicationTests.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.4.RELEASE/spring-security-web-5.2.4.RELEASE-sources.jar!/org/springframework/security/web/DefaultSecurityFilterChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.6.RELEASE/spring-context-5.2.6.RELEASE.jar!/org/springframework/context/event/ApplicationEventMulticaster.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.6.RELEASE/spring-context-5.2.6.RELEASE.jar!/org/springframework/context/event/SimpleApplicationEventMulticaster.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.6.RELEASE/spring-context-5.2.6.RELEASE-sources.jar!/org/springframework/context/event/ApplicationEventMulticaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-devtools/2.2.7.RELEASE/spring-boot-devtools-2.2.7.RELEASE-sources.jar!/org/springframework/boot/devtools/restart/Restarter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="424" column="9" selection-start-line="424" selection-start-column="9" selection-end-line="424" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-devtools/2.2.7.RELEASE/spring-boot-devtools-2.2.7.RELEASE.jar!/org/springframework/boot/devtools/restart/RestartApplicationListener.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <caret line="13" column="88" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-boot-demo/spring-boot-demo.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-boot-demo/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.6.RELEASE/spring-context-5.2.6.RELEASE-sources.jar!/org/springframework/context/ApplicationListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        <state relative-caret-position="289">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/23.0/guava-23.0.jar!/com/google/common/hash/BloomFilter.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.3.RELEASE/spring-boot-2.1.3.RELEASE-sources.jar!/org/springframework/boot/context/config/ConfigFileApplicationListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="54" column="93" selection-start-line="54" selection-start-column="93" selection-end-line="54" selection-end-column="93" />
+        <state relative-caret-position="106">
+          <caret line="160" column="34" selection-start-line="160" selection-start-column="16" selection-end-line="160" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/roncoo/education/TestBloomFilter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.6.RELEASE/spring-context-5.2.6.RELEASE-sources.jar!/org/springframework/context/event/SimpleApplicationEventMulticaster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="144">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4508#4509#0" expanded="true" />
+            <element signature="e#4568#4569#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/roncoo/education/RedisTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-devtools/2.2.7.RELEASE/spring-boot-devtools-2.2.7.RELEASE-sources.jar!/org/springframework/boot/devtools/restart/RestartApplicationListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="367">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-boot-demo/src/test/java/com/roncoo/education/redis/LinkedHashMapTest.java">
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/src/test/java/com/mashibing/admin/Csrf1ApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="80">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.mashibing.admin:csrf1:0.0.1-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.mashibing.admin:csrf1:0.0.1-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">com.mashibing.admin:csrf1:0.0.1-SNAPSHOT</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.7.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.7.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3/ch.qos.logback:logback-core:jar:1.2.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.7.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.12.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.7.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.12.1/org.apache.logging.log4j:log4j-api:jar:2.12.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.7.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.30</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.7.RELEASE/jakarta.annotation:jakarta.annotation-api:jar:1.3.5</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.7.RELEASE/org.yaml:snakeyaml:jar:1.25</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework:spring-aop:jar:5.2.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework:spring-aop:jar:5.2.6.RELEASE/org.springframework:spring-beans:jar:5.2.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework.security:spring-security-config:jar:5.2.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework.security:spring-security-config:jar:5.2.4.RELEASE/org.springframework:spring-context:jar:5.2.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework.security:spring-security-web:jar:5.2.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-security:jar:2.2.7.RELEASE/org.springframework.security:spring-security-web:jar:5.2.4.RELEASE/org.springframework:spring-expression:jar:5.2.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.7.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.10.4</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.7.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.10.4/com.fasterxml.jackson.core:jackson-annotations:jar:2.10.4</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.7.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.10.4/com.fasterxml.jackson.core:jackson-core:jar:2.10.4</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.7.RELEASE/com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.10.4</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.7.RELEASE/com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.10.4</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.7.RELEASE/com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.10.4</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.2.7.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.34</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.2.7.RELEASE/org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.34</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.2.7.RELEASE/org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.34</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.7.RELEASE/jakarta.validation:jakarta.validation-api:jar:2.0.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.7.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.19.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.7.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.19.Final/org.jboss.logging:jboss-logging:jar:3.4.1.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.7.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.19.Final/com.fasterxml:classmate:jar:1.5.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework:spring-web:jar:5.2.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.7.RELEASE/org.springframework:spring-webmvc:jar:5.2.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-test:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-test-autoconfigure:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2/org.ow2.asm:asm:jar:5.0.4</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/org.slf4j:slf4j-api:jar:1.7.30</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3/jakarta.activation:jakarta.activation-api:jar:1.2.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-api:jar:5.5.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-api:jar:5.5.2/org.apiguardian:apiguardian-api:jar:1.1.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-api:jar:5.5.2/org.opentest4j:opentest4j:jar:1.2.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-api:jar:5.5.2/org.junit.platform:junit-platform-commons:jar:1.5.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-params:jar:5.5.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-engine:jar:5.5.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-engine:jar:5.5.2/org.junit.platform:junit-platform-engine:jar:1.5.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.mockito:mockito-junit-jupiter:jar:3.1.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.assertj:assertj-core:jar:3.13.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.hamcrest:hamcrest:jar:2.1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.mockito:mockito-core:jar:3.1.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.mockito:mockito-core:jar:3.1.0/net.bytebuddy:byte-buddy:jar:1.10.10</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.mockito:mockito-core:jar:3.1.0/net.bytebuddy:byte-buddy-agent:jar:1.10.10</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.mockito:mockito-core:jar:3.1.0/org.objenesis:objenesis:jar:2.6</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0/com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.springframework:spring-core:jar:5.2.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.springframework:spring-core:jar:5.2.6.RELEASE/org.springframework:spring-jcl:jar:5.2.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.springframework:spring-test:jar:5.2.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.7.RELEASE/org.xmlunit:xmlunit-core:jar:2.6.4</node>
+            <node x="" y="">org.springframework.security:spring-security-test:jar:5.2.4.RELEASE</node>
+            <node x="" y="">org.springframework.security:spring-security-test:jar:5.2.4.RELEASE/org.springframework.security:spring-security-core:jar:5.2.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-devtools:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-devtools:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-devtools:jar:2.2.7.RELEASE/org.springframework.boot:spring-boot-autoconfigure:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.2.7.RELEASE/org.thymeleaf:thymeleaf-spring5:jar:3.0.11.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.2.7.RELEASE/org.thymeleaf:thymeleaf-spring5:jar:3.0.11.RELEASE/org.thymeleaf:thymeleaf:jar:3.0.11.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.2.7.RELEASE/org.thymeleaf:thymeleaf-spring5:jar:3.0.11.RELEASE/org.thymeleaf:thymeleaf:jar:3.0.11.RELEASE/org.attoparser:attoparser:jar:2.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.2.7.RELEASE/org.thymeleaf:thymeleaf-spring5:jar:3.0.11.RELEASE/org.thymeleaf:thymeleaf:jar:3.0.11.RELEASE/org.unbescape:unbescape:jar:1.1.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.2.7.RELEASE/org.thymeleaf.extras:thymeleaf-extras-java8time:jar:3.0.4.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.2.7.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.2.7.RELEASE/com.zaxxer:HikariCP:jar:3.4.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.2.7.RELEASE/org.springframework:spring-jdbc:jar:5.2.6.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-jdbc:jar:2.2.7.RELEASE/org.springframework:spring-jdbc:jar:5.2.6.RELEASE/org.springframework:spring-tx:jar:5.2.6.RELEASE</node>
+            <node x="" y="">mysql:mysql-connector-java:jar:8.0.20</node>
+            <node x="" y="">com.github.penggle:kaptcha:jar:2.3.2</node>
+            <node x="" y="">com.github.penggle:kaptcha:jar:2.3.2/javax.servlet:javax.servlet-api:jar:4.0.1</node>
+            <node x="" y="">com.github.penggle:kaptcha:jar:2.3.2/com.jhlabs:filters:jar:2.0.235-1</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="1011.0" y="903.5" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.7.RELEASE/spring-boot-2.2.7.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="307" selection-start-line="307" selection-end-line="307" />
+          <folding>
+            <element signature="e#9896#9897#0" expanded="true" />
+            <element signature="e#9929#9930#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.7.RELEASE/spring-boot-2.2.7.RELEASE-sources.jar!/org/springframework/boot/context/event/EventPublishingRunListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../backend/2.java/spring/SpringSecurity/csrf3 验证码 security注解等/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.7.RELEASE/spring-boot-autoconfigure-2.2.7.RELEASE.jar!/org/springframework/boot/autoconfigure/aop/AopAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.7.RELEASE/spring-boot-autoconfigure-2.2.7.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/aop/AopAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="61" column="80" lean-forward="true" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1363,7 +1471,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>spring-boot-demo</last-edited>
+          <last-edited>redis-spring-boot-starter</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

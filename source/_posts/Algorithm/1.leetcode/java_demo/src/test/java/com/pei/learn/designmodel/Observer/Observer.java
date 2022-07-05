@@ -39,6 +39,7 @@ class TradeProducer {
 
     public void execute(TradeAccount tradeAccount, double amount, TradeType tradeType) {
         System.out.println("post new trade");
+        // 通过post 发送事件
         eventBus.post(new TradeEvent());
     }
 }

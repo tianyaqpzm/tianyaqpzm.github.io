@@ -59,10 +59,33 @@ class Solution {
             stack.pop();
             res.add(root.val);
             System.out.println(root.val);
-            //
             root = root.right;
         }
 
+    }
+
+    /**
+     * 与 inorderTraversal 相同
+     * 
+     * @param root
+     * @return
+     */
+    public List<Integer> inorderTraversal3(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
+        List<Integer> res = new ArrayList<>();
+        while (root != null || !stack.empty()) {
+            // 先遍历完左侧的树
+            if (root != null) {
+                stack.add(root);
+                root = root.left;
+            } else {
+                // 取出最后一颗二叉树， 刚刚变量添加进去了，现在要对其进行处理
+                stack.pop();
+                res.add(root.val);
+                System.out.println(root.val);
+                root = root.right;
+            }
+        }
     }
 
     public static void main(String[] args) {

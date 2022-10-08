@@ -7,10 +7,7 @@
     <bookmark url="file://$USER_HOME$/program/java/IdeaProjects/SpringBoot/spring-boot-demo-18-1/src/main/java/com/roncoo/education/component/RoncooMongodbComponent.java" description="Query query = new Query(criteria);" line="29" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3eccccdd-8e03-45c7-bf38-091e837f1782" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../../.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.vscode/settings.json" afterDir="false" />
-    </list>
+    <list default="true" id="3eccccdd-8e03-45c7-bf38-091e837f1782" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -377,7 +374,7 @@
       <recent name="com.pei.learn.designmodel.t00_single" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Juzhen">
+  <component name="RunManager" selected="Application.T01_01_Lock_ReentrantLock">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -392,13 +389,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T01_02_ThreadPerformance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pei.learn.basic.multiThread.T01_02_ThreadPerformance" />
+    <configuration name="T01_01_Lock_ReentrantLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pei.learn.lock.T01_01_Lock_ReentrantLock" />
       <module name="java_demo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pei.learn.basic.multiThread.*" />
+          <option name="PATTERN" value="com.pei.learn.lock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -406,13 +403,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBloomFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.roncoo.education.TestBloomFilter" />
-      <module name="spring-boot-demo" />
+    <configuration name="T01_HelloJOL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pei.learn.lock.jol.T01_HelloJOL" />
+      <module name="java_demo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.roncoo.education.*" />
+          <option name="PATTERN" value="com.pei.learn.lock.jol.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T02_Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pei.learn.lock.jol.T02_Hello" />
+      <module name="java_demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pei.learn.lock.jol.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -437,23 +448,6 @@
       <option name="PACKAGE_NAME" value="com.pei.learn.designmodel.Observer" />
       <option name="MAIN_CLASS_NAME" value="com.pei.learn.designmodel.Observer.GuavaEventBusUnitTest" />
       <option name="METHOD_NAME" value="paymentSuccessfulEvent_whenEventHandled_thenSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="T01_02_ThreadPerformance.test_task_split_perform_add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java_demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pei.learn.basic.multiThread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.pei.learn.basic.multiThread" />
-      <option name="MAIN_CLASS_NAME" value="com.pei.learn.basic.multiThread.T01_02_ThreadPerformance" />
-      <option name="METHOD_NAME" value="test_task_split_perform_add" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -501,11 +495,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.T01_01_Lock_ReentrantLock" />
+        <item itemvalue="Application.T02_Hello" />
+        <item itemvalue="Application.T01_HelloJOL" />
         <item itemvalue="Application.Juzhen" />
         <item itemvalue="JUnit.GuavaEventBusUnitTest.paymentSuccessfulEvent_whenEventHandled_thenSuccess" />
-        <item itemvalue="Application.TestBloomFilter" />
-        <item itemvalue="JUnit.T01_02_ThreadPerformance.test_task_split_perform_add" />
-        <item itemvalue="Application.T01_02_ThreadPerformance" />
       </list>
     </recent_temporary>
   </component>
@@ -539,6 +533,9 @@
       <workItem from="1648230590764" duration="87000" />
       <workItem from="1648230699064" duration="5374000" />
       <workItem from="1654349331386" duration="8093000" />
+      <workItem from="1658021369343" duration="10701000" />
+      <workItem from="1663384746429" duration="4077000" />
+      <workItem from="1664681737858" duration="5060000" />
     </task>
     <servers />
   </component>
@@ -739,38 +736,13 @@
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_00_LockSupportTest.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_00_LockSupportTest.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_00_LockSupportTest.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_00_LockSupportTest.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/deadlock/T01_00_Philosopher.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/deadlock/T01_00_Philosopher.java</url>
           <line>47</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_02_SyncWaitNotifyTest.java</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -832,6 +804,11 @@
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.3.RELEASE/spring-boot-2.1.3.RELEASE-sources.jar!/org/springframework/boot/context/config/ConfigFileApplicationListener.java</url>
           <line>161</line>
           <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/pei/learn/lock/T01_02_SyncWaitNotifyTest.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>

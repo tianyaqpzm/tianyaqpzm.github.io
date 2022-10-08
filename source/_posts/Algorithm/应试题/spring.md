@@ -44,11 +44,11 @@ DI: 依赖注入，将对应的属性注入到具体的对象中 @Autowired @Res
 	/** Cache of singleton objects: bean name to bean instance. 一级缓存*/
 	private final Map<String, Object> singletonObjects = new ConcurrentHashMap<>(256);
 
-	/** Cache of singleton factories: bean name to ObjectFactory. 三级缓存*/
-	private final Map<String, ObjectFactory<?>> singletonFactories = new HashMap<>(16);
-
 	/** Cache of early singleton objects: bean name to bean instance. 二级缓存 */
 	private final Map<String, Object> earlySingletonObjects = new HashMap<>(16);
+
+	/** Cache of singleton factories: bean name to ObjectFactory. 三级缓存*/
+	private final Map<String, ObjectFactory<?>> singletonFactories = new HashMap<>(16);
 ```
 
 每个bean的生命周期，从创建和使用到销毁，各个环节都是由容器来帮忙控制的。
@@ -65,13 +65,7 @@ ioc中除了创建对象之外还有一个重要的点就是填充属性，
 
 生命周期的东西
 
-
-
 1.1 谈一下spring ioc的底层实现？
-
-
-
-
 
 #### 2、简单描述bean的生命周期是？
 

@@ -1,3 +1,13 @@
+---
+title: MAC软件
+date: 2021-05-24 22:07:58
+tags: [MAC, 软件]
+categories:
+  - Algorithm
+description: 软件
+top: true
+---
+
 
 
 ### 面试题：
@@ -57,7 +67,7 @@ final class Accumulator2 {
 
 
 
-com.pei.learn.lock.deadlock.T01_00_Philosopher
+> 详情：com.pei.learn.lock.deadlock.T01_00_Philosopher
 
 
 
@@ -71,13 +81,17 @@ com.pei.learn.lock.deadlock.T01_00_Philosopher
 
 > com.pei.learn.lock.T01_01_Lock_ReentrantLock
 
+com.pei.learn.lock.T01_00_LockSupportTest
+
+[JUC锁: LockSupport详解](https://pdai.tech/md/java/thread/java-thread-x-lock-LockSupport.html#%E5%B8%A6%E7%9D%80bat%E5%A4%A7%E5%8E%82%E7%9A%84%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E5%8E%BB%E7%90%86%E8%A7%A3)
+
+
+
 AQS== CAS +CLA队列
 
 
 
 环形数组： Disruptor  RingBuffer
-
-
 
 
 

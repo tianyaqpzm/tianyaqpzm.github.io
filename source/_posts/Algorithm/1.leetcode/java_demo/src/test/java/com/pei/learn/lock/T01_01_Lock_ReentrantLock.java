@@ -24,7 +24,7 @@ public class T01_01_Lock_ReentrantLock {
             }
             lock.lock();
             try {
-                for (char c : a1) {
+                for (char c : a2) {
                     System.out.print(c);
                     conditionT2.signal();
                     conditionT1.await();
@@ -46,7 +46,7 @@ public class T01_01_Lock_ReentrantLock {
                     conditionT1.signal(); // 叫醒另一个线程
                     conditionT2.await();
                 }
-            } catch (InterruptedException e) {
+            } catch (InterruptedException   e) {
                 e.printStackTrace();
             } finally {
                 lock.unlock();

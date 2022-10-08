@@ -10,9 +10,21 @@ top: true
 
 
 
-# MAC
+# 目录
 
 [TOC]
+
+# MAC
+
+## 常用命令
+
+### 系统
+
+#### 1、检查端口监听lsof：
+
+`lsof -iTCP -sTCP:LISTEN -n -P`
+
+
 
 ## JAVA多版本
 
@@ -127,6 +139,10 @@ protocol=https
 保存在路径：`~/Library/Logs`
 所以这个log文件的地址为：`~/Library/Logs/ss-local.log`
 
+检查1080端口是否启动：
+
+![image-20221002131545399](mac/image-20221002131545399.png)
+
 
 
 cd /Applications/ShadowsocksX-NG-R8.app/Contents/Resources
@@ -142,8 +158,6 @@ cd /Applications/ShadowsocksX-NG-R8.app/Contents/Resources
 cd /Users/pei/Library/LaunchAgents/
 
 sudo chown root com.qiuyuzhou.shadowsocksX-NG.local.plist
-
-
 
 sudo launchctl load com.qiuyuzhou.shadowsocksX-NG.local.plist
 
@@ -178,8 +192,7 @@ sudo launchctl load com.qiuyuzhou.shadowsocksX-NG.local.plist
 
 
 
-可以用这个命令来检查一下端口监听状况：
-`lsof -iTCP -sTCP:LISTEN -n -P`
+
 
 
 
@@ -204,4 +217,14 @@ curl http://cip.cc/180.110.125.108
 ![image-20220306142304268](mac/image-20220306142304268.png)
 
 
+
+
+
+# Linux
+
+
+
+
+
+# Window
 

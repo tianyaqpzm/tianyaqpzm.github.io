@@ -32,6 +32,7 @@ public class T01_05_CAS {
                 }
                 System.out.print(c);
                 threadNo.set(1);
+//                threadNo.compareAndSet(2,1); // 未验证
             }
 
         }, "t1").start();

@@ -16,6 +16,7 @@ public class T01_02_SyncWaitNotifyTest {
                 for (char c : a1) {
                     System.out.print(c);
                     try {
+                        // 叫醒 这把锁等待队列的其他线程
                         o.notify();  // CFS: 完全公平算法， 线程调度，叫醒哪一个线程
                         o.wait(); // 让出锁，必须持有锁能执行
                     } catch (InterruptedException e) {

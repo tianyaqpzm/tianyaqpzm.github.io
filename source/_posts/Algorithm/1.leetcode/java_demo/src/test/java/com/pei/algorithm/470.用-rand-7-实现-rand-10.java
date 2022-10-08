@@ -5,6 +5,12 @@
  */
 
 // @lc code=start
+
+class SolBase{
+   int rand7(){
+        return 1;
+    }
+}
 /**
  * The rand7() API is already defined in the parent class SolBase.
  * public int rand7();

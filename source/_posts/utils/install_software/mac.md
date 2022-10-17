@@ -14,6 +14,22 @@ top: true
 
 [TOC]
 
+
+
+# 常用软件
+
+## 工具效率
+
+#### 1、截取GIF
+
+* mac: LICEcap
+
+
+
+
+
+
+
 # MAC
 
 ## 常用命令
@@ -23,6 +39,8 @@ top: true
 #### 1、检查端口监听lsof：
 
 `lsof -iTCP -sTCP:LISTEN -n -P`
+
+
 
 
 

@@ -3558,7 +3558,7 @@ NgRx 是 Angular 应用中实现全局状态管理的 Redux 架构解决方案�
 
 1. 下载 NgRx
 
-   `npm install @ngrx/store @ngrx/effects @ngrx/entity @ngrx/router-store @ngrx/store-devtools @ngrx/schematics`
+   `npm install @ngrx/store@11 @ngrx/effects@11 @ngrx/entity@11 @ngrx/router-store@11 @ngrx/store-devtools@11 @ngrx/schematics@11`
 
 2. 配置 NgRx CLI
 
@@ -4019,7 +4019,7 @@ custom：自定义状态，元素默认就在页面之中，从一个状态运�
    ```
 
    ```html
-<li @slide></li>
+   <li @slide></li>
    ```
    
    注意：入场动画中可以不指定元素的默认状态，Angular 会将 void 状态清空作为默认状态
@@ -4033,7 +4033,7 @@ custom：自定义状态，元素默认就在页面之中，从一个状态运�
      transition(":leave", [
     		animate(600, style({ opacity: 0, transform: "translateX(100%)" }))
      ])
-])
+   ])
    ```
    
    注意：要设置动画的运动参数，需要将 animate 方法的一个参数更改为字符串类型

@@ -2,6 +2,14 @@
 
 
 
+idea中这几个快捷键或许可以解决困扰。
+
+**Home** 光标快速定位至行首
+**End** 光标快速定位至行末
+**Ctrl+Shift+左/右箭头** 快速选中光标左/右侧整个单词
+
+
+
 
 
 https://r86oxhhvu2.feishu.cn/docs/doccnp6Qvu7bRH1K6B0cX3RcEGf

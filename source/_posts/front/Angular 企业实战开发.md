@@ -4446,3 +4446,25 @@ Angular 提供了 `state` 方法用于定义状态。
    ])
    ```
 
+
+
+### 测试
+
+https://www.jianshu.com/p/ab84653ce166
+
+
+
+[聊聊Angular中的单元测试](https://www.muzhuangnet.com/show/48871.html)
+
+
+
+
+
+错误：
+
+NullInjectorError: No provider for HttpHandler!
+
+![image-20221020001454042](images/image-20221020001454042.png)
+
+A：没有引入 HttpClientTestingModule 模块, 执行测试用例时找不到模块。
+

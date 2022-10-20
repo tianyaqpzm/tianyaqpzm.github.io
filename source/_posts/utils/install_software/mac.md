@@ -147,9 +147,15 @@ protocol=https
 
 
 
+## 重新安装Brew
+
+https://blog.csdn.net/sl_world/article/details/124494182
+
+https://www.cnblogs.com/paly76/p/7136218.html
 
 
-### [ShadowsocksX-NG](https://www.twisted-meadows.com/shadowsocksx-ng/)
+
+## [ShadowsocksX-NG](https://www.twisted-meadows.com/shadowsocksx-ng/)
 
 ##### 1、先检查报错日志：
 

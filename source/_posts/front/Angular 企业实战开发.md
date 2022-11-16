@@ -4448,13 +4448,37 @@ Angular 提供了 `state` 方法用于定义状态。
 
 
 
-### 测试
+## 测试
 
 https://www.jianshu.com/p/ab84653ce166
 
 
 
 [聊聊Angular中的单元测试](https://www.muzhuangnet.com/show/48871.html)
+
+
+
+简介：
+
+第一个测试使用 `new` 创建了 `ValueService`，然后把它传给了 `MasterService` 的构造函数。
+
+不过，对于大多数没这么容易创建和控制的依赖项来说，注入真实的服务很容易出问题。
+
+你可以改用模拟依赖的方式，你可以使用虚值或在相关的服务方法上创建一个[间谍（spy）](https://jasmine.github.io/2.0/introduction.html#section-Spies)。
+
+
+
+#### 使用 [`TestBed`](https://angular.cn/api/core/testing/TestBed)（测试机床）测试服务
+
+你的应用中会依赖 Angular 的[依赖注入 (DI)](https://angular.cn/guide/dependency-injection) 来创建服务。 当某个服务依赖另一个服务时，DI 就会找到或创建那个被依赖的服务。 如果那个被依赖的服务还有它自己的依赖，DI 也同样会找到或创建它们。
+
+[`TestBed`](https://angular.cn/api/core/testing/TestBed) 会动态创建一个用来模拟 [@NgModule](https://angular.cn/guide/ngmodules) 的 Angular *测试*模块。
+
+[纠错](javascript:;)
+
+`TestBed.configureTestingModule()` 方法接收一个元数据对象，其中具有 [@NgModule](https://angular.cn/guide/ngmodules) 中的绝大多数属性
+
+
 
 
 
@@ -4467,4 +4491,10 @@ NullInjectorError: No provider for HttpHandler!
 ![image-20221020001454042](images/image-20221020001454042.png)
 
 A：没有引入 HttpClientTestingModule 模块, 执行测试用例时找不到模块。
+
+
+
+
+
+
 

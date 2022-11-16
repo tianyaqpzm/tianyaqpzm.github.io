@@ -41,4 +41,10 @@ app.get("/api/hello", (req, res) => {
   })
 })
 
+app.get("/api/customerinfo", (req, res) => {
+  res.json({
+    msg: "Hello"
+  })
+})
+
 app.listen(3005, () => console.log("服务器启动成功, 监听 3005 端口"))

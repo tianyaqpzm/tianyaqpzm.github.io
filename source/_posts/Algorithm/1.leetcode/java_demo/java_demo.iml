@@ -57,5 +57,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.dom4j:dom4j:2.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hibernate.common:hibernate-commons-annotations:5.0.4.Final" level="project" />
     <orderEntry type="library" name="Maven: org.openjdk.jol:jol-core:0.9" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:transmittable-thread-local:2.14.1" level="project" />
   </component>
 </module>

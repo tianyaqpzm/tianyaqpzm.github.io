@@ -26,6 +26,8 @@ export class VideoTrackingComponent implements OnInit {
   facecontext: any;
   tra: any;
   buffer: any;
+  informationTitle: string = '';
+  flag = true;
   constructor() {}
 
   ngOnInit(): void {
@@ -83,7 +85,7 @@ export class VideoTrackingComponent implements OnInit {
       .getUserMedia({
         audio: false,
         video: {
-          facingMode: 'environment'
+          facingMode: 'user'
         }
       })
       .then(stream => {
@@ -104,7 +106,7 @@ export class VideoTrackingComponent implements OnInit {
 
         //   event.data.forEach(function(rect) {
         //     context.font = '11px Helvetica';
-        //     context.fillText("已识别到人脸，请点击拍照",100,40);
+        //    context .fillText("已识别到人脸，请点击拍照",100,40);
         //     context.strokeStyle = '#a64ceb';
         //     context.strokeRect(rect.x, rect.y, rect.width, rect.height);
         //   });
@@ -122,6 +124,7 @@ export class VideoTrackingComponent implements OnInit {
               //未检测到人脸
               if (!faceflag && !timer) {
                 timer = setTimeout(() => {
+                  this.informationTitle = '未检测到人脸';
                   informationTitle.innerHTML = '未检测到人脸';
                 }, 500);
               }
@@ -134,6 +137,12 @@ export class VideoTrackingComponent implements OnInit {
               if (!tipFlag) {
                 // 给检测到的人脸绘制矩形
                 event.data.forEach((rect: any) => {
+                  // this.facecontext.font = '11px Helvetica';
+                  // this.facecontext.fillText(
+                  //   '已识别到人脸，请点击拍照',
+                  //   100,
+                  //   40
+                  // );
                   this.facecontext.strokeStyle = '#a64ceb';
                   this.facecontext.strokeRect(
                     rect.x,
@@ -151,23 +160,26 @@ export class VideoTrackingComponent implements OnInit {
                 ) {
                   // 检测到人脸进行拍照，延迟0.5秒
                   informationTitle.innerHTML = '识别中，请勿乱动~';
+                  this.informationTitle = '识别中，请勿乱动~';
                   faceflag = true;
                   tipFlag = true;
                   setTimeout(() => {
                     this.tackPhoto(); // 拍照
-                  }, 500);
+                  }, 1000);
                 }
               }
             } else {
               //检测到多张人脸
               if (!faceflag) {
+                this.informationTitle = '只可一人进行人脸识别！';
                 informationTitle.innerHTML = '只可一人进行人脸识别！';
               }
             }
           }
         });
       })
-      .catch(function(err) {
+      .catch(err => {
+        this.informationTitle = '打开摄像头失败';
         informationTitle.innerHTML = '打开摄像头失败';
       });
   }
@@ -233,6 +245,7 @@ export class VideoTrackingComponent implements OnInit {
       .forEach((track: { stop: () => any }) => track.stop());
     // 取消监听
     this.tra.stop();
+    this.flag = false;
   }
 
   /**

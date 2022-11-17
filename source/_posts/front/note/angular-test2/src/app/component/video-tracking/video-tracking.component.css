@@ -12,15 +12,23 @@
 }
 
 #canvas_bind {
-    /* position: absolute; */
-    /* top: 0; */
-    /* z-index: 2; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* z-index: -1; */
 }
 
 .tip-box {
     position: absolute;
-    /* margin: auto; */
-    z-index: 2; 
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    /* right: 0;
+    top: 0; */
+    /* z-index: 2;  */
     
     /* margin-top: 50vh; */
     /* font-size: 24; */

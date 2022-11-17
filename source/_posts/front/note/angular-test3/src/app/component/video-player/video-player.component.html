@@ -1,0 +1,15 @@
+<div style="margin:0;padding:0;">
+  <div id="showVideoCycle">
+    <div class="videoPlay">
+      <!--       data-setup='{"controls": false, "autoplay": false, "preload": "auto"}' -->
+      <video id="videoNew" #target class="video-js" options>
+        <!-- <source id="video_path" srcObject="" type="video/mp4" /> -->
+      </video>
+    </div>
+  </div>
+
+  <div class="control">
+    <p class="open" (click)="invokingCarera()">开启摄像头</p>
+    <p class="close" (click)="closeCamera()">关闭摄像头</p>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="content">
+  <video
+    width="318"
+    height="270"
+    id="video_bind"
+    #targetOrigin
+    autoplay
+    playsinline
+    webkit-playsinline="true"
+  >
+    <div class="tip-box text-center"></div>
+  </video>
+  <div>
+    <button type="button" (click)="init()">继续</button>
+    <button type="button" (click)="tackPhoto()">拍照</button>
+  </div>
+  <canvas id="canvas_bind" width="318" height="270"></canvas>
+</div>

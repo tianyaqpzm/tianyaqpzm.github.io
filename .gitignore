@@ -14,4 +14,6 @@ source/_posts/Algorithm/1.leetcode/java_demo/target/
 source/_posts/Algorithm/1.leetcode/java_demo/.idea
 source/_posts/Algorithm/1.leetcode/spring-boot-demo/target
 source/_posts/Algorithm/1.leetcode/spring-boot-demo/.idea
-source/_posts/front/note/angular-test2/dist/
+#source/_posts/front/note/angular-test2/dist/
+dist/
+.angular

@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
 
 /*
  * @lc app=leetcode.cn id=322 lang=java
@@ -169,6 +171,12 @@ class Solution {
         int[] coins = new int[] { 1, 2, 5 };
         Solution322 solution322 = new Solution322();
         solution322.coinChangeError(coins, 5);
+    }
+
+    @Test
+    @DisplayName("ReDos攻击")
+    public void test_binary_redos() {
+        System.err.println("sss");
     }
 
 }

@@ -1,0 +1,420 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "T00_TraceIDTest",
+            "request": "launch",
+            "mainClass": "com.pei.advance.T00_TraceIDTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T01_TraceIDTest",
+            "request": "launch",
+            "mainClass": "com.pei.advance.T01_TraceIDTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T03_TraceIDTest",
+            "request": "launch",
+            "mainClass": "com.pei.advance.T03_TraceIDTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T04_TraceIDTest",
+            "request": "launch",
+            "mainClass": "com.pei.advance.T04_TraceIDTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "Juzhen",
+            "request": "launch",
+            "mainClass": "com.pei.algorithm.Juzhen",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "com.pei.algorithm.Solution",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "com.pei.algorithm.Test",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "Solution2",
+            "request": "launch",
+            "mainClass": "com.pei.algorithm._547.省份数量.Solution2",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "Solution3",
+            "request": "launch",
+            "mainClass": "com.pei.algorithm._547.省份数量.Solution3",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "com.pei.learn.App",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "Longestpalindrome",
+            "request": "launch",
+            "mainClass": "com.pei.learn.algorithm.dp.Longestpalindrome",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "Basic",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.Basic",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "Inter",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.Inter",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "ProtectedTest",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.ProtectedTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "ProtectedTestSub",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.ProtectedTestSub",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "ThreadPoolTest",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.multiThread.ThreadPoolTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "DynamicProxyDemo",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.proxy.dynamiccglib.DynamicProxyDemo",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "DynamicProxyDemo(1)",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.proxy.dynamicmode.DynamicProxyDemo",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T00_00_BlockQueue",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.queue.T00_00_BlockQueue",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T00_01_BlockQueue",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.queue.T00_01_BlockQueue",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T00_02_BlockQueue",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.queue.T00_02_BlockQueue",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T00_03_BlockQueue",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.queue.T00_03_BlockQueue",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T00_04_BlockQueue",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.queue.T00_04_BlockQueue",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T00_05_BlockQueue",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.queue.T00_05_BlockQueue",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T00_06_BlockQueue",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.queue.T00_06_BlockQueue",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "ReflectTest",
+            "request": "launch",
+            "mainClass": "com.pei.learn.basic.reflect.ReflectTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "ClassLoaderTest",
+            "request": "launch",
+            "mainClass": "com.pei.learn.classloader.ClassLoaderTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "Observer",
+            "request": "launch",
+            "mainClass": "com.pei.learn.designmodel.Observer.Observer",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T00_00_SingleClass",
+            "request": "launch",
+            "mainClass": "com.pei.learn.designmodel.t00_single.T00_00_SingleClass",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T00_01_SingleClass",
+            "request": "launch",
+            "mainClass": "com.pei.learn.designmodel.t00_single.T00_01_SingleClass",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "ArraysDemoTest",
+            "request": "launch",
+            "mainClass": "com.pei.learn.labada.ArraysDemoTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T01_00_LockSupportTest",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.T01_00_LockSupportTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T01_01_Lock_ReentrantLock",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.T01_01_Lock_ReentrantLock",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T01_02_SyncWaitNotifyTest",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.T01_02_SyncWaitNotifyTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T01_03_TransferQueue",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.T01_03_TransferQueue",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T01_04_Self_Def_CAS",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.T01_04_Self_Def_CAS",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T01_05_CAS",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.T01_05_CAS",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T02_00_ABCABC",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.T02_00_ABCABC",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T03_00_AliQuestion",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.T03_Disorder.T03_00_AliQuestion",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T03_01_AliQuestion",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.T03_Disorder.T03_01_AliQuestion",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T03_02_AliQuestionAboutCF",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.T03_Disorder.T03_02_AliQuestionAboutCF",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "To3_00_Disorder",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.T03_Disorder.To3_00_Disorder",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T04_00_NewObject",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.T04_00_NewObject",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T01_00_Philosopher",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.deadlock.T01_00_Philosopher",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T01_01_Philosopher",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.deadlock.T01_01_Philosopher",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T01_HelloJOL",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.jol.T01_HelloJOL",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "T02_Hello",
+            "request": "launch",
+            "mainClass": "com.pei.learn.lock.jol.T02_Hello",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "CopyFileTest",
+            "request": "launch",
+            "mainClass": "com.pei.learn.nio.CopyFileTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "Example",
+            "request": "launch",
+            "mainClass": "com.pei.learn.nio.Example",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "SelectorTest",
+            "request": "launch",
+            "mainClass": "com.pei.learn.nio.SelectorTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "CipherTest",
+            "request": "launch",
+            "mainClass": "com.pei.learn.safe.CipherTest",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "EClient",
+            "request": "launch",
+            "mainClass": "com.pei.learn.safe.EClient",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "EServer",
+            "request": "launch",
+            "mainClass": "com.pei.learn.safe.EServer",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "SslEClient",
+            "request": "launch",
+            "mainClass": "com.pei.learn.safe.SslEClient",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "SslEServer",
+            "request": "launch",
+            "mainClass": "com.pei.learn.safe.SslEServer",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "SnowFlakeShortUrl",
+            "request": "launch",
+            "mainClass": "com.pei.learn.utils.shortUrl.SnowFlakeShortUrl",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "OutOfMemoryError",
+            "request": "launch",
+            "mainClass": "com.pei.learn.xingneng.OutOfMemoryError",
+            "projectName": "java_demo"
+        },
+        {
+            "type": "java",
+            "name": "Math1",
+            "request": "launch",
+            "mainClass": "java.lang.Math1",
+            "projectName": "java_demo"
+        }
+    ]
+}

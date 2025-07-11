@@ -5,6 +5,10 @@ categories: dir
 tags: [tag1, tag2]
 ---
 
+
+
+
+
 亿级流量电商网站的商品详情页系统，架构讲解，项目实战：高并发+高可用的系统缓存架构
 
 真正能支撑高并发以及高可用的复杂系统中的**缓存架构**有哪些东西？
@@ -27,3 +31,10 @@ redis 企业级集群架构
 
               return new Promise((resolve, reject) => {}); // 返回pending状态
               // return (new Promise((resolve, reject)=>{reject()}));//返回reject状态 会被最后catch捕获。
+
+
+
+rate-limit 一款 java 开源渐进式分布式限流框架使用介绍
+
+https://juejin.cn/post/7176566285181845562
+

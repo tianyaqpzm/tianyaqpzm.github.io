@@ -1,21 +1,49 @@
 <div class="content">
-  <video
-    width="318"
-    height="270"
-    id="video_bind"
-    #targetOrigin
-    autoplay
-    playsinline
-    webkit-playsinline="true"
-  ></video>
-  <canvas id="canvas_bind" width="318" height="270"></canvas>
-  <div class="tip-box text-center"></div>
+  <div>
+    <!-- [(ngModel)]="userForm.username" -->
+    <input
+      matInput
+      #vidoeInput
+      type="text"
+      class="form-control"
+      placeholder="videoBitsPerSecond"
+      [(ngModel)]="videoBitsPerSecond"
+    />
+    <div style="display: block"></div>
+    <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="mineType">
+      <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+        {{ season }}
+      </mat-radio-button>
+    </mat-radio-group>
 
+    <button mat-stroked-button type="button" (click)="init()">继续</button>
+    <button mat-stroked-button type="button" (click)="tackPhoto()">拍照</button>
+  </div>
+  <hr />
+  <!-- autoplay -->
+  <div id="showVideoCycle">
+    <div class="videoPlay">
+      <!-- width="300"
+      height="270" -->
+      <video
+        id="video_bind"
+        class="wh"
+        #targetOrigin
+        muted
+        controls="controls"
+        autoplay
+        playsinline
+        webkit-playsinline="true"
+      ></video>
+      <canvas id="canvas_bind" class="wh"></canvas>
+      <div class="tip-box text-center"></div>
+    </div>
+  </div>
   <!-- <div>
     {{ informationTitle }}
   </div> -->
-  <div>
-    <button type="button" (click)="init()">继续</button>
-    <button type="button" (click)="tackPhoto()">拍照</button>
-  </div>
+  <hr />
+  <div>{{ logger }}</div>
+
+  <video hidden="true" #targetVideo id="startVideo"></video>
 </div>

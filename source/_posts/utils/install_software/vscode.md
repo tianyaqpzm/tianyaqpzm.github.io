@@ -4,6 +4,19 @@
 
 
 
+## 问题汇总
+
+### 1、VScode登录Microsoft 的账号回调失败
+
+**添加hosts记录**
+
+```bash
+13.107.213.46   vscode.dev
+```
+
+**重新打开vscode.dev可以看到访问正常，再在vscode中重新登录同步功能**
+![在这里插入图片描述](vscode/fdc4a0b9df424391a98157b67235e359.png)
+
 
 
 ## [VSCODE搭建JAVA基本开发环境](https://blog.csdn.net/gxiangzi/article/details/84335549)
@@ -139,3 +152,43 @@ https://github.com/junit-team/junit4/wiki/Download-and-Install
 ————————————————
 版权声明：本文为CSDN博主「ME不想家」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/ME__WE/article/details/104887568
+
+
+
+
+
+### vscode代码格式化时属性不换行
+
+1、需要 command+,；打开设置，搜索wrap 如下选择 代表永不换行
+
+![img](vscode/2022123100011.png)
+
+
+
+2、插件市场下载插件：Prettier - Code formatter；安装完成之后需要打开settings.json添加如下配置
+
+```javascript
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_line_length": 120,
+      "wrap_attributes": "auto",
+      "end_with_newline": false
+    },
+    "prettier": {
+      "semi": false, //不使用分号结尾
+      "singleQuote": true, //使用单引号
+      "eslintIntegration": false //开启 eslint 支持
+    }
+  },
+    
+
+
+```
+
+.prettierrc 根目录文件
+
+ "printWidth": 3000, // 就是这行生效，其他配置主要是为了多人协作规范代码格式，后面开始eslint校验能完美搭配，数字自己调整可以看看效果
+
+
+

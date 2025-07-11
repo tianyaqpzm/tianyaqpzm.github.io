@@ -1,0 +1,44 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job         
+    steps:
+      - uses: actions/checkout@main  #采用main分支下的
+      - name: Setup Node.js
+        uses: actions/setup-node@v2  #安装node.js
+        with:
+          node-version: '16'
+      - name: Install Dependency       
+        run: |
+          pwd
+          echo start build
+          npm install
+          npm run build
+          # 替换相对路径
+          sed -i "s|script src=\"|script src=\"./angular/|g" ./dist/angular-test2/index.html
+          sed -i "5,\$s|href=\"|href=\"./angular/|g" ./dist/angular-test2/index.html
+      - name: Deploy   # 部署
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages # 部署后提交到那个分支
+          folder: dist/angular-test2 # 这里填打包好的目录名称
+          

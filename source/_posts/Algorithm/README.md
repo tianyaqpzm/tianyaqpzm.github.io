@@ -37,7 +37,11 @@ top: true
 在 VS Code 快速生成单元测试———— Go版本
 https://jaycechant.info/2020/rapidly-generate-unit-tests-in-vs-code/
 
+[代码随想录](https://programmercarl.com/)
 
+[力扣加加 - 努力做西湖区最好的算法题解](https://leetcode-solution-leetcode-pp.gitbook.io/leetcode-solution/thinkings/dynamic-programming)
+
+[**Overseas Rabbit | 海外兔**](https://osjobs.net/)
 
 
 

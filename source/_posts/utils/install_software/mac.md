@@ -18,6 +18,15 @@ top: true
 
 # 常用软件
 
+PATH environment variable
+
+  /Users/pei/.profile
+  /Users/pei/.bash_profile
+  /Users/pei/.bashrc
+  /Users/pei/.zshenv
+
+
+
 ## 工具效率
 
 #### 1、截取GIF
@@ -28,17 +37,248 @@ top: true
 
 
 
+Shift + Command ⌘ + 5
+
+![image-20221231135202260](mac/image-20221231135202260.png)
+
+
+
+
+
 
 
 # MAC
 
+## 系统技巧
+
+### 2、iTerm2 + Oh My Zsh 打造舒适终端体验：
+
+https://www.jianshu.com/p/9c3439cc3bdb
+
+
+
+### Mac怎么调整 LaunchPad图标数量及大小
+
+输入命令：【defaults write com.apple.dock springboard-rows -int 6】，这里的7，（横轴调整启动图标数量），根据你的需要输入一个数字。
+
+【defaults write com.apple.dock springboard-columns -int 9】（11是（纵数图标）），然后输入命令：【defaults write com.apple.dock ResetLaunchPad -bool TRUE;killall Dock】生效。
+
+默认： 5*7 
+
+
+
+
+
+
+
 ## 常用命令
 
+
+
+### 清理硬盘
+
+sudo tmutil listlocalsnapshots /
+
+接下来会显示你磁盘上的所有快照文件
+
+
+
+占用很大硬盘
+
+/Users/pei/Library/Caches/CloudKit/com.apple.cloudphotod/39accd3621390c988c0d1d338ef31976ec189347/4d4df0a526653b9317b428548a9695da13fa5b0c/MMCS
+
+
+
+清理缓存：
+
+https://zhuanlan.zhihu.com/p/551028789
+
 ### 系统
+
+
+
+
+
+
+
+
 
 #### 1、检查端口监听lsof：
 
 `lsof -iTCP -sTCP:LISTEN -n -P`
+
+
+
+
+
+
+
+
+
+### brew使用
+
+
+
+#### 更新代理
+
+全局代理，写入配置
+
+git config --global http.proxy 'socks5://127.0.0.1:1080'
+
+git config --global https.proxy 'socks5://127.0.0.1:1080'
+
+清除配置
+
+git config --global --unset http.proxy
+
+git config --global --unset https.proxy
+
+临时代理
+
+ALL_PROXY=socks5://127.0.0.1:8888 git clone https://github.com/some/one.git
+
+ALL_PROXY=socks5://127.0.0.1:9050
+
+
+
+#### 卸载
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+
+解决：
+
+re-install homebrew
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+- usr/local。通过调用：sudo chown -R $(whoami) usr/local
+- private/tmp。通过调用：sudo chown -R $(whoami) /private/tmp
+
+sudo chown $(whoami):admin /usr/local
+
+brew doctor会输出所有需要重新链接的软件包。复制这些软件包名放到一个文本文件里，例如~/formulas.txt:
+
+android-platform-tools
+
+ant
+
+aria2
+
+autoconf
+
+automake
+
+...
+
+运行一个for语句让它们全部重新链接：
+
+```
+for PKG in $(<~/text.txt)
+do
+ brew link --overwrite $PKG
+done
+```
+
+
+
+完成之后，清理没用的链接
+
+```
+for PKG in $(<~/text.txt)
+do
+brew cleanup $PKG
+done
+brew prune
+```
+
+
+
+##### 报错 error: Not a valid ref: refs/remotes/origin/master 的解决方法
+
+个人博客 ](https://learnku.com/blog/Galois)/ 31 / 0 / 创建于 1年前 / 更新于 1年前
+
+执行命令：
+
+```php
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+报错：
+
+```php
+HEAD is now at 8175e404e Merge pull request #7942 from sjackman/bottle_tag
+error: Not a valid ref: refs/remotes/origin/master
+fatal: ambiguous argument 'refs/remotes/origin/master': unknown revision or path not in the working tree.
+```
+
+解决方案：卸载重装 brew
+下载 [raw.githubusercontent.com/Homebrew...](https://raw.githubusercontent.com/Homebrew/install/master/uninstall) 并保存为 `uninstall.rb`，再执行 `ruby uninstall.rb`
+
+
+
+**如果安装过老版本，删除后再执行以下命令，如果没有安装过，直接执行以下命令**
+
+git clone git://mirrors.ustc.edu.cn/homebrew-core.git/ /usr/local/
+
+
+
+**更改homebrew和homebrew-core仓库的源URL为国内中科大的源URL**
+
+cd "$(brew --repo)"
+
+
+
+git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+
+
+
+cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core" 
+
+
+
+git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+
+**注意：$(brew --repo)是一个路径变量，指的是以下路径：**
+
+/usr/local/Homebrew
+
+
+
+
+
+**（1）克隆homebrew-core文件夹**
+
+git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow
+
+
+
+
+
+查看已经过时的homebrew包版本(如果不想看，直接升级以可以，升级时会列出报版本由什么版本升级到了什么版本，比如minicom 2.7.1 -> 2.8)
+
+brew outdated
+
+更新已有过时的homebrew包版本
+
+brew upgrade
+
+brew install --HEAD usbmuxd
+
+ ✘  ~  brew install --HEAD libimobiledevice
+
+ ✘  ~  npm i -g remotedebug-ios-webkit-adapter@next
+
+ ✘  ~  npm update remotedebug-ios-webkit-adapter -g
+
+
+
+#### 重新安装Brew
+
+https://blog.csdn.net/sl_world/article/details/124494182
+
+https://www.cnblogs.com/paly76/p/7136218.html
+
+
 
 
 
@@ -147,17 +387,11 @@ protocol=https
 
 
 
-## 重新安装Brew
-
-https://blog.csdn.net/sl_world/article/details/124494182
-
-https://www.cnblogs.com/paly76/p/7136218.html
-
 
 
 ## [ShadowsocksX-NG](https://www.twisted-meadows.com/shadowsocksx-ng/)
 
-##### 1、先检查报错日志：
+### 1、先检查报错日志：
 
 这版**X-NG**会把自己的log文件：**ss-local.log**
 保存在路径：`~/Library/Logs`
@@ -167,17 +401,21 @@ https://www.cnblogs.com/paly76/p/7136218.html
 
 ![image-20221002131545399](mac/image-20221002131545399.png)
 
+lsof -i tcp:1080
 
+netstat -an|grep 1080
 
 cd /Applications/ShadowsocksX-NG-R8.app/Contents/Resources
+
+
 
 ![image-20220306141158775](mac/image-20220306141158775.png)
 
 
 
+我们写好了.plist文件以后，将它拷贝到/library/LaunchDeamons/文件夹下面，然后就直接执行了sudo luanchctl load xxxx.plist，这样肯定会产生权限不够的问题，
 
-
-我们写好了.plist文件以后，将它拷贝到/library/LaunchDeamons/文件夹下面，然后就直接执行了sudo luanchctl load xxxx.plist，这样肯定会产生权限不够的问题，所以，正确的方法是，现将其的权限修改为root，sudo chown root xxxx.plist， 然后再来执行上述命令就没事啦。
+所以，正确的方法是，现将其的权限修改为root，sudo chown root xxxx.plist， 然后再来执行上述命令就没事啦。
 
 cd /Users/pei/Library/LaunchAgents/
 
@@ -223,7 +461,7 @@ sudo launchctl load com.qiuyuzhou.shadowsocksX-NG.local.plist
 `privoxy`监听了我设置的HTTP代理端口，`ss-local`监听了我设置的Socks5代理端口
 
 ```
-curl --socks5 127.0.0.1:1086 http://cip.cc
+curl --socks5 127.0.0.1:1080 http://cip.cc
 ```
 
 与代理命令 proxy_off 无关：
@@ -239,6 +477,10 @@ curl --socks5 127.0.0.1:1086 http://cip.cc
 curl http://cip.cc/180.110.125.108
 
 ![image-20220306142304268](mac/image-20220306142304268.png)
+
+
+
+
 
 
 

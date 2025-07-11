@@ -1,11 +1,4 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  Input,
-  OnInit,
-  ViewChild
-} from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import videojs from 'video.js';
 
 declare const navigator: any;
@@ -24,7 +17,7 @@ export interface VideoOption {
 @Component({
   selector: 'app-video-player',
   templateUrl: './video-player.component.html',
-  styleUrls: ['./video-player.component.css']
+  styleUrls: ['./video-player.component.css'],
 })
 export class VideoPlayerComponent implements OnInit, AfterViewInit {
   @ViewChild('target', { static: true }) target!: ElementRef;
@@ -33,7 +26,7 @@ export class VideoPlayerComponent implements OnInit, AfterViewInit {
   options: VideoOption = {
     fluid: true,
     autoplay: true,
-    controls: false
+    controls: false,
   };
   player!: videojs.Player;
 
@@ -43,10 +36,7 @@ export class VideoPlayerComponent implements OnInit, AfterViewInit {
   constructor(private elementRef: ElementRef) {
     // const oCapture = document.querySelector("video"),
     this.userMedia = navigator.getUserMedia =
-      navigator.getUserMedia ||
-      navigator.webKitGetUserMedia ||
-      navigator.mozGetUserMedia ||
-      navigator.msGetUserMedia;
+      navigator.getUserMedia || navigator.webKitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
   }
 
   ngOnInit(): void {
@@ -75,7 +65,7 @@ export class VideoPlayerComponent implements OnInit, AfterViewInit {
       navigator.mediaDevices
         .getUserMedia({
           audio: false,
-          video: { width: 720, height: 720 }
+          video: { width: 720, height: 720 },
           // video: { facingMode: 'user' }
         })
         .then((mediaStream: any) => {
@@ -88,7 +78,7 @@ export class VideoPlayerComponent implements OnInit, AfterViewInit {
       navigator.getUserMedia(
         {
           video: true,
-          audio: true
+          audio: true,
         },
         this.getVideoStream,
         () => {
@@ -108,8 +98,7 @@ export class VideoPlayerComponent implements OnInit, AfterViewInit {
       try {
         this.target.nativeElement.srcObject = this.buffer;
       } catch (error) {
-        this.target.nativeElement.src =
-          window.URL && window.URL.createObjectURL(this.buffer);
+        this.target.nativeElement.src = window.URL && window.URL.createObjectURL(this.buffer);
       }
     }
   }
@@ -117,10 +106,7 @@ export class VideoPlayerComponent implements OnInit, AfterViewInit {
   closeCamera() {
     debugger;
     if (this.buffer) {
-      let fn =
-        typeof this.buffer.stop === 'function'
-          ? this.buffer
-          : this.buffer.getTracks()[0];
+      let fn = typeof this.buffer.stop === 'function' ? this.buffer : this.buffer.getTracks()[0];
       fn.stop();
       // this.buffer.getTracks()[1].stop();
     }

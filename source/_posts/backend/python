@@ -62,6 +62,142 @@ urllib.robotparser用于解析robots.txt文件
 
 
 
+### virtualenv
+
+virtualenv -p ~/pyenv/python3.5 env3.5 来指定创建一个3.5的env
+
+
+
+
+
+
+
+### Map函数的使用以及 input 的输入 sort 以k 排序
+
+def fun8():
+
+​	d = {}
+
+​	for _ in range(input()):
+
+​		k, v = map(int, raw_input().split())
+
+​		d[k] = d.get(k, 0) + v
+
+​	print '\n'.join(map(lambda x: '%d %d'% (x[0], x[1]), sorted(d.items(), key=lambda x: x[0])))
+
+while True:
+
+​	try:
+
+​		fun8()
+
+​	except EOFError:
+
+​		break
+
+
+
+
+
+求一个数 每位数：
+
+
+
+while n>0:
+
+​	sum +=(n%10)*(n%10)
+
+​	n/=10
+
+
+
+while True:
+
+  try:
+
+​    \#将输入的字符 组成一个列表 好经典啊啊 啊啊 啊啊啊
+
+​    nums = [int(raw_input()) for _ in range(input())]
+
+​    \#第一个参数 传 函数名
+
+​    print '\n'.join(map(str, sorted(set(nums))))
+
+  except EOFError:
+
+​    break
+
+
+
+\>>> import sys
+
+\>>> message = sys.stdin.readlines()
+
+Hello
+
+World
+
+My
+
+Name
+
+Is
+
+James
+
+Bond
+
+\# <ctrl-d> EOF sent
+
+\>>> print message
+
+['Hello\n', 'World\n', 'My\n', 'Name\n', 'Is\n', 'James\n', 'Bond\n']
+
+
+
+
+
+###  sort函数
+
+sort是在原位重新排列列表，而sorted()是产生一个新的列表。
+
+sorted(...)
+
+  sorted(iterable, cmp=None, key=None, reverse=False) --> new sorted list
+
+---------------------------------sort----------------------------------------
+
+\>>> help(list.sort)
+
+Help on method_descriptor:
+
+
+
+sort(...)
+
+  L.sort(cmp=None, key=None, reverse=False) -- stable sort *IN PLACE*;
+
+  cmp(x, y) -> -1, 0, 1
+
+\-----------------------------------------------------------------------------
+
+
+
+iterable：是可迭代类型;
+
+cmp：用于比较的函数，比较什么由key决定,有默认值，迭代集合中的一项;
+
+key：用列表元素的某个属性和函数进行作为关键字，有默认值，迭代集合中的一项;
+
+reverse：排序规则. reverse = True 或者 reverse = False，有默认值。
+
+返回值：是一个经过排序的可迭代类型，与iterable一样。
+
+ 
+
+注；一般来说，cmp和key可以使用**lambda****表达式**。
+
 
 
 

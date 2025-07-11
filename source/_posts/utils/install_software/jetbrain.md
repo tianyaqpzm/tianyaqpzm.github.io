@@ -10,6 +10,39 @@ idea中这几个快捷键或许可以解决困扰。
 
 
 
+获取6个月的有效期临时激活码
+
+http://idea.javatiku.cn/
+
+最后一次 2023.07.26
+
+
+
+### vmoption配置：
+
+```
+-Xms128m
+-Xmx1024m
+-Dide.no.platform.update=true
+-Dsun.io.useCanonCaches=false
+-XX:SoftRefLRUPolicyMSPerMB=50
+-ea
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:-OmitStackTraceInFastThrow
+-XX:ErrorFile=$USER_HOME/java_error_in_idea_%p.log
+-XX:HeapDumpPath=$USER_HOME/java_error_in_idea.hprof
+-Djdk.http.auth.tunneling.disabledSchemes=""
+-Djdk.attach.allowAttachSelf=true
+-Djdk.module.illegalAccess.silent=true
+-Dkotlinx.coroutines.debug=off
+-XX:ReservedCodeCacheSize=512m
+-XX:+IgnoreUnrecognizedVMOptions
+-XX:+UseG1GC
+-XX:CICompilerCount=2
+```
+
+
+
 
 
 https://r86oxhhvu2.feishu.cn/docs/doccnp6Qvu7bRH1K6B0cX3RcEGf
@@ -94,6 +127,14 @@ ja-netfilter.jar`解压到了`E:\ja-netfilter
 
 
 
+/Users/pei/Library/Application\ Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/213.6777.52/IntelliJ IDEA.app.vmoptions
+
+
+
+
+
+-javaagent:/Users/pei/project/utils/jetbra/ja-netfilter.jar
+
 那我配置的内容是
 
 ```XML
@@ -147,6 +188,8 @@ bin文件下就可以看到 `idea64.exe.vmoptions`
 竟然发现激活到了5000年？？？
 
 ![img](https://r86oxhhvu2.feishu.cn/space/api/box/stream/download/asynccode/?code=NWI4Y2MzZmZlNjQ4MTA1MTJhZmM4NjdhNTY1ZTI1MmNfZ3ZxeDVmdjM3cDJldllqcGUxbjFHRHRGOENmRUxHYldfVG9rZW46Ym94Y25CVER5OFhadzBWZmYwMWM0eEI4MlBnXzE2NTQzOTYyNzg6MTY1NDM5OTg3OF9WNA)
+
+
 
 其实这个5000年是我自己配置的，包括Licensed to NoBug，也是我配置的。
 

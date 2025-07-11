@@ -57,16 +57,16 @@ top
     命令 < 文件| 将文件作为命令的标准输入
     命令 << 分界符| 从标准输入中读入，直到遇见分界符
     命令 < 文件1 > 文件2 | 将文件1作为命令的标准输入并将输出到文件2  
-    ```
+```
     tr a-z  A-Z <<END
         abcdef
         END
-```  
+```
 
 2. 输出重定向：将原本输出到屏幕的数据信息写入指定文件中
     * 标准输出重定向：STDOUT，文件描述符1（可省略）
     * 错误输出重定向：STDERR，文件描述符2
-输出重定向中用到的符号及其作用  
+    输出重定向中用到的符号及其作用  
 
 符号|作用
 ---|---
@@ -75,14 +75,12 @@ top
 命令 >> 文件|将标准输出重定向到一个文件中(追加到原有内容的后面)
 命令 2>> 文件 |将错误输出重定向到一个文件中(追加到原有内容的后面)
 命令 >> 文件 2>&1 或 命令 &>> 文件| 将标准输出与错误输出共同写入到文件中(追加到原有内容 的后面)
-     
-                            
 
-- [ ] task one not finish `- + SPACE + [ ]`
-- [x] s
+​                            
 
 
-##sed
+## sed
+
 1. **定义**
 [转载](https://www.cnblogs.com/emanlee/archive/2013/09/07/3307642.html)
 >是一种文本处理工，一行一行处理文本的，还有需要知道sed有一个HOLD空间和模式空间，HOLD用来作为文档处理的暂存空间，不能有任何的操作，所有的操作只能在模式空间进行  
@@ -93,7 +91,7 @@ top
     * -i : 直接在读取的内容进行修改，如果没有—i，不会源文件造成任何修改；
     * -n: 静默模式，即只输出匹配的行，如果没有-n则匹配行会和源文件全部输出；
 3. 编辑命令
-sed的编辑命令有24个之多，在这里只学习常用的几个：
+   sed的编辑命令有24个之多，在这里只学习常用的几个：
     * 追加（a）
     * 更改（c）
     * 删除（d）
@@ -113,6 +111,7 @@ sed的编辑命令有24个之多，在这里只学习常用的几个：
     sed -i 's/Alias admin/Alias chao/' httpd.conf
     # cat sed.txt
 |    Alias admin   |
+
 # cat sed.txt | sed 's/Alias admin/Alias chao/'
 |    Alias chao   |  
 # cat sed.txt
@@ -127,9 +126,25 @@ Alias chao
 　　//格式：sed 's/要替换的字符串/新的字符串/g'   （要替换的字符串可以用正则表达式）
 sed -n '/ruby/p' ab | sed 's/ruby/bird/g'    #替换ruby为bird
 sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
+```
     ```
+
 >空格的表示方法[[:space:]]
 为了引入shell变量，必须使用双引号
+
+
+
+实例：
+
+angular-test2自动化部署，需要做替换，讲index.html中的地址改为相对路径
+
+sed -i "" "s|script src=\"|script src=\"./angular/|" ./dist/angular-test2/index.html
+
+sed -i "" "5,$s|href=\"|href=\"./angular/|" ./dist/angular-test2/index.html
+
+
+
+
 
  ## 替换：
 
@@ -142,9 +157,19 @@ sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
     # 替换两个或多个空格为一个空格
     sed 's/[ ][ ]*/ /g' file_name
 
-
 ​    
-​    # 替换两个或多个空格为分隔符:
+
+sed -i "" "s|script src=\"|script src=\"./angular/|" ./dist/angular-test2/index.html
+
+sed -i "" "5,$s|href=\"|href=\"./angular/|" ./dist/angular-test2/index.html
+
+sed 's/原字符串/替换字符串/g; s/原字符串/替换字符串/g' 
+
+
+
+
+
+    # 替换两个或多个空格为分隔符:
 ​    sed 's/[ ][ ]*/:/g' file_name
 ​        
 ​    # 如果空格与⇥共存时用下面的命令进行替换
@@ -153,6 +178,7 @@ sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
 ​    
 ​    # 替换成分隔符:
 ​    sed 's/[[:space:]][[:space:]]*/:/g' filename
+
 ```
 
 ```

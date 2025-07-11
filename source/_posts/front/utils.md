@@ -2,6 +2,8 @@
 
 
 
+[TOC]
+
 # npx 使用教程
 
 https://www.ruanyifeng.com/blog/2019/02/npx.html
@@ -64,9 +66,157 @@ sudo npm install -g n
 
 
 
+
+
 yarn global add  @angular/cli@latest
 
 
+
+### yarn&npm
+
+registry=https://registry.npm.taobao.org
+
+sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
+
+phantomjs_cdnurl=http://cnpmjs.org/downloads
+
+electron_mirror=https://npm.taobao.org/mirrors/electron/
+
+sqlite3_binary_host_mirror=https://foxgis.oss-cn-shanghai.aliyuncs.com/
+
+profiler_binary_host_mirror=https://npm.taobao.org/mirrors/node-inspector/
+
+chromedriver_cdnurl=https://cdn.npm.taobao.org/dist/chromedriver
+
+复制代码
+
+npm set registry https://registry.npm.taobao.org
+
+npm set  sass_binary_site https://npm.taobao.org/mirrors/node-sass/
+
+npm set  phantomjs_cdnurl http://cnpmjs.org/downloads
+
+npm set  electron_mirror https://npm.taobao.org/mirrors/electron/
+
+npm set  sqlite3_binary_host_mirror https://foxgis.oss-cn-shanghai.aliyuncs.com/
+
+npm set  profiler_binary_host_mirror https://npm.taobao.org/mirrors/node-inspector/
+
+npm set  chromedriver_cdnurl https://cdn.npm.taobao.org/dist/chromedriver
+
+npm set proxy http://127.0.0.1
+
+npm set https-proxy http://127.0.0.1
+
+yarn config set strict-ssl false
+
+yarn config set registry https://registry.npm.taobao.org -g
+
+yarn config set disturl https://npm.taobao.org/dist -g
+
+yarn config set electron_mirror https://npm.taobao.org/mirrors/electron/ -g
+
+yarn config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/ -g
+
+yarn config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/ -g
+
+yarn config set chromedriver_cdnurl https://cdn.npm.taobao.org/dist/chromedriver -g
+
+yarn config set operadriver_cdnurl https://cdn.npm.taobao.org/dist/operadriver -g
+
+yarn config set fse_binary_host_mirror https://npm.taobao.org/mirrors/fsevents -g
+
+\1. 临时修改
+
+yarn save 软件名 --registry https:*//registry.[npm.taobao.org/](http://npm.taobao.org/)*
+
+\2. 全局修改
+
+yarn config set registry https:*//registry.[npm.taobao.org/](http://npm.taobao.org/)*
+
+Yarn 淘宝源安装，分别复制粘贴以下代码行到黑窗口运行即可
+
+yarn config set registry [https://registry.npm.taobao.org](https://registry.npm.taobao.org/) -g
+
+yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g
+
+初始化一个新的项目
+
+yarn init
+
+添加一个依赖包
+
+yarn add [package]
+
+yarn add [package]@[version]
+
+yarn add [package]@[tag]
+
+更新一个依赖包
+
+yarn upgrade [package]
+
+yarn upgrade [package]@[version]
+
+yarn upgrade [package]@[tag]
+
+删除一个依赖包
+
+yarn remove [package]
+
+安装所有的依赖包
+
+yarn or yarn install
+
+列出每个缓存的包
+
+yarn cache ls
+
+清除本地缓存
+
+yarn cache clean
+
+
+
+
+
+```sh
+npm config delete proxy
+npm config delete https-proxy
+
+npm config set proxy 'username:password@your.proxy.com'
+npm config set https-proxy 'username:password@your.proxy.com'
+```
+
+
+
+[npm install --save 与 npm install --save-dev 的区别](http://www.cnblogs.com/hollen/p/5956012.html)
+
+#### **以npm安装msbuild为例：**
+
+**npm install msbuild:**
+
+- **会**把msbuild包安装到node_modules目录中
+- **不会**修改package.json
+- 之后运行npm install命令时，**不会**自动安装msbuild
+
+**npm install --save:**
+
+- **会**把msbuild包安装到node_modules目录中
+- **会**在package.json的**dependencies**属性下添加msbuild
+- 之后运行npm install命令时，**会**自动安装msbuild到node_modules目录中
+- 之后运行npm install --production或者注明NODE_ENV变量值为production时，**会**自动安装msbuild到node_modules目录中
+
+**npm install --save-dev:**
+
+- **会**把msbuild包安装到node_modules目录中
+- **会**在package.json的**devDependencies**属性下添加msbuild
+- 之后运行npm install命令时，**会**自动安装msbuild到node_modules目录中
+- 之后运行npm install --production或者注明NODE_ENV变量值为production时，**不会**自动安装msbuild到node_modules目录中
+
+**使用原则:**
+
+**运行时需要用到的包使用--save，否则使用--save-dev。**
 
 
 

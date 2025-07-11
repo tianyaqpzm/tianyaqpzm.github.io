@@ -1,5 +1,7 @@
 # Markdown syntax guide and writing on MWeb
 
+[TOC]
+
 ## Philosophy
 
 > Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
@@ -113,7 +115,7 @@ Just typing enter to newline,please set：`Preferences` - `Themes` - `Translate 
         
     2. Item 2 
 
-### Task lists
+### Task lists [待办]
 
 **Example:**
 
@@ -126,6 +128,11 @@ Just typing enter to newline,please set：`Preferences` - `Themes` - `Translate 
 
 - [ ] task one not finish `- + SPACE + [ ]`
 - [x] task two finished `- + SPACE + [x]`
+
+
+
+- [ ] task one not finish `- SPACE [ ] SPACE`
+- [x] 
 
 ## Images
 

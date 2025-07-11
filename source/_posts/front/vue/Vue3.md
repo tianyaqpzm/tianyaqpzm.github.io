@@ -12,3 +12,8 @@ Vue3 使用ts 实现了类型推断， 新版api全部采用普通函数，让�
 
 使用
 
+
+
+
+
+[Vue3文档](https://cn.vuejs.org/guide/typescript/overview.html)

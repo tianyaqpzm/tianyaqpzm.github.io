@@ -23,7 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="csrf1" options="-parameters" />
       <module name="redis-spring-boot-starter" options="-parameters" />
-      <module name="spring-boot-demo" options="-parameters" />
+      <module name="spring-boot-demo" options="" />
     </option>
   </component>
 </project>

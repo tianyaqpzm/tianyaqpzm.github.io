@@ -4458,6 +4458,16 @@ https://www.jianshu.com/p/ab84653ce166
 
 
 
+[Angular 单元测试实践 (4)](https://www.jianshu.com/p/cc337849aef6)
+
+
+
+##### Angular自学笔记（二）：@Input、@Output的测试
+
+##### https://zhuanlan.zhihu.com/p/30238181
+
+
+
 简介：
 
 第一个测试使用 `new` 创建了 `ValueService`，然后把它传给了 `MasterService` 的构造函数。

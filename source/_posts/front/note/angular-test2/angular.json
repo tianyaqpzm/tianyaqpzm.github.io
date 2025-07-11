@@ -29,7 +29,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": ["node_modules/tracking/build/tracking-min.js","node_modules/tracking/build/data/face-min.js"]
+            "scripts": ["node_modules/tracking/build/tracking-min.js",
+            "node_modules/tracking/build/data/eye-min.js",
+            "node_modules/tracking/build/data/mouth-min.js",
+            "node_modules/tracking/build/data/face-min.js",
+            "src/lib/RecordRTC.min.js"]
           },
           "configurations": {
             "production": {

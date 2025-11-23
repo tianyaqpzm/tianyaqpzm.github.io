@@ -27,36 +27,40 @@ class Solution:
             if not node.left and not node.right:
                 return node
             
+            # 先整理左子树
             leftTail = flattenTree(node.left)
+            # 整理右子树
             rightTail = flattenTree(node.right)
             
             if leftTail:
+                # 保存当前处理节点的右子树，接到左子树的尾部
                 leftTail.right = node.right
                 node.right = node.left
                 node.left = None
             
-            return rightTail if rightTail else leftTail 
+            return rightTail if rightTail else leftTail
+        flattenTree(root)
+        
     def flatten2(self, root: Optional[TreeNode]) -> None:
-
-        # if not root:
-        #     return
+        if not root: 
+            return
         
-        # stack = [root]
-        # prev = None
+        stack = [root]
+        prev = None
         
-        # while stack:
-        #     node = stack.pop()
+        while stack:
+            node = stack.pop()
             
-        #     if prev:
-        #         prev.left = None
-        #         prev.right = node
+            if prev:
+                prev.left = None
+                prev.right = node
             
-        #     if node.right:
-        #         stack.append(node.right)
-        #     if node.left:
-        #         stack.append(node.left)
+            if node.right:
+                stack.append(node.right)
+            if node.left:
+                stack.append(node.left)
             
-        #     prev = node
+            prev = node
         
 # @lc code=end
 

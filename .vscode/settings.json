@@ -1,6 +1,6 @@
 {
     "go.inferGopath": false,
-    "java.checkstyle.configuration":"./source/_posts/other/google_checks.xml",
+    "java.checkstyle.configuration": "./source/_posts/other/google_checks.xml",
     "java.errors.incompleteClasspath.severity": "info",
     "java.project.sourcePaths": [
         "source/_posts/Algorithm/经典算法/排序",
@@ -15,8 +15,17 @@
         "source/_posts/1.leetcode/tmp",
         "source/_posts/Algorithm/算法专题/动态规划"
     ],
-    "java.debug.settings.onBuildFailureProceed":true,
-    "java.project.referencedLibraries":[
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.referencedLibraries": [
         "lib/**/*.jar"
+    ],
+    "python.defaultInterpreterPath": "d:\\projects\\blog\\source\\_posts\\Algorithm\\1.leetcode\\py-demo\\.venv\\Scripts\\python.exe",
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.analysis.extraPaths": [
+        "./source/_posts/Algorithm/1.leetcode/py-demo/src"
     ]
 }

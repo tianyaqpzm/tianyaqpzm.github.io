@@ -1,0 +1,624 @@
+{
+    "name": "youtube热门趋势",
+    "nodes": [
+        {
+            "parameters": {
+                "assignments": {
+                    "assignments": [
+                        {
+                            "id": "search-terms",
+                            "name": "searchTerms",
+                            "type": "string",
+                            "value": "大模型"
+                        },
+                        {
+                            "id": "published-after",
+                            "name": "publishedAfter",
+                            "type": "string",
+                            "value": "={{ new Date(Date.now() - 24*60*60*1000).toISOString() }}"
+                        },
+                        {
+                            "id": "region-code",
+                            "name": "regionCode",
+                            "type": "string",
+                            "value": "US"
+                        },
+                        {
+                            "id": "relevance-language",
+                            "name": "relevanceLanguage",
+                            "type": "string",
+                            "value": "zh-Hans"
+                        },
+                        {
+                            "id": "max-per-keyword",
+                            "name": "max",
+                            "type": "number",
+                            "value": 100
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "id": "2f3a99e1-18de-4bc5-890e-f5296c032040",
+            "name": "设置参数",
+            "type": "n8n-nodes-base.set",
+            "typeVersion": 3.4,
+            "position": [
+                -864,
+                1440
+            ]
+        },
+        {
+            "parameters": {
+                "fieldToSplitOut": "searchTerms",
+                "options": {
+                    "disableDotNotation": false
+                }
+            },
+            "id": "4c24b7c4-6594-4539-a002-557ba2c71488",
+            "name": "Split Out 关键词",
+            "type": "n8n-nodes-base.splitOut",
+            "typeVersion": 1,
+            "position": [
+                -416,
+                1440
+            ]
+        },
+        {
+            "parameters": {
+                "resource": "video",
+                "limit": "={{ $('设置参数').item.json.max }}",
+                "filters": {
+                    "publishedAfter": "={{ $('设置参数').item.json.publishedAfter }}",
+                    "q": "={{ $json.searchTerms }}",
+                    "regionCode": "={{ $('设置参数').item.json.regionCode }}"
+                },
+                "options": {
+                    "order": "={{ \"viewCount\" }}",
+                    "safeSearch": "strict"
+                }
+            },
+            "id": "8a73885a-00fe-4156-b6a8-22c552bd3841",
+            "name": "YouTube 搜索（按观看量）",
+            "type": "n8n-nodes-base.youTube",
+            "typeVersion": 1,
+            "position": [
+                64,
+                1312
+            ],
+            "credentials": {
+                "youTubeOAuth2Api": {
+                    "id": "bFhwEprjaQJSeRAV",
+                    "name": "YouTube account"
+                }
+            }
+        },
+        {
+            "parameters": {
+                "url": "https://www.googleapis.com/youtube/v3/videos",
+                "authentication": "predefinedCredentialType",
+                "nodeCredentialType": "youTubeOAuth2Api",
+                "sendQuery": true,
+                "queryParameters": {
+                    "parameters": [
+                        {
+                            "name": "part",
+                            "value": "contentDetails,snippet,statistics"
+                        },
+                        {
+                            "name": "id",
+                            "value": "={{ JSON.parse($json.videoId).join(',') }}"
+                        }
+                    ]
+                },
+                "options": {
+                    "timeout": 30000
+                }
+            },
+            "id": "8783b3f3-cef4-4c17-9668-2c05a57165b5",
+            "name": "获取视频详情（批量）",
+            "type": "n8n-nodes-base.httpRequest",
+            "typeVersion": 4.2,
+            "position": [
+                704,
+                1312
+            ],
+            "executeOnce": false,
+            "credentials": {
+                "youTubeOAuth2Api": {
+                    "id": "bFhwEprjaQJSeRAV",
+                    "name": "YouTube account"
+                }
+            },
+            "onError": "continueRegularOutput"
+        },
+        {
+            "parameters": {
+                "promptType": "define",
+                "text": "=基于以下YouTube趋势数据，请输出中文分析报告（条理清晰、含建议）：\n\n## 以下内容放在报告开头，不修改：\n总体统计：\n- 总视频数：{{$json.summary.totalVideos}}\n- 总观看量：{{$json.summary.totalViews}}\n- 平均观看量：{{$json.summary.averageViews}}\n- 中位数观看量：{{$json.summary.medianViews}}\n- 平均时长（秒）：{{$json.summary.avgDuration}}\n- 总点赞：{{$json.summary.totalLikes}}；总评论：{{$json.summary.totalComments}}\n\n热门标签（出现频次TOP10）：\n{{$json.topTags.map(x=>`${x.tag}(${x.count})`).join(', ')}}\n\n热门标签（按观看量加权TOP10）：\n{{$json.topTagsWeighted.map(x=>`${x.tag}(${x.views})`).join(', ')}}\n\n热门频道（按总观看量TOP5）：\n{{$json.topChannels.map((c, i) => `${i + 1}、${c.channelTitle}(${c.videoCount}个视频/${c.totalViews}观看)`).join('\\n')}}\n\n热门视频（按观看量TOP5）：\n{{$json.topVideos.slice(0,5).map((v, i) => `${i + 1}、${v.title} - ${v.viewCount} - ${v.url}`).join('\\n')}}\n\n互动率最高（TOP5）：\n{{$json.topByEngagement.slice(0,5).map((v, i) => `${i + 1}、${v.title} - 互动率${(v.engagementRate*100).toFixed(2)}%`).join('\\n')}}\n\n\n",
+                "options": {
+                    "systemMessage": "=## 请根据以下内容进行整合分析\n\n1) 当前趋势主题与叙事角度（结合“加权标签”）\n2) 内容类型偏好（视频时长、封面/标题风格）\n3) 观众参与度（互动率）与驱动因素\n4) 创作者建议（标题/封面/结构/时长/关键词）\n5) 细分机会（长尾标签/冷门但高互动）\n\n如果涉及到标题外语，不修改原来的语言，但需要备注好（中文标题），如：Generate Viral Marketing Ads with 1 Click!（一键生成病毒式营销广告！）\n请直接输出报告，其他无关内容无需输出。\n要求所有讲解，清晰，简介，要求瞬间看到需要的内容，避免生成不必要的信息。\n\n\n## 报告格式（请严格遵守）\n24小时内youtube视频总体统计：\n- 总视频数：XX\n- 总观看量：XX\n- 平均观看量：XX\n- 中位数观看量：X\n- 平均时长（秒）：XX\n- 总点赞：XX；总评论：XX\n\n热门标签（出现频次TOP10）：\nXX\n\n热门标签（按观看量加权TOP10）：\nXX\n\n热门频道（按总观看量TOP5）：\nXX\n\n热门视频（按观看量TOP5）：\nXX\n\n互动率最高（TOP5）：\nXX\n\n详细分析：\nXXXX"
+                }
+            },
+            "id": "0c6496fe-2bcc-4fd3-85a2-1a3451f813b0",
+            "name": "AI Agent（生成报告）",
+            "type": "@n8n/n8n-nodes-langchain.agent",
+            "typeVersion": 2.2,
+            "position": [
+                1376,
+                1440
+            ]
+        },
+        {
+            "parameters": {
+                "options": {
+                    "temperature": 0.5
+                }
+            },
+            "id": "2acdb839-bf22-4c10-8b28-bff1fc0769d5",
+            "name": "DeepSeek Chat Model1",
+            "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+            "typeVersion": 1,
+            "position": [
+                1328,
+                1696
+            ],
+            "credentials": {
+                "deepSeekApi": {
+                    "id": "lLSUcbtqOr46HehX",
+                    "name": "DeepSeek account"
+                }
+            }
+        },
+        {
+            "parameters": {
+                "rule": {
+                    "interval": [
+                        {
+                            "triggerAtHour": 6
+                        }
+                    ]
+                }
+            },
+            "type": "n8n-nodes-base.scheduleTrigger",
+            "typeVersion": 1.2,
+            "position": [
+                -1088,
+                1440
+            ],
+            "id": "a7b0b25f-f8b8-4169-855d-1bdc655f4ec3",
+            "name": "Schedule Trigger"
+        },
+        {
+            "parameters": {
+                "resource": "message",
+                "operation": "message:send",
+                "receive_id_type": "chat_id",
+                "receive_id": "oc_4189c162d5a8a71fd9f5b87390e307a2",
+                "content": "={{ $json.content }}"
+            },
+            "type": "n8n-nodes-feishu-common.feishuNode",
+            "typeVersion": 1,
+            "position": [
+                1952,
+                1440
+            ],
+            "id": "d8ee45fc-b3cf-4522-ba93-53338dc9bf0a",
+            "name": "Message:send message",
+            "credentials": {
+                "feishuCredentialsApi": {
+                    "id": "HGVpPRHxJxzH5gl7",
+                    "name": "Feishu Credentials account"
+                }
+            }
+        },
+        {
+            "parameters": {
+                "jsCode": "function median(arr){ if(!arr.length) return 0; const s=[...arr].sort((a,b)=>a-b); const m=Math.floor(s.length/2); return s.length%2? s[m] : Math.round((s[m-1]+s[m])/2); }\n\ntry {\n  const all = $input.all().map(i=>i.json).filter(v=>!v.error);\n  if (!all.length) return [{ json: { error: '没有找到符合条件的视频' } }];\n\n  const byViews = [...all].sort((a,b)=>b.viewCount - a.viewCount);\n\n  // 标签频次（普通 & 按观看量加权）\n  const freq = {}, weighted = {};\n  for (const v of all) {\n    (v.tags || []).forEach(t => {\n      freq[t] = (freq[t] || 0) + 1;\n      weighted[t] = (weighted[t] || 0) + v.viewCount;\n    });\n  }\n  const topTags = Object.entries(freq).sort(([,a],[,b])=>b-a).slice(0,10).map(([tag,count])=>({tag,count}));\n  const topTagsWeighted = Object.entries(weighted).sort(([,a],[,b])=>b-a).slice(0,10).map(([tag,views])=>({tag,views}));\n\n  // 频道聚合\n  const channels = {};\n  for (const v of all) {\n    channels[v.channelId] ??= { channelTitle: v.channelTitle, channelUrl: v.channelUrl, videoCount:0, totalViews:0, totalLikes:0, totalComments:0 };\n    const c = channels[v.channelId];\n    c.videoCount++; c.totalViews+=v.viewCount; c.totalLikes+=v.likeCount; c.totalComments+=v.commentCount;\n  }\n  const topChannels = Object.values(channels).sort((a,b)=>b.totalViews - a.totalViews).slice(0,5);\n\n  // 统计\n  const totalVideos = all.length;\n  const viewsArr = all.map(v=>v.viewCount);\n  const totalViews = viewsArr.reduce((s,x)=>s+x,0);\n  const averageViews = Math.round(totalViews / totalVideos);\n  const medianViews = median(viewsArr);\n  const totalLikes = all.reduce((s,v)=>s+v.likeCount,0);\n  const totalComments = all.reduce((s,v)=>s+v.commentCount,0);\n  const avgDuration = Math.round(all.reduce((s,v)=>s+v.duration,0) / totalVideos);\n\n  const topByEngagement = [...all]\n    .map(v => ({...v, engagementRate: v.viewCount ? (v.likeCount + v.commentCount) / v.viewCount : 0}))\n    .sort((a,b)=>b.engagementRate - a.engagementRate)\n    .slice(0,10);\n\n  return [{\n    json: {\n      summary: {\n        totalVideos, totalViews, averageViews, medianViews, totalLikes, totalComments, avgDuration,\n        analysisDate: new Date().toISOString()\n      },\n      topVideos: byViews.slice(0,10),\n      topByEngagement,\n      topTags,\n      topTagsWeighted,\n      topChannels,\n      allVideos: byViews\n    }\n  }];\n} catch (e) {\n  return [{ json: { error: e.message } }];\n}"
+            },
+            "id": "e859a1cd-60d5-4f25-90f8-39821557cec9",
+            "name": "趋势分析1",
+            "type": "n8n-nodes-base.code",
+            "typeVersion": 2,
+            "position": [
+                1152,
+                1440
+            ]
+        },
+        {
+            "parameters": {
+                "options": {}
+            },
+            "type": "n8n-nodes-base.splitInBatches",
+            "typeVersion": 3,
+            "position": [
+                -192,
+                1440
+            ],
+            "id": "31fdad8f-48be-4c81-ada4-0739a6531a65",
+            "name": "Loop Over Items1"
+        },
+        {
+            "parameters": {
+                "fieldsToAggregate": {
+                    "fieldToAggregate": [
+                        {
+                            "fieldToAggregate": "id.videoId"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.aggregate",
+            "typeVersion": 1,
+            "position": [
+                256,
+                1312
+            ],
+            "id": "2798ff15-2dcf-4cfe-b9b3-39594a15ae21",
+            "name": "Aggregate"
+        },
+        {
+            "parameters": {
+                "assignments": {
+                    "assignments": [
+                        {
+                            "id": "9757777e-06f0-46ed-b718-b1c1591e73f8",
+                            "name": "videoId",
+                            "value": "={{ $json.videoId }}",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.set",
+            "typeVersion": 3.4,
+            "position": [
+                480,
+                1312
+            ],
+            "id": "11f43101-94ee-4e1e-9ad7-14b9a331698b",
+            "name": "Edit Fields"
+        },
+        {
+            "parameters": {
+                "resource": "bitable",
+                "operation": "bitable:table:record:add",
+                "app_toke": "ZCv1bqWnGahgDLsXhq4c6Y68njh",
+                "table_id": "tblR70mMYRIBDItI",
+                "body": "={\"fields\":{\n  \"标题\":\"{{ $json.title }}\",\n  \"url\":{\n      \"link\":\"{{ $json.url }}\",\n      \"text\":\"查看视频\"},\n  \"观看量\":\"{{ $json.viewCount }}\",\n  \"发布日期\":\"{{ $json.publishedAt }}\"\n}}"
+            },
+            "type": "n8n-nodes-feishu-common.feishuNode",
+            "typeVersion": 1,
+            "position": [
+                1952,
+                1184
+            ],
+            "id": "35594026-eb78-4a61-8e59-ed6af803a7b6",
+            "name": "Bitable:table:record:add bitable",
+            "credentials": {
+                "feishuCredentialsApi": {
+                    "id": "HGVpPRHxJxzH5gl7",
+                    "name": "Feishu Credentials account"
+                }
+            },
+            "onError": "continueRegularOutput"
+        },
+        {
+            "parameters": {
+                "mode": "combine",
+                "combineBy": "combineByPosition",
+                "options": {}
+            },
+            "type": "n8n-nodes-base.merge",
+            "typeVersion": 3.2,
+            "position": [
+                2176,
+                1440
+            ],
+            "id": "bfb4302e-031b-41ed-82a5-436ec83b720a",
+            "name": "Merge"
+        },
+        {
+            "parameters": {
+                "jsCode": "  const safe = String($json.output || '')\n    .replace(/\\u0000|\\u2028|\\u2029/g, '') // 清掉控制字符\n    .replace(/\\r\\n?/g, '\\n')              // 统一换行\n    .slice(0, 4000);                      // 可选：长度控制\n  return {\n    content: JSON.stringify({ text: safe })   // 关键：内容必须是 JSON 字符串\n  }\n"
+            },
+            "type": "n8n-nodes-base.code",
+            "typeVersion": 2,
+            "position": [
+                1728,
+                1440
+            ],
+            "id": "e724d281-d08d-496b-879d-f0da214d8d76",
+            "name": "Code in JavaScript"
+        },
+        {
+            "parameters": {
+                "jsCode": "function parseISODuration(s){\n  if(!s) return 0;\n  const m = s.match(/PT(?:(\\d+)H)?(?:(\\d+)M)?(?:(\\d+)S)?/);\n  if(!m) return 0;\n  const h = parseInt(m[1]||'0',10), mm = parseInt(m[2]||'0',10), ss = parseInt(m[3]||'0',10);\n  return h*3600 + mm*60 + ss;\n}\n\nfunction extractItems(it){\n  const j = it.json ?? it;\n  if (Array.isArray(j)) return j;\n  if (Array.isArray(j.items)) return j.items;\n  if (j.body && Array.isArray(j.body.items)) return j.body.items;   // Full Response = true\n  if (j.data && Array.isArray(j.data.items)) return j.data.items;   // 某些接口封装\n  return [];\n}\n\ntry {\n  const carrier = $input.first()?.json ?? {};\n  const flowCfg = $items('设置参数', 0, 0)?.json ?? {};\n\n  const minDuration = Number(carrier.minDuration ?? flowCfg.minDuration ?? 30);\n  const minViews    = Number(carrier.minViews    ?? flowCfg.minViews    ?? 400);\n  const afterDate   = (carrier.publishedAfter ?? flowCfg.publishedAfter)\n    ? new Date(carrier.publishedAfter ?? flowCfg.publishedAfter)\n    : null;\n\n  const inputs = $input.all();\n  const rawItems = inputs.flatMap(extractItems);\n\n  const seen = new Set();\n  const out = [];\n  let totalIn = 0;\n\n  for (const v of rawItems) {\n    totalIn++;\n\n    const id = v.id;\n    if (!id || seen.has(id)) continue;\n\n    const sn = v.snippet || {};\n    const st = v.statistics || {};\n    const cd = v.contentDetails || {};\n\n    if (sn.liveBroadcastContent === 'live' || sn.liveBroadcastContent === 'upcoming') continue;\n\n    const duration = parseISODuration(cd.duration);\n\n    const viewCount    = parseInt(st?.viewCount    || '0', 10);\n    const likeCount    = parseInt(st?.likeCount    || '0', 10);\n    const commentCount = parseInt(st?.commentCount || '0', 10);\n\n    if (!Number.isFinite(viewCount)) continue;\n\n    const pubAt = sn.publishedAt ? new Date(sn.publishedAt) : null;\n\n    if (minDuration > 0 && duration < minDuration) continue;\n    if (afterDate && pubAt && pubAt < afterDate)   continue;\n    if (pubAt && pubAt > new Date())               continue;\n    if (viewCount < minViews)                      continue;\n\n    seen.add(id);\n\n    out.push({\n      videoId: id,\n      title: sn.title || '',\n      channelTitle: sn.channelTitle || '',\n      channelId: sn.channelId || '',\n      description: sn.description || '',\n      tags: sn.tags || [],\n      publishedAt: sn.publishedAt || '',\n      duration,\n      viewCount,\n      likeCount,\n      commentCount,\n      engagementRate: viewCount ? (likeCount + commentCount) / viewCount : 0,\n      thumbnails: sn.thumbnails || {},\n      categoryId: sn.categoryId || '',\n      defaultLanguage: sn.defaultLanguage || '',\n      url: `https://www.youtube.com/watch?v=${id}`,\n      channelUrl: sn.channelId ? `https://www.youtube.com/channel/${sn.channelId}` : undefined,\n    });\n  }\n\n  if (!out.length) {\n    return [{\n      json: {\n        error: '没有符合条件的视频',\n        _why: totalIn === 0\n          ? '上游HTTP返回结构不在 json.items / json.body.items / json.data.items / 直接数组 之内'\n          : '全部被过滤条件剔除',\n        _applied: {\n          minViews, minDuration,\n          afterDate: afterDate ? afterDate.toISOString() : null,\n          totalIn\n        },\n        _peekOfInput0: $input.first()?.json ?? null\n      }\n    }];\n  }\n\n  // ✅ 加入排序逻辑：按观看量（viewCount）降序排列\n  out.sort((a, b) => b.viewCount - a.viewCount);\n\n  return out.map(x => ({ json: x }));\n  \n} catch (e) {\n  return [{ json: { error: e.message } }];\n}\n"
+            },
+            "id": "e78f9a5b-95f5-4e77-9d0e-629795007cfe",
+            "name": "整理与过滤1",
+            "type": "n8n-nodes-base.code",
+            "typeVersion": 2,
+            "position": [
+                928,
+                1312
+            ]
+        },
+        {
+            "parameters": {
+                "jsCode": "function normalizeStringArray(input) {\n  if (Array.isArray(input)) {\n    return input\n      .map(i => (typeof i === 'string' ? i.trim() : String(i)))\n      .filter(i => !!i);\n  }\n\n  if (typeof input === 'string') {\n    return input\n      .split(',')\n      .map(i => i.trim())\n      .filter(i => !!i);\n  }\n\n  return [];\n}\n\n// 获取参数：先从 $input.first() 拿，再从 “设置参数” 节点 fallback\nconst carrier = $input.first()?.json ?? {};\nconst flowCfg = $items('设置参数', 0, 0)?.json ?? {};\n\nconst searchTermsRaw = carrier.searchTerms ?? flowCfg.searchTerms ?? [];\n\nconst searchTerms = normalizeStringArray(searchTermsRaw);\n\n// 返回处理后的 searchTerms（只有这一项）\nreturn [\n  {\n    json: {\n      searchTerms\n    }\n  }\n];\n"
+            },
+            "type": "n8n-nodes-base.code",
+            "typeVersion": 2,
+            "position": [
+                -640,
+                1440
+            ],
+            "id": "7f191794-e5a5-4427-aae5-b82457802bc1",
+            "name": "Code in JavaScript2"
+        },
+        {
+            "parameters": {
+                "content": "这里可以设置最大值或者地区等"
+            },
+            "type": "n8n-nodes-base.stickyNote",
+            "position": [
+                -928,
+                1248
+            ],
+            "typeVersion": 1,
+            "id": "2a52c8f3-7a9c-4c03-9006-bcbeaecb1463",
+            "name": "Sticky Note"
+        },
+        {
+            "parameters": {
+                "content": "一定要配好google服务"
+            },
+            "type": "n8n-nodes-base.stickyNote",
+            "position": [
+                0,
+                1120
+            ],
+            "typeVersion": 1,
+            "id": "ddf3cc4c-0ce5-44cc-9ebc-1fb332096786",
+            "name": "Sticky Note1"
+        },
+        {
+            "parameters": {
+                "content": "先搭建表格再进行创建"
+            },
+            "type": "n8n-nodes-base.stickyNote",
+            "position": [
+                1872,
+                992
+            ],
+            "typeVersion": 1,
+            "id": "8100d5d9-01ca-4767-b35f-92f5bbc59e90",
+            "name": "Sticky Note2"
+        }
+    ],
+    "pinData": {},
+    "connections": {
+        "设置参数": {
+            "main": [
+                [
+                    {
+                        "node": "Code in JavaScript2",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Split Out 关键词": {
+            "main": [
+                [
+                    {
+                        "node": "Loop Over Items1",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "YouTube 搜索（按观看量）": {
+            "main": [
+                [
+                    {
+                        "node": "Aggregate",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "获取视频详情（批量）": {
+            "main": [
+                [
+                    {
+                        "node": "整理与过滤1",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "DeepSeek Chat Model1": {
+            "ai_languageModel": [
+                [
+                    {
+                        "node": "AI Agent（生成报告）",
+                        "type": "ai_languageModel",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Schedule Trigger": {
+            "main": [
+                [
+                    {
+                        "node": "设置参数",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "AI Agent（生成报告）": {
+            "main": [
+                [
+                    {
+                        "node": "Code in JavaScript",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Message:send message": {
+            "main": [
+                [
+                    {
+                        "node": "Merge",
+                        "type": "main",
+                        "index": 1
+                    }
+                ]
+            ]
+        },
+        "趋势分析1": {
+            "main": [
+                [
+                    {
+                        "node": "AI Agent（生成报告）",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Loop Over Items1": {
+            "main": [
+                [],
+                [
+                    {
+                        "node": "YouTube 搜索（按观看量）",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Aggregate": {
+            "main": [
+                [
+                    {
+                        "node": "Edit Fields",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Edit Fields": {
+            "main": [
+                [
+                    {
+                        "node": "获取视频详情（批量）",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bitable:table:record:add bitable": {
+            "main": [
+                [
+                    {
+                        "node": "Merge",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Code in JavaScript": {
+            "main": [
+                [
+                    {
+                        "node": "Message:send message",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Merge": {
+            "main": [
+                [
+                    {
+                        "node": "Loop Over Items1",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "整理与过滤1": {
+            "main": [
+                [
+                    {
+                        "node": "Bitable:table:record:add bitable",
+                        "type": "main",
+                        "index": 0
+                    },
+                    {
+                        "node": "趋势分析1",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Code in JavaScript2": {
+            "main": [
+                [
+                    {
+                        "node": "Split Out 关键词",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    },
+    "active": true,
+    "settings": {
+        "executionOrder": "v1"
+    },
+    "versionId": "ab55b9d8-ef35-4ef5-a4c0-2ec0bc74ab42",
+    "meta": {
+        "templateCredsSetupCompleted": true,
+        "instanceId": "1122df49d9fa40cce32cd2d60acb0bad372d247c259e9e9c08600ee066ef1305"
+    },
+    "id": "1G6XgZtCRsUgvlyx",
+    "tags": []
+}
+
+
+
+
+{"fields": {
+        "标题":"{{ $json.title }}",
+        "url": {
+            "link": "{{ $json.url }}",
+            "text": "查看视频"
+        },
+        "观看量": "{{ $json.viewCount }}",
+        "发布日期":"{
+            { $json.publishedAt
+            }
+        }"}}

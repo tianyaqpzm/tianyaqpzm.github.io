@@ -7,6 +7,9 @@
 // @lc code=start
 class Solution {
 
+/**
+ * 没有重复元素，
+ */
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         // Arrays.sort(nums);

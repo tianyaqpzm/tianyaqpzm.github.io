@@ -89,39 +89,10 @@
             "projectName": "blog_be527a3e"
         },
         {
-            "type": "java",
-            "name": "Launch Solution_131",
+            "type": "node",
             "request": "launch",
-            "mainClass": "Solution_131",
-            "projectName": "blog_be527a3e"
-        },
-        {
-            "type": "java",
-            "name": "Launch Solution2",
-            "request": "launch",
-            "mainClass": "Solution2",
-            "projectName": "blog_be527a3e"
-        },
-        {
-            "type": "java",
-            "name": "Launch Solution1",
-            "request": "launch",
-            "mainClass": "Solution1",
-            "projectName": "blog_be527a3e"
-        },
-        {
-            "type": "java",
-            "name": "Launch DumpSort",
-            "request": "launch",
-            "mainClass": "DumpSort",
-            "projectName": "blog_be527a3e"
-        },
-        {
-            "type": "java",
-            "name": "Launch Heap",
-            "request": "launch",
-            "mainClass": "Heap",
-            "projectName": "blog_be527a3e"
+            "name": "JS ",
+            "program": "${file}"
         },
         {
             "type": "java",

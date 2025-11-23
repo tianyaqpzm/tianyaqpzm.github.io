@@ -1,0 +1,147 @@
+docker run -it --rm --name n8n -p 5678:8080 -v n8n_data:/home/node/.n8n n8nio/n8n
+
+8080  n8n 服务
+
+sudo fallocate -l 2G /swapfile
+# 创建一个 4GB 的文件（根据需要调整大小）
+sudo fallocate -l 4G /swapfile
+
+
+
+sudo fallocate -l 768MB /swapfile
+
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+# 将其添加到 /etc/fstab 以便在重启后保留
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+
+
+NODE_OPTIONS="--max-old-space-size=1024" npm install n8n --maxsockets=1
+NODE_OPTIONS="--max-old-space-size=2048" npm install n8n --force --maxsockets=1
+
+sudo swapoff /swapfile
+# 2. 删除 /swapfile
+sudo rm /swapfile
+sudo nano /etc/fstab
+
+scp -r n8n-pei root@pei.work.gd:/root/n8n-pei/
+
+~$ curl -fsSL https://deb.nodesource.com/setup_20.19.4.x | sudo bash - 
+
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo bash -
+sudo apt-get install -y nodejs
+
+export N8N_SECURE_COOKIE=false && ./node_modules/.bin/n8n
+
+npm install sqlite3 --save
+
+forever 
+forever start "/mnt/volume_add_01/n8x/node_modules/.bin/n8n" -e app-err.log
+forever  -e app-err.log start /mnt/volume_add_01/n8x/node_modules/.bin/n8n
+
+./node_modules/.bin/n8n user-management:reset
+
+npm uninstall forever -g
+npm install forever -g
+
+命令	描述
+forever start [script]	以后台守护进程模式启动脚本。
+forever list	列出所有由 forever 管理的正在运行的进程。
+forever stop [uid/pid/index]	停止指定的进程（可以使用 ID、PID 或列表中的索引）。
+forever stopall	停止所有由 forever 管理的进程。
+forever restart [uid/pid/index]	重启指定的进程。
+forever restartall	重启所有由 forever 管理的进程。
+forever logs [uid/pid/index]	查看指定进程的日志。
+
+
+https://aistudio.google.com/api-keys
+
+
+http://pei.work.gd:5678/signup?inviterId=61dda550-3df7-4fc1-9116-aa71ce0f9cd6&inviteeId=6f11b021-3bb3-4733-9764-94f707eb1b8b
+
+
+http://pei.work.gd:5678/signup?inviterId=61dda550-3df7-4fc1-9116-aa71ce0f9cd6&inviteeId=d30992a1-7f13-4476-95ac-5dfea11336d5
+
+
+测试语法是否正确
+nginx -t
+sudo systemctl start nginx
+systemctl restart nginx
+sudo systemctl reload nginx
+sudo service nginx reload
+
+tail -f /var/log/nginx/access.log
+
+
+
+http://localhost:5678/webhook/e5616171-e3b5-4c39-81d4-67409f9fa60a/chat
+
+
+https://pei.work.gd/webhook/e5616171-e3b5-4c39-81d4-67409f9fa60a/chat
+http://localhost:5678/webhook/e5616171-e3b5-4c39-81d4-67409f9fa60a/chat
+
+YOUR_DOMAIN="pei.work.gd"
+openssl s_client -connect "$YOUR_DOMAIN":443 -servername "$YOUR_DOMAIN" < /dev/null
+
+
+
+https://pei.work.gd/signup?inviterId=61dda550-3df7-4fc1-9116-aa71ce0f9cd6&inviteeId=049893b9-d22f-4234-949a-829a35dfd6c4
+
+
+# 假设您将使用 /etc/nginx/ssl/pei.work.gd_full.pem 作为最终文件
+
+# 1. 将您的域名证书（Leaf Certificate）放在最前面
+cat pei.work.gd.cer > /etc/nginx/n8n/pei.work.gd/full.pem
+
+# 2. 将中间证书（Intermediate Certificate(s)）追加在其后
+cat ca.cer >> /etc/nginx/n8n/pei.work.gd/full.pem
+
+在/mnt/volume_add_01/n8x 位置执行下面命令
+forever start n8n-config.json
+[
+  {
+    "uid": "n8n",
+    "script": "./node_modules/.bin/n8n",
+    "options": ["start"], 
+    "logFile": "/var/log/n8n/n8n.log",
+    "outFile": "/var/log/n8n/n8n-out.log",
+    "errFile": "/var/log/n8n/n8n-err.log",
+    "env": {
+      "WEBHOOK_URL": "https://pei.work.gd/",
+      "N8N_PROTOCOL": "https",
+      "N8N_EDITOR_BASE_URL": "https://pei.work.gd/",
+      "N8N_PROXY_HOPS":1,
+      "NODE_ENV": "production"
+    }
+  }
+]
+
+#export N8N_SECURE_COOKIE=false
+export WEBHOOK_URL=https://pei.work.gd/
+export N8N_HOST=pei.work.gd
+export N8N_PROTOCOL=https
+export N8N_PROXY_HOPS=1
+
+
+
+# 将 <YOUR_HTTPS_URL> 替换为您实际的 Webhook 地址，该地址必须是 HTTPS
+curl -F "url=https://pei.work.gd/webhook/55acc711-c248-4ac9-b6cd-e295c2d33f4b/webhook" \
+"https://api.telegram.org/bot8025607322:AAEQsOk04UPKhk1B6b8SCUy6EOJhVvSd0ms/setWebhook"
+https://t.me/TimnyBot
+
+     https://pei.work.gd/webhook/55acc711-c248-4ac9-b6cd-e295c2d33f4b/webhook
+
+
+
+
+export NODE_OPTIONS="--max-old-space-size=4096"
+
+
+https://www.woshipm.com/ai/6280845.html
+
+复制到 ./${fulename} 文件夹
+
+
+
+root        8992       1  0 Jan11 ?        00:19:55 /usr/bin/shadowsocks-server -u -c /etc/shadowsock

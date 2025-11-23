@@ -282,6 +282,22 @@ https://www.cnblogs.com/paly76/p/7136218.html
 
 
 
+## nginx
+
+Docroot is: /usr/local/var/www
+
+The default port has been set in /usr/local/etc/nginx/nginx.conf to 8080 so that
+nginx can run without sudo.
+
+nginx will load all files in /usr/local/etc/nginx/servers/.
+
+To start nginx now and restart at login:
+  brew services start nginx
+Or, if you don't want/need a background service you can just run:
+  /usr/local/opt/nginx/bin/nginx -g daemon\ off\;
+
+
+
 
 
 ## JAVA多版本
@@ -328,6 +344,10 @@ alias java9='export JAVA_HOME=$JAVA_9_HOME'
 alias java10='export JAVA_HOME=$JAVA_10_HOME'
 alias java11='export JAVA_HOME=$JAVA_11_HOME'
 ```
+
+
+
+
 
 
 
@@ -413,9 +433,7 @@ cd /Applications/ShadowsocksX-NG-R8.app/Contents/Resources
 
 
 
-我们写好了.plist文件以后，将它拷贝到/library/LaunchDeamons/文件夹下面，然后就直接执行了sudo luanchctl load xxxx.plist，这样肯定会产生权限不够的问题，
-
-所以，正确的方法是，现将其的权限修改为root，sudo chown root xxxx.plist， 然后再来执行上述命令就没事啦。
+我们写好了.plist文件以后，将它拷贝到/library/LaunchDeamons/文件夹下面，然后就直接执行了sudo luanchctl load xxxx.plist，这样肯定会产生权限不够的问题，所以，正确的方法是，现将其的权限修改为root，sudo chown root xxxx.plist， 然后再来执行上述命令就没事啦。
 
 cd /Users/pei/Library/LaunchAgents/
 

@@ -10,6 +10,9 @@ import java.util.List;
 
 // @lc code=start
 class Solution {
+    /**
+     * 不可重复，如果待排列的里面有相同元素， 那就不仅要标记，需先排序，再判断当前枚举和前一个是否相等
+     */
     public List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(nums);

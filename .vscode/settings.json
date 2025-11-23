@@ -17,8 +17,18 @@
     ],
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
+        "lib/**/*.jar",
+        "/Users/pei/blog/blog/lib/**/*.jar"
     ],
+    // 使用轻量级Jest Runner ，而没有使用Jest插件
+    "jest.jestCommandLine": "npm test",
+    "jest.autoRun": {
+        "watch": false,
+        "onSave": "test-file"
+    },
+    "jest.showCoverageOnLoad": true,
+    "jest.coverageFormatter": "DefaultFormatter",
+    "kiroAgent.configureMCP": "Disabled",
     "python.defaultInterpreterPath": "d:\\projects\\blog\\source\\_posts\\Algorithm\\1.leetcode\\py-demo\\.venv\\Scripts\\python.exe",
     "python.testing.pytestEnabled": true,
     "python.testing.pytestArgs": [

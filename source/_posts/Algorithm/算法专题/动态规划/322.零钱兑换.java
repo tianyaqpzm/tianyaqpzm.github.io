@@ -11,7 +11,7 @@ import org.junit.jupiter.api.DisplayName;
  */
 
 // @lc code=start
-class Solution {
+class Solution322 {
     public HashMap<Integer, Integer> cache = new HashMap<>();
 
     private int MAX_VALUE;
@@ -170,7 +170,13 @@ class Solution {
     public static void main(String[] args) {
         int[] coins = new int[] { 1, 2, 5 };
         Solution322 solution322 = new Solution322();
-        solution322.coinChangeError(coins, 5);
+        solution322.coinChange1(coins, 5);
+    }
+
+    @Test
+    @DisplayName("ReDos攻击")
+    public void test_binary_redos() {
+        System.err.println("sss");
     }
 
     @Test

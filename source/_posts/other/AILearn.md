@@ -17,3 +17,9 @@
 ## ChatGPT
 
 ![image-20250112100600689](AILearn/image-20250112100600689.png)
+
+
+
+
+
+{"fields":{"标题":\"{{ $json.title }}",  "url":{      "link":"{{ $json.url }}",      "text":"查看视频"}, "观看量":"{{ $json.viewCount }}", "发布日期\":"{{ $json.publishedAt }}"}}

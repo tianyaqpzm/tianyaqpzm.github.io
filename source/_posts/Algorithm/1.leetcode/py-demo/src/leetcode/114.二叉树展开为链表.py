@@ -37,7 +37,9 @@ class Solution:
                 leftTail.right = node.right
                 node.right = node.left
                 node.left = None
-            
+            # 为什么要返回右子树的尾部呢？ 因为右子树是最后处理的节点
+            # 能否先返回左子树的尾部呢？ 不能， 因为右子树可能为空
+
             return rightTail if rightTail else leftTail
         flattenTree(root)
         

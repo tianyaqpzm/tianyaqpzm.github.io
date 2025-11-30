@@ -29,10 +29,10 @@
     "jest.showCoverageOnLoad": true,
     "jest.coverageFormatter": "DefaultFormatter",
     "kiroAgent.configureMCP": "Disabled",
-    "python.defaultInterpreterPath": "d:\\projects\\blog\\source\\_posts\\Algorithm\\1.leetcode\\py-demo\\.venv\\Scripts\\python.exe",
+    "python.defaultInterpreterPath": "/Users/pei/.pyenv/versions/py-demo/bin/python",
     "python.testing.pytestEnabled": true,
     "python.testing.pytestArgs": [
-        "tests"
+        "source/_posts/Algorithm/1.leetcode/py-demo/tests"
     ],
     "python.testing.unittestEnabled": false,
     "python.analysis.extraPaths": [

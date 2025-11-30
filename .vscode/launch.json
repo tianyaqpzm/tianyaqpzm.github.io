@@ -117,7 +117,7 @@
             "name": "Pytest: Debug single node (prompt)",
             "type": "debugpy",
             "request": "launch",
-            "program": "d:\\projects\\blog\\source\\_posts\\Algorithm\\1.leetcode\\py-demo\\.venv\\Scripts\\python.exe",
+            "program": "${command:python.interpreterPath}",
             "args": [
                 "-m",
                 "pytest",
@@ -126,6 +126,14 @@
             ],
             "console": "integratedTerminal",
             "justMyCode": false
+        }
+    ],
+    "inputs": [
+        {
+            "name": "pytestNode",
+            "type": "promptString",
+            "description": "Pytest node to debug (e.g., 'path/to/file.py::test_func')",
+            "id": "pytestNode"
         }
     ]
 }
